@@ -1,0 +1,132 @@
+division_template = {
+	name = "Infantry Brigade"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 0 y = 2 }
+		spearmen = { x = 1 y = 0 }
+        spearmen = { x = 1 y = 1 }
+        spearmen = { x = 1 y = 2 }
+	}
+	
+	support = {
+
+	}
+
+	priority = 1
+
+	#template_counter = 5
+}
+
+division_template = {
+	name = "Earthbender Unit"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 1 y = 0 }
+		earthbender = { x = 1 y = 1 }
+	}
+
+	priority = 2
+
+	#template_counter = 1
+}
+
+#############################################
+units = {
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8584
+		division_template = "Earthbender Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8584
+		division_template = "Earthbender Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8545
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8567
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8599
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3137
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5616
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5616
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+
+
+
+}

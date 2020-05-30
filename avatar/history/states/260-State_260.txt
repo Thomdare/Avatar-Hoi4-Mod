@@ -1,0 +1,41 @@
+state={
+	id=260
+	name="STATE_260"
+	manpower = 980
+	state_category = wasteland
+
+	resources={
+		
+	}
+
+	history={
+		12.4.23 = {
+			owner = SAT
+			controller = SAT
+			add_core_of = SAT
+
+			buildings = {
+				infrastructure = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = SAT
+			controller = SAT
+		}
+
+		105.2.4 = {
+			owner = SAT
+			controller = SAT
+		}
+
+		111.10.30 = {
+			owner = SAT
+			controller = SAT
+		}
+	}
+
+	provinces={
+		110 858 1931 2097 2753 3657 5053 5259 5299 5378 5383 5543 9532 9547 9560 9573 9583 9584 9601 9602 9603 9611 9615 9632 9649 10613 
+	}
+}

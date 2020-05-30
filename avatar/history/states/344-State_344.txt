@@ -1,0 +1,49 @@
+
+state={
+	id=344
+	name="STATE_344"
+	resources={
+		aluminium=5.000
+		stone=3.000
+		iron=2.000
+	}
+
+	history={
+		victory_points = {
+			899 10 
+		}
+		12.4.23 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.1.1 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		105.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		114 218 277 1331 2007 3280 5233 7907 7925 7939 7955 
+	}
+	manpower=5478
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

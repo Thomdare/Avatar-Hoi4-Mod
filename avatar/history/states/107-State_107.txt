@@ -1,0 +1,44 @@
+state={
+	id=107
+	name="STATE_107"
+	manpower = 21670
+	state_category = large_town
+
+	resources={
+		aluminuim = 7
+		oil = 5
+		chromium = 4
+	}
+
+	history={
+		12.4.23 = {
+			owner = XIN
+			controller = XIN
+			add_core_of = XIN
+
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = XIN
+			controller = XIN
+		}
+
+		105.2.4 = {
+			owner = XIN
+			controller = XIN
+		}
+
+		111.10.30 = {
+			owner = XIN
+			controller = XIN
+		}
+	}
+
+	provinces={
+		61 219 1269 1652 1964 2033 2437 2653 2735 3536 3834 4049 4093 4344 4678 5298 6329 6345 6401 6541 
+	}
+}

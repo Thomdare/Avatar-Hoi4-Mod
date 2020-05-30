@@ -1,0 +1,45 @@
+
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		iron=6.000
+		stone=3.000
+	}
+
+	history={
+		12.4.23 = {
+			owner = OMS
+			controller = OMS
+			add_core_of = OMS
+			buildings = {
+				infrastructure = 2
+
+			}
+
+		}
+		52.1.1 = {
+			owner = OMS
+			controller = OMS
+
+		}
+		105.2.4 = {
+			owner = OMS
+			controller = OMS
+
+		}
+		111.10.30 = {
+			owner = OMS
+			controller = OMS
+
+		}
+
+	}
+
+	provinces={
+		1088 1667 1826 2251 2591 2888 3159 3523 3640 5083 5198 5616 8532 8533 8571 8573 8608 8618 8621 8634 8639 8644 8662 8680 
+	}
+	manpower=12700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

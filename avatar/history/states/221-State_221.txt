@@ -1,0 +1,45 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		chromium=2.000
+		aluminium=8.000
+	}
+
+	history={
+		12.4.23 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 3
+
+			}
+
+		}
+		52.1.1 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		105.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		403 769 893 966 1313 2479 2733 3264 3541 4311 7962 7971 8011 8027 8043 
+	}
+	manpower=16300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

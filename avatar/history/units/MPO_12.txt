@@ -1,0 +1,105 @@
+
+
+division_template = {
+	name = "Desert Infantry"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 0 y = 2 }
+		archer = { x = 1 y = 0 }
+        archer = { x = 1 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Militia Regiment"
+
+	regiments = {
+		skirmishers = { x = 0 y = 0 }
+		skirmishers = { x = 0 y = 1 }
+		spearmen  = { x = 0 y = 2 }
+		swordsmen = { x = 1 y = 0 }
+		swordsmen = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Sandbender Regiment"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 0 y = 2 }
+	}
+}
+
+#############################################
+
+units = {
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Desert Infantry"
+		start_experience_factor = 0.01
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Desert Infantry"
+		start_experience_factor = 0.01
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Desert Infantry"
+		start_experience_factor = 0.01
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Desert Infantry"
+		start_experience_factor = 0.01
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Desert Infantry"
+		start_experience_factor = 0.01
+	}
+	
+}	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Sandbender Regiment"
+		start_experience_factor = 0.02
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2229
+		division_template = "Sandbender Regiment"
+		start_experience_factor = 0.02
+	}

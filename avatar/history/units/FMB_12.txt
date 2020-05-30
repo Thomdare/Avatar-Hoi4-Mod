@@ -1,0 +1,123 @@
+division_template = {
+	name = "Infantry Regiment"
+
+	regiments = {
+		swordsmen = { x = 0 y = 0 }
+		swordsmen = { x = 0 y = 1 }
+		swordsmen = { x = 0 y = 2 }
+		swordsmen = { x = 1 y = 0 }
+        swordsmen = { x = 1 y = 1 }
+		swordsmen = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Archer Regiment"
+
+	regiments = {
+		archers = { x = 0 y = 0 }
+		archers = { x = 0 y = 1 }
+		archers = { x = 1 y = 0 }
+        archers = { x = 1 y = 1 }
+	}
+	
+	support = {
+
+	}
+}
+
+division_template = {
+	name = "Spearmen Regiment"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 0 y = 2 }
+		spearmen = { x = 1 y = 0 }
+        spearmen = { x = 1 y = 1 }
+		spearmen = { x = 1 y = 2 }
+
+	}
+	
+	support = {
+
+	}
+}
+
+division_template = {
+	name = "Militia Regiment"
+
+	regiments = {
+		skirmishers = { x = 0 y = 0 }
+		skirmishers = { x = 0 y = 1 }
+		spearmen  = { x = 0 y = 2 }
+		swordsmen = { x = 1 y = 0 }
+		swordsmen = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Earthbender Regiment"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 0 y = 2 }
+		earthbender = { x = 0 y = 3 }
+		earthbender = { x = 0 y = 4 }
+	}
+}
+
+#############################################
+
+units = {
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2568
+		division_template = "Militia Regiment"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2568
+		division_template = "Militia Regiment"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Town Guardsmen
+		location = 2568
+		division_template = "Spearmen Regiment"
+		start_experience_factor = 0.25
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Huntsmen brigade"
+		location = 2568
+		division_template = "Archer Regiment"
+		start_experience_factor = 0.25
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2568
+		division_template = "Earthbender Regiment"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,50 @@
+
+state={
+	id=434
+	name="STATE_434"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		victory_points = {
+			922 35 
+		}
+		12.4.23 = {
+			owner = YII
+			controller = YII
+			add_core_of = YII
+			buildings = {
+				infrastructure = 6
+				arms_factory = 1
+				industrial_complex = 2
+				dockyard = 1
+
+			}
+
+		}
+		52.1.1 = {
+			owner = YII
+			controller = YII
+
+		}
+		105.2.4 = {
+			owner = YII
+			controller = YII
+
+		}
+		111.10.30 = {
+			owner = YII
+			controller = YII
+
+		}
+
+	}
+
+	provinces={
+		38 212 281 401 594 753 847 922 924 930 947 1143 1179 1557 1799 1939 2355 2795 3617 3928 4032 4122 4630 4897 5246 5452 5487 9057 9099 9113 9121 9131 9143 9144 9163 9164 9165 9170 9181 9191 9194 9195 9206 9209 9214 9228 9229 9248 9251 9257 
+	}
+	manpower=33800
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,25 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			8259 = { # Caldera city
+				add_province_modifier = {
+					static_modifiers = { terrain_caldera }
+					province = { id = 8259	}
+				}
+			}
+
+
+
+			8218 = { # Caldera Harbour
+				add_province_modifier = {
+					static_modifiers = { terrain_caldera_harbour }
+					province = { id = 8218	}
+				}
+			}
+
+			
+		}
+	}
+}

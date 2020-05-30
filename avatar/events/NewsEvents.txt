@@ -1,0 +1,176 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Sozins Comet
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = sozins_comet_first
+		}
+	}
+
+	major = yes
+
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = { TAG = FIR }
+	}
+}
+
+# Comet Trigger (HIDDEN)
+news_event = {
+	id = news.2
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 12.8.6
+		date < 12.8.20
+		country_exists = FIR
+		NOT = { has_global_flag = sozins_comet_first }
+	}
+
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	immediate = {
+		random_list = {
+			100 = { FIR = { news_event = { id = news.1 } } }
+		}
+		FIR = {
+			add_timed_idea = { idea = sozins_comet_1 days = 100 }
+		}
+	
+	option = {
+		name = news.2.a
+	}
+}
+
+
+#Bears! (by Jari 'Spider-Man')
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_002
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = news.3.a
+	}
+	
+}
+
+# Bears Trigger (HIDDEN)
+country_event = {
+	id = news.4
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 61.1.1
+		date < 68.1.1
+		NOT = { has_global_flag = bears_appear }
+	}
+
+	mean_time_to_happen = {
+		days = 600
+	}
+	
+	immediate = {
+		random_list = {
+			100 = { EAR = { news_event = { id = news.3 } } }
+		}
+	}
+	
+	option = {
+		name = news.4.a
+	}
+}
+
+#
+deleted hidden temple situations
+#
+
+#Airnomad Genocide News
+
+#Airnomad Genocide Trigger (HIDDEN)
+
+#Sozin Dies (HIDDEN)
+country_event = {
+	id = news.13
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 32.1.1
+		has_country_leader = {
+   			name = "Sozin"
+    		ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 142
+	}
+	
+	immediate = {
+		random_list = {
+			100 = { FIR = { country_event = { id = firenation.11 } } }
+		}
+	}
+	
+	option = {
+		name = news.13.a
+	}
+}
+
+#Sozin dies News
+news_event = {
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news_event_005
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	option = {
+		name = news.14.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+	option = {
+		name = news.14.b
+		trigger = { TAG = FIR }
+	}
+	
+}

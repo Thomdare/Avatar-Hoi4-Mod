@@ -1,0 +1,347 @@
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 0 y = 2 }
+        spearmen = { x = 0 y = 3 }
+		spearmen = { x = 1 y = 0 }
+        spearmen = { x = 1 y = 1 }
+		spearmen = { x = 1 y = 2 }
+		spearmen = { x = 1 y = 3 }
+	}
+	
+	support = {
+
+	}
+
+	priority = 1
+
+	#template_counter = 5
+}
+
+division_template = {
+	name = "Guard Division"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 1 y = 0 }
+        spearmen = { x = 1 y = 1 }
+	}
+	
+	support = {
+
+	}
+
+	priority = 1
+
+	#template_counter = 5
+}
+
+division_template = {
+	name = "Earthbender Division"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 1 y = 0 }
+		earthbender = { x = 1 y = 1 }
+	}
+
+	priority = 2
+
+	#template_counter = 1
+}
+
+#############################################
+units = {
+
+	### dai li ###
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Dai Li Royal Guards"
+		location = 10462
+		division_template = "Earthbender Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Dai Li Division"
+		location = 4191
+		division_template = "Earthbender Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Dai Li Division"
+		location = 4191
+		division_template = "Earthbender Division"
+		start_experience_factor = 0.3
+	}
+
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Royal Guards"
+		location = 10462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Royal Guards"
+		location = 10462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9348
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6498
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10415
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10386
+		division_template = "Guard Division"
+		start_experience_factor = 0.3
+	}
+
+
+
+
+	
+
+
+
+}

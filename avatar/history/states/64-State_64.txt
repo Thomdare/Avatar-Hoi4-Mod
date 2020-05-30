@@ -1,0 +1,44 @@
+state={
+	id=64
+	name="STATE_64"
+	manpower = 3467
+	state_category = wasteland
+
+	resources={
+		
+	}
+
+	history={
+	
+		victory_points = { 3037 5 }
+	
+		12.4.23 = {
+			owner = SWT
+			controller = SWT
+			add_core_of = SWT
+
+			buildings = {
+				infrastructure = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = SWT
+			controller = SWT
+		}
+
+		105.2.4 = {
+			owner = SWT
+			controller = SWT
+		}
+
+		111.10.30 = {
+			owner = SWT
+			controller = SWT
+		}
+	}
+
+	provinces={
+		201 1539 2339 2405 2874 3037 3232 3278 3383 3407 3720 3900 4126 4222 4537 4596 5158 10155 10157 10160 10168 10170 10185 10197 10208 10211 10219 10229 10230 10240 10252 
+	}
+}

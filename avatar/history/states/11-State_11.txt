@@ -1,0 +1,46 @@
+state={
+	id=11
+	name="STATE_11"
+	manpower = 31600
+	state_category = rural
+
+	resources={
+		oil = 7
+	}
+
+	history={
+	
+		victory_points = { 5834 10 }
+	
+		12.4.23 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				dockyard = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		105.2.4 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+		}
+	}
+
+	provinces={
+		305 896 2395 3061 5729 5758 5778 5796 5800 5811 5818 5834 5844 
+	}
+}

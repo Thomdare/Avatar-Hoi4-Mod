@@ -1,0 +1,23 @@
+
+air_wings = {
+	### Bison Herd ###
+	63 = { 
+		name = "Bison Herd"
+		transport_plane_equipment_1 = {
+			owner = "EAT" 
+			amount = 20
+		}
+	}
+	### Bison Herd ###
+	234 = { 
+		name = "Bison Herd"
+		transport_plane_equipment_1 = {
+			owner = "EAT" 
+			amount = 20
+		}
+	}
+}
+
+
+#####################
+

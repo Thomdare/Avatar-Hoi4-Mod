@@ -1,0 +1,15 @@
+
+air_wings = {
+	### Bison Herd ###
+	5 = { 
+		name = "Bison Herd"
+		transport_plane_equipment_1 = {
+			owner = "NAT" 
+			amount = 10
+		}
+	}
+}
+
+
+#####################
+

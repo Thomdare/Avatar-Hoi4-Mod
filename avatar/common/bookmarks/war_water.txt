@@ -1,0 +1,115 @@
+bookmarks = {
+	bookmark = {
+		name = "WAR_WATER_NAME"
+		desc = "WAR_WATER_DESC"
+		date = 52.1.1.12
+
+    ### wiki info : 40AG: c. The Fire Nation begins raids on the Southern Water Tribe, destroying its city and systematically capturing its waterbending population.[
+
+
+		picture = "GFX_select_date_azulon"
+		default_country = "FIR"
+		
+		"SWT"={
+			history = "SWT_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"NWT"={
+			history = "NWT_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"FIR"={
+			history = "FIR_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"EAR"={
+			history = "EAR_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"KYI"={
+			history = "KYI_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WAT"={
+			history = "ANM_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SAT"={
+			history = "ANM_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		
+		"---"={
+			history = "OTHER_WAR_WATER_DESC"
+		}
+
+
+		"NAT"={
+			minor = yes
+			history = "ANM_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+			
+			}
+		}
+		"EAT"={
+			minor = yes
+			history = "ANM_WAR_WATER_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+			
+			}
+		}
+
+
+	}
+}

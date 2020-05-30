@@ -1,0 +1,67 @@
+capital = 260
+
+
+
+set_technology = {
+	water_equipment = 1
+
+	basic_weapons = 1
+	spear1 = 1
+	sword1 = 1
+	pike1 = 1
+	armor = 1
+	light_armor1 = 1
+	heavy_armor1 = 1
+}
+
+set_research_slots = 2
+
+set_convoys = 200
+
+
+set_politics = {
+	ruling_party = tribalism
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	tribalism = 80
+	democratica = 10
+	imperialism = 0
+	monarchism = 0
+	pacifism = 10
+}
+
+
+106.2.4 ={
+
+
+create_country_leader = {
+	name = "Hakoda"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Southernwatertribe_Hakoda.dds"
+	expire = "164.3.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+}
+
+
+#
+
+
+create_country_leader = {
+	name = "Salota"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Southernwatertribe_Dad_Hakoda.dds"
+	expire = "164.3.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}

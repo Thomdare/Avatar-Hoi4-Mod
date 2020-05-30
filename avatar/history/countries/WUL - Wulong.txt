@@ -1,0 +1,69 @@
+capital = 150
+
+OOB = "WUL_12"
+
+set_technology = {
+	earth_equipment = 1
+
+	basic_weapons_1 = 1
+	line_formation = 1
+	basic_weapons_2 = 1
+	basic_armor = 1
+	light_armor_1 = 1
+	light_armor_2 = 1
+	armor_inovation = 1
+	heavy_armor_1 = 1
+	substance = 1
+
+	trade = 1
+	tool_use = 1
+	artisanship = 1
+}
+
+set_research_slots = 2
+set_convoys = 400
+set_stability = 0.4 
+set_war_support = 0.6
+
+
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	tribalism = 35
+	democratica = 10
+	imperialism = 10
+	monarchism = 40
+	pacifism = 5
+}
+
+set_cosmetic_tag = WUL_puppet
+
+52.1.1 ={
+
+	set_cosmetic_tag = WUL_puppet
+
+
+}
+
+
+
+105.2.4 ={
+
+	set_cosmetic_tag = WUL_puppet
+
+
+}
+
+
+111.10.30 ={
+
+	set_cosmetic_tag = WUL_puppet
+
+}

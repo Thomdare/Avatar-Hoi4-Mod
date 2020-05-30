@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_korra_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//korra_album_art.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,45 @@
+state={
+	id=77
+	name="STATE_77"
+	manpower = 14500
+	state_category = town
+
+	resources={
+		stone = 30
+	}
+
+	history={
+	
+		victory_points = { 5251 4 }
+	
+		12.4.23 = {
+			owner = YII
+			controller = YII
+			add_core_of = YII
+
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = YII
+			controller = YII
+		}
+
+		105.2.4 = {
+			owner = YII
+			controller = YII
+		}
+
+		111.10.30 = {
+			owner = YII
+			controller = YII
+		}
+	}
+
+	provinces={
+		17 67 355 568 581 1732 1907 3210 4874 5251 8825 8845 8863 8907 8946 
+	}
+}

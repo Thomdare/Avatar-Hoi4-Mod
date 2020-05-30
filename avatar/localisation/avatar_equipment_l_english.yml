@@ -1,0 +1,18 @@
+﻿l_english:
+ #general
+
+ support_equipment_1:0 "Support Equipment"
+ support_equipment_1_short:0 "Support Eq."
+ support_equipment_1_desc:0 "Ink and paper, shovels, binoculars and other equipment to support troops."
+ support_unit_equipment_1:0 "Support Unit Equipment"
+ support_unit_equipment_1_short:0 "Support Unit Eq."
+ support_unit_equipment_1_desc:0 "Some Units need more Equipment than the usual."
+ transport_equipment_1:0 "Transport Equipment"
+ transport_equipment_1_short:0 "Transport Eq."
+ transport_equipment_1_desc:0 "A wagon is a good tool to help supply your troops or transport stuff."
+
+ #firenation
+
+ firebender_equipment_1:0 "Firebender Equipment"
+ firebender_equipment_1_short:0 "Firebender Eq."
+ firebender_equipment_1_desc:0 "Although they need no weapons, even firebenders need an armor."

@@ -1,0 +1,1443 @@
+technologies = {
+	tool_use = {
+		
+		path = {
+			leads_to_tech = domesticating
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = artisanship
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = trade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	domesticating = {
+
+		enable_building = {
+			building = farm
+			level = 6
+		}
+		
+		path = {
+			leads_to_tech = public_security
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 15
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	artisanship = {
+
+		enable_building = {
+			building = factory
+			level = 20
+		}
+		
+		path = {
+			leads_to_tech = public_security
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 15
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	trade = {
+
+		enable_building = {
+			building = infrastructure
+			level = 10
+		}
+		
+		path = {
+			leads_to_tech = public_security
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 15
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	public_security = {
+
+		enable_building = {
+			building = scout_tower
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = fortifications
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = boatbuilding
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 20
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	fortifications = {
+
+		enable_building = {
+			building = wall
+			level = 30
+		}
+		enable_building = {
+			building = coastal_fortress
+			level = 10
+		}
+		
+		path = {
+			leads_to_tech = standing_army
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 25
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	standing_army = {
+
+		conscription = 0.02
+		training_time_factor = -0.1
+		
+		path = {
+			leads_to_tech = command_structure
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 30
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	boatbuilding = {
+
+		enable_building = {
+			building = dockyard
+			level = 20
+		}
+		
+		path = {
+			leads_to_tech = maritime_trade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 25
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	maritime_trade = {
+
+		enable_building = {
+			building = naval_base 
+			level = 10
+		}
+		
+		path = {
+			leads_to_tech = command_structure
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 30
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	command_structure = {
+
+		enable_building = {
+			building = commandpost
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = war_logistics
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mathematics
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 35
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	war_logistics = {
+
+		enable_building = {
+			building = supply_depot
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = anti_espionage
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = espionage
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = iron_smelting
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 45
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	espionage = {
+
+		decryption = 1
+		
+		research_cost = 1
+		start_year = 45
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	anti_espionage = {
+
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 45
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	iron_smelting = {
+
+		category_all_infantry = {
+			defense = 0.05
+		}
+		
+		path = {
+			leads_to_tech = watchtowers
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 55
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 18 }
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	watchtowers = {
+
+		enable_building = {
+			building = scout_tower
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = messenger_animals
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = interception
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = camouflaged_outposts
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 65
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	messenger_animals = {
+
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 65
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	interception = {
+
+		decryption = 1
+		
+		research_cost = 1
+		start_year = 65
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	camouflaged_outposts = {
+
+		enable_building = {
+			building = scout_tower
+			level = 3
+		}
+		
+		path = {
+			leads_to_tech = steel_casting
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 70
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	steel_casting = {
+
+		category_all_infantry = {
+			defense = 0.05
+		}
+		
+		path = {
+			leads_to_tech = steam_power
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 75
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	mathematics = {
+
+		research_speed_factor = 0.02
+		
+		path = {
+			leads_to_tech = engineering
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 40
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	engineering = {
+
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = philosophy
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = apothecary
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 50
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	philosophy = {
+
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = alchemy
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 55
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	apothecary = {
+
+		monthly_population = 0.05
+		
+		path = {
+			leads_to_tech = alchemy
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 55
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	alchemy = {
+
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = literature
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 60
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	literature = {
+
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = chemistry
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = physics
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 70
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	chemistry = {
+
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = steam_power
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 65
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	physics = {
+
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = steam_power
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 65
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	steam_power = {
+
+		production_factory_max_efficiency_factor = 0.1
+		
+		path = {
+			leads_to_tech = factories
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = telescopes
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 80
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	factories = {
+
+		enable_building = {
+			building = factory1
+			level = 20
+		}
+		
+		path = {
+			leads_to_tech = fossile_fuels
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 85
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	fossile_fuels = {
+
+		local_resources_factor = 0.05
+		
+		path = {
+			leads_to_tech = blast_furnace
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 90
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	blast_furnace = {
+
+		category_all_infantry = {
+			defense = 0.05
+		}
+		
+		path = {
+			leads_to_tech = industrial_revolution
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 95
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	telescopes = {
+
+		enable_building = {
+			building = scout_tower
+			level = 4
+		}
+		
+		path = {
+			leads_to_tech = medicine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 85
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	medicine = {
+
+		monthly_population = 0.15
+		
+		path = {
+			leads_to_tech = public_schooling
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 90
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	public_schooling = {
+
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = industrial_revolution
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 95
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	industrial_revolution = {
+
+		local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.10
+		
+		path = {
+			leads_to_tech = mechanization
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = radio_signal
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = airships
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 100
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	mechanization = {
+
+		production_factory_max_efficiency_factor = 0.05
+		
+		path = {
+			leads_to_tech = mechanical_engineering
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 105
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	mechanical_engineering = {
+
+		category_tanks = {
+			max_organisation = 3
+			breakthrough = 0.20
+		}
+		
+		research_cost = 1
+		start_year = 110
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 40 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	radio_signal = {
+
+		enable_building = {
+			building = scout_tower
+			level = 5
+		}
+		
+		path = {
+			leads_to_tech = signal_encryption
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_communication
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = radio_interception
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 105
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	signal_encryption = {
+
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 105
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	improved_communication = {
+
+		enable_building = {
+			building = scout_tower
+			level = 6
+		}
+		
+		research_cost = 1
+		start_year = 110
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 40 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	radio_interception = {
+
+		decryption = 1
+		
+		research_cost = 1
+		start_year = 105
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	airships = {
+
+		enable_building = {
+			building = air_base
+			level = 10
+		}
+		
+		path = {
+			leads_to_tech = aerodynamics
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 105
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+	aerodynamics = {
+
+		
+		
+		research_cost = 1
+		start_year = 110
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 40 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

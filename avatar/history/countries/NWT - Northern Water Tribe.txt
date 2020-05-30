@@ -1,0 +1,68 @@
+capital = 17
+
+OOB = "NWT_12"
+
+set_technology = {
+	water_equipment = 1
+
+	basic_weapons = 1
+	spear1 = 1
+	sword1 = 1
+	pike1 = 1
+	armor = 1
+	light_armor1 = 1
+	heavy_armor1 = 1
+}
+
+set_research_slots = 2
+
+set_convoys = 60
+
+
+set_politics = {
+	ruling_party = tribalism
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	tribalism = 85
+	democratica = 15
+	imperialism = 0
+	monarchism = 0
+	pacifism = 0
+}
+
+add_ideas = {
+	export_focus
+	early_economic_mobilisation 
+	volunteer_only
+	family_support_3
+}
+
+106.2.4 ={
+
+create_country_leader = {
+	name = "Arnook"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Northernwatertribe_Arnook.dds"
+	expire = "151.3.24"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+}
+
+create_country_leader = {
+	name = "Rundak"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Northernwatertribe_Generic1.dds"
+	expire = "151.3.24"
+	ideology = liberalism
+	traits = {
+		
+	}
+}

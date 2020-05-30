@@ -1,0 +1,50 @@
+state={
+	id=74
+	name="STATE_74"
+	manpower = 29700
+	state_category = rural
+
+	resources={
+		oil = 9
+		chromium = 11
+	}
+
+	history={
+	
+		victory_points = { 10169 15 }
+	
+		12.4.23 = {
+			owner = SWT
+			controller = SWT
+			add_core_of = SWT
+
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				dockyard = 1
+				10169 = {
+					naval_base = 2
+				}
+			}
+		}
+
+		52.1.1 = {
+			owner = SWT
+			controller = SWT
+		}
+
+		105.2.4 = {
+			owner = SWT
+			controller = SWT
+		}
+
+		111.10.30 = {
+			owner = SWT
+			controller = SWT
+		}
+	}
+
+	provinces={
+		65 958 1724 2078 3079 3631 3679 3757 3879 4259 5081 5478 5561 10104 10109 10115 10126 10134 10135 10138 10144 10146 10147 10150 10154 10159 10164 10165 10166 10167 10169 10173 10174 10182 10189 10190 10199 10201 10225 10243 
+	}
+}

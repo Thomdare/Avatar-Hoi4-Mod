@@ -1,0 +1,52 @@
+
+state={
+	id=218
+	name="STATE_218"
+	resources={
+		tungsten=12.000
+		aluminium=4.000
+		stone=3.000
+		iron=9.000
+	}
+
+	history={
+		victory_points = {
+			3127 65 
+		}
+		12.4.23 = {
+			owner = GAO
+			controller = GAO
+			add_core_of = GAO
+			buildings = {
+				infrastructure = 5
+				arms_factory = 3
+				industrial_complex = 3
+
+			}
+
+		}
+		52.1.1 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		105.2.4 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		111.10.30 = {
+			owner = GAO
+			controller = GAO
+
+		}
+
+	}
+
+	provinces={
+		389 620 698 713 1072 1533 1642 1706 1868 1927 2164 2175 2180 2323 2619 2925 2992 3127 3198 3265 3652 4121 4244 5234 5481 5590 9043 9056 9071 9072 9085 9090 9091 9103 9110 9111 9120 9127 9147 9152 9167 9172 9189 
+	}
+	manpower=38800
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

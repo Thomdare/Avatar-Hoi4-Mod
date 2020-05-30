@@ -1,0 +1,41 @@
+state={
+	id=3
+	name="STATE_3"
+	manpower = 14380
+	state_category = pastoral
+
+	resources={
+		chromium = 5
+	}
+
+	history={
+		12.4.23 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+
+			buildings = {
+				infrastructure = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		105.2.4 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+		}
+	}
+
+	provinces={
+		41 168 486 541 909 983 1038 1155 1481 1702 2038 2367 2381 3495 3622 3825 3895 4251 4346 4743 5093 5201 5576 5666 5667 5668 5711 5727 5734 5735 5759 5760 5765 5769 5773 5774 5787 5792 5806 5812 5830 5835 5836 5848 5849 5862 5889 5894 5903 5928 5929 5943 5950 5964 5972 5976 
+	}
+}

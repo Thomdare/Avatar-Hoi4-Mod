@@ -1,0 +1,33 @@
+﻿l_russian:
+ pacifism:0 "Пацифист"
+ pacifism_noun:0 "Пацифизм"
+ pacifism_desc:0 "Мирный режим"
+ democratica:0 "Демократия"
+ democratica_noun:0 "Демократия"
+ democratica_desc:0 "Демократический режим"
+ imperialism:0 "Империалист"
+ imperialism_noun:0 "Империализм"
+ imperialism_desc:0 "Тоталитаристский режим"
+ monarchism:0 "Монархист"
+ monarchism_noun:0 "Монархизм"
+ monarchism_desc:0 "Авторитаристский режим"
+ tribalism:0 "Трибалист"
+ tribalism_noun:0 "Трибализм"
+ tribalism_desc:0 "Мирный режим"
+
+ absolute_pacifism:0 "Абсолютный Пацифизм"
+ absolute_pacifism_desc:0 "1"
+ active_pacifism:0 "Активный Пацифизм"
+ active_pacifism_desc:0 "1"
+
+ republican:0 "Республиканский"
+ republican_desc:0 "2"
+ liberalism:0 "Либерализм"
+ liberalism_desc:0 "2"
+ 
+
+ FIR_imperialism_party:0 "Королевская семья"
+ FIR_pacifism_party:0 "Мир"
+ FIR_democratic_party:0 "ДЕМОКРАТИЯ"
+ FIR_monarchism_party:0 "Монархия"
+ FIR_tribalism_party:0 "Племя"

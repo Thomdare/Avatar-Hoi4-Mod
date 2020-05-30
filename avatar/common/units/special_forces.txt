@@ -1,0 +1,127 @@
+sub_units = {
+
+	marine = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = no
+		marines = yes
+		
+		priority = 601
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = special
+		
+		categories = {
+			category_army
+			category_front_line
+			category_all_infantry
+			category_special_forces
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 25
+		default_morale = 0.25
+		manpower = 100
+
+		#Misc Abilities
+		training_time = 200
+		suppression = 1
+		weight = 0.5
+		supply_consumption = 0.8
+		breakthrough = 1.5
+	
+		need = {
+			light_armor_equipment = 100
+			spear_equipment = 100
+		}
+
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.4
+		}
+		amphibious = {
+			attack = 0.5
+		}
+	}
+
+	trebuchet = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = ranged
+		
+		categories = {
+			category_army
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+		}
+		
+		combat_width = 1
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 60
+
+		#Misc Abilities
+		training_time = 200
+		suppression = 0
+		weight = 0.5
+		
+		supply_consumption = 0.6
+	
+		need = {
+			trebuchet_equipment = 10
+		}
+
+		forest = {
+			attack = -0.4
+			movement = -0.4
+		}
+		hills = {
+			movement = -0.1
+		}
+		mountain = {
+			movement = -0.4
+		}
+		jungle = {
+			attack = -0.5
+			movement = -0.4
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.6
+		}
+		fort = {
+			attack = 1.0
+		}
+		river = {
+			movement = -0.4
+		}
+		amphibious = {
+			attack = -0.8
+		}
+	}
+
+
+}

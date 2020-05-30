@@ -1,0 +1,594 @@
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+
+        spearmen = { x = 1 y = 0 }
+		spearmen = { x = 1 y = 1 }
+	}
+
+	priority = 1
+
+	#template_counter = 4
+}
+
+division_template = {
+	name = "Attack Division"
+
+	regiments = {
+		archers = { x = 0 y = 0 }
+		archers = { x = 0 y = 1 }
+		archers = { x = 0 y = 2 }
+
+        spearmen = { x = 1 y = 0 }
+		spearmen = { x = 1 y = 1 }
+		scout = { x = 1 y = 2 }
+
+		high_command = { x = 2 y = 0 }
+	}
+
+	priority = 2
+
+	#template_counter = 4
+}
+
+division_template = {
+	name = "Firebender Division"
+
+	regiments = {
+		firebender = { x = 0 y = 0 }
+		firebender = { x = 0 y = 1 }
+
+		firebender = { x = 1 y = 0 }
+		firebender = { x = 1 y = 1 }
+	}
+
+	#template_counter = 0
+
+	priority = 2
+}
+
+
+division_template = {
+	name = "Marines"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+	}
+
+	priority = 1
+}
+
+division_template = {
+	name = "Garrison"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+	}
+	
+
+	priority = 0
+
+	#template_counter = 4
+}
+
+#############################################
+units = {
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "1st Fire Fountain Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "2nd Fire Fountain Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "3th Fire Fountain Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "4th Fire Fountain Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "5th Fire Fountain Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "1st Wing Wa Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "2nd Wing Wa Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "3th Wing Wa Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "4th Wing Wa Division"
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "City Guards"
+		location = 8283
+		division_template = "Firebender Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "City Guards"
+		location = 8283
+		division_template = "Firebender Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Great Gates Guards"
+		location = 8283
+		division_template = "Firebender Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "Great Gates Guards"
+		location = 8283
+		division_template = "Firebender Division"
+		start_experience_factor = 0.3
+	}
+
+
+			### garrisons ###
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8283
+		division_template = "Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.8
+	}
+
+			### marines ###
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "1st Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "2nd Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "3th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "4th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "5th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "8th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "9th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "10th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "11th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		name = "12th Marine Regiment"
+		location = 8283
+		division_template = "Marines"
+		start_experience_factor = 0.3
+	}
+
+
+
+
+
+
+
+}

@@ -1,0 +1,52 @@
+capital = 67
+
+OOB = "NAN_12"
+
+
+
+set_research_slots = 2
+set_convoys = 400
+set_stability = 0.4 
+set_war_support = 0.6
+
+
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	tribalism = 15
+	democratica = 25
+	imperialism = 0
+	monarchism = 60
+	pacifism = 0
+}
+
+set_cosmetic_tag = NAN_puppet
+
+52.1.1 ={
+
+	set_cosmetic_tag = NAN_puppet
+
+
+}
+
+
+
+105.2.4 ={
+
+	set_cosmetic_tag = NAN_puppet
+
+}
+
+
+111.10.30 ={
+
+	set_cosmetic_tag = NAN_puppet
+
+}

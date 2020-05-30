@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	# CALDERA
+	spriteType = {
+		name = "GFX_terrain_caldera"
+		textureFile = "gfx/interface/terrains/terrain_caldera.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_caldera_harbour"
+		textureFile = "gfx/interface/terrains/terrain_caldera_harbour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_harbour_town"
+		textureFile = "gfx/interface/terrains/terrain_harbour_town.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_taku"
+		textureFile = "gfx/interface/terrains/terrain_taku.dds"
+	}
+	
+}

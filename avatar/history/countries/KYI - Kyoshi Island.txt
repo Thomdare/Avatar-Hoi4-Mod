@@ -1,0 +1,66 @@
+capital = 70
+
+OOB = "KYI_12"
+
+
+set_technology = {
+	#earth_equipment = 1
+
+	basic_weapons = 1
+	spear1 = 1
+	sword1 = 1
+	pike1 = 1
+	armor = 1
+	light_armor1 = 1
+	heavy_armor1 = 1
+}
+
+set_research_slots = 2
+
+set_convoys = 100
+
+
+set_politics = {
+	ruling_party = democratica
+	last_election = "12.1.1"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	tribalism = 20
+	democratica = 60
+	imperialism = 0
+	monarchism = 15
+	pacifism = 5
+}
+
+52.1.1 ={
+	
+
+
+
+create_country_leader = {
+	name = "Oyaji"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Kyoshi_Oyaji.dds"
+	expire = "120.1.1"
+	ideology = liberalisma
+}
+
+}
+
+
+
+
+#
+
+
+
+create_country_leader = {
+	name = "Kyoshi Leader"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Kyoshi_Generic.dds"
+	expire = "60.1.1"
+	ideology = liberalisma
+}

@@ -1,0 +1,3 @@
+﻿l_english:
+WAR_EXHAUSTION_TOOLTIP:0 "§YWar Weariness§! \n\nCurrent days of war weariness: §R[?war_exhaustion_variable]§!  \n\nYou gain §R[?war_exhaustion_daily]§! war weariness  per day while at war. You will lose §G[?peace_exhaustion_daily]§! war weariness per day while at peace."
+WAR_EXHAUSTION_TOOLTIP_DELAYED:0 "The longer your nation is at war, the more severe the war weariness will be. Return to peace and this counter will drop. \nCertain §HNational Focuses§! and §HEvents§! can also lower this value."

@@ -1,0 +1,47 @@
+state={
+	id=140
+	name="STATE_140"
+	manpower = 17400
+	state_category = large_town
+
+	resources={
+		aluminium = 5
+		chromium = 4
+		oil = 6
+	}
+
+	history={
+	
+		victory_points = { 3088 10 }
+	
+		12.4.23 = {
+			owner = LAM
+			controller = LAM
+			add_core_of = LAM
+
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+			}
+		}
+
+		52.1.1 = {
+			owner = LAM
+			controller = LAM
+		}
+
+		105.2.4 = {
+			owner = LAM
+			controller = LAM
+		}
+
+		111.10.30 = {
+			owner = LAM
+			controller = LAM
+		}
+	}
+
+	provinces={
+		12 433 442 491 525 2027 2065 2108 2221 2371 2877 3070 3088 3108 3149 3864 4044 4337 4576 4654 4684 5555 6487 6613 6625 6645 6720 6721 6753 6760 6819 
+	}
+}

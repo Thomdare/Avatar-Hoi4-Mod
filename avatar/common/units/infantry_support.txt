@@ -1,0 +1,415 @@
+sub_units = {
+
+	engineer = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 100
+		ai_priority = 100
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_support_offensive
+			category_army
+		}
+
+	
+		combat_width = 2
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 40
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		
+		entrenchment  = 5
+
+				
+		defense = 0.1
+		breakthrough = 0.5
+
+		# Support nerfs to combat abilities
+		soft_attack = -0.5
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 40
+		}
+
+		can_be_parachuted = no
+
+		forest = {
+			defence = 0.25
+			movement = 0.05
+		}
+
+		hills = {
+			defence = 0.1
+			movement = 0.05
+		}
+
+		jungle = {
+			defence = 0.25
+			movement = 0.2
+		}
+
+		marsh = {
+			defence = 0.25
+			movement = 0.2
+		}
+
+		fort = {
+			defence = 0.25
+		}
+
+		river = {
+			attack = 0.5
+			movement = 0.5
+		}
+
+		amphibious = {
+			attack = 0.25
+		}
+	}
+
+
+
+	supply_wagon = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 1
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 10	
+		default_morale = 0.3
+		manpower = 60
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = no
+
+		# Important Ability
+		supply_consumption_factor = -0.1
+		fuel_consumption_factor = -0.05
+
+		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+		
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			transport_equipment = 20
+		}
+
+	}
+
+
+
+	scavenger = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 1
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 20	
+		default_morale = 0.3
+		manpower = 25
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.5
+		can_be_parachuted = no
+		
+		# Important Ability
+		reliability_factor = 0.05
+		equipment_capture_factor = 0.05
+		
+		essential = {
+			support_equipment
+		}
+		
+		need = {
+			support_equipment = 25
+		}
+
+	}
+
+
+
+	scout = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 1
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 10
+		training_time = 200
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.1
+		recon = 1
+		can_be_parachuted = no
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.9
+		hard_attack = -0.9
+		
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 10
+		}
+
+		forest = {
+			movement = 0.2
+		}
+		hills = {
+			movement = 0.2
+		}
+		mountain = {
+			movement = 0.2
+		}
+		jungle = {
+			movement = 0.2
+		}
+		marsh = {
+			movement = 0.2
+		}
+		plains = {
+			movement = 0.2
+		}
+		desert = {
+			movement = 0.2
+		}
+		river = {
+			movement = 0.2
+		}
+	}
+
+
+
+	military_police = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 2
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 1	
+		default_morale = 0.3
+		manpower = 100
+		training_time = 180
+		suppression = 2.0
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.1
+		can_be_parachuted = no
+		
+		# Important Ability
+		suppression_factor = 0.20
+
+		essential = {
+			support_equipment
+		}
+		
+		need = {
+			light_armor_equipment = 100
+			spear_equipment = 100
+			support_equipment = 100
+		}
+
+	}
+
+
+
+	high_command = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 8
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 60
+		manpower = 25
+		training_time = 300
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.25
+		can_be_parachuted = no
+		
+		# Important Ability
+		initiative = 0.20
+		default_morale = 20
+		
+		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+		
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 250
+		}
+
+	}
+
+
+
+	field_hospital = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 6
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 100
+		training_time = 200
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 10
+		can_be_parachuted = no
+
+		# Important Ability
+		casualty_trickleback = 0.05
+		experience_loss_factor = -0.05
+
+		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+
+		essential = {
+			support_equipment
+		}
+		
+		need = {
+			support_equipment = 100
+		}
+	}
+}

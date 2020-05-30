@@ -1,0 +1,41 @@
+state={
+	id=8
+	name="STATE_8"
+	manpower = 15600
+	state_category = rural
+
+	resources={
+		
+	}
+
+	history={
+		12.4.23 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+
+			buildings = {
+				infrastructure = 2
+			}
+		}
+
+		52.1.1 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		105.2.4 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+		}
+	}
+
+	provinces={
+		342 1436 1958 2418 2616 3241 3603 4285 4720 5680 5681 5682 5688 5701 5704 5740 5743 5772 5776 5780 5794 5809 5840 
+	}
+}

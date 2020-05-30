@@ -1,0 +1,45 @@
+
+state={
+	id=431
+	name="STATE_431"
+
+	history={
+		victory_points = {
+			3441 5 
+		}
+		12.4.23 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+
+			}
+
+		}
+		52.1.1 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		105.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		222 895 900 1719 1851 2410 3157 3164 3174 3962 4075 4551 4987 5129 5269 8347 8378 8403 8411 8417 8437 8453 8464 8485 
+	}
+	manpower=22500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

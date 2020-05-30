@@ -1,0 +1,54 @@
+capital = 154
+
+OOB = "GAO_12"
+
+set_technology = {
+
+	earth_equipment = 1
+	basic_weapons_1 = 1
+	line_formation = 1
+	spear_1 = 1
+	close_combat_training = 1
+	sword_1 = 1
+	basic_armor = 1
+	light_armor_1 = 1
+	armor_inovation = 1
+	heavy_armor_1 = 1
+	substance = 1
+
+	ranged_weapons = 1
+	arrow1 = 1
+
+	trade = 1
+	tool_use = 1
+	artisanship = 1
+	maritime_trade = 1
+
+	transport = 1
+}
+
+set_research_slots = 2
+set_convoys = 75
+set_stability = 0.7 
+set_war_support = 0.4
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "10.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	tribalism = 10
+	democratica = 10
+	imperialism = 0
+	monarchism = 65
+	pacifism = 15
+}
+
+
+#
+
+

@@ -1,0 +1,164 @@
+#reload countrycolors
+
+FIR = {
+	color = rgb { 170 10 10 }
+	color_ui = rgb { 170 10 10 }
+}
+NWT = {
+	color = rgb { 27 178 242 }
+	color_ui = rgb {27 178 242}
+}
+SWT = {
+	color = rgb {27 178 242}
+	color_ui = rgb {27 178 242}
+}
+NAT = {
+	color = rgb { 239 235 186 }
+	color_ui = rgb { 255 243 191 }
+}
+EAT = {
+	color = rgb { 239 235 186 }
+	color_ui = rgb { 255 243 191 }
+}
+SAT = {
+	color = rgb { 239 235 186 }
+	color_ui = rgb { 255 243 191 }
+}
+WAT = {
+	color = rgb { 239 235 186 }
+	color_ui = rgb { 255 243 191 }
+}
+SNW= {
+	color = rgb { 250 215 166 }
+	color_ui = rgb { 250 215 166 }
+}
+
+
+EAR = {
+	color = rgb { 224 211 69 }
+	color_ui = rgb { 230 222 73 }
+}
+KYI = {
+	color = rgb {0 132 13}
+	color_ui = rgb {6 138 19}
+}
+OMS = {
+	color = rgb { 174 186 34 }
+	color_ui = rgb { 124 146 44 }
+}
+BSS = {
+	color = rgb { 224 211 69 }
+	color_ui = rgb { 230 222 73 }
+}
+GAO = {
+	color = rgb { 154 188 34 }
+	color_ui = rgb { 114 158 44 }
+}
+POH = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+TAK = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+XIN = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+WUL = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+MAK = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+NOW = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+HAN = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+GAR = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+NIX = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+YUE = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+CHN = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+ZAO = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+SWA = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+MPO = {
+	color = rgb { 255 217 0 }
+	color_ui = rgb { 255 217 0 }
+}
+NAN = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+ZIN = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+YII = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+HEB = {
+	color = rgb { 40 122 37 }
+	color_ui = rgb { 40 122 37 }
+}
+ISL = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+NCB = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+ECB = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+EBA = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+WBA = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+LAM = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+GDD = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+FMB = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}
+MER = {
+	color = rgb { 54 163 7 }
+	color_ui = rgb { 54 163 7 }
+}

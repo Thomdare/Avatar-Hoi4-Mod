@@ -1,0 +1,45 @@
+state={
+	id=182
+	name="STATE_182"
+	manpower = 16470
+	state_category = town
+
+	resources={
+		oil = 13
+	}
+
+	history={
+	
+		victory_points = { 5527 10 }
+	
+		12.4.23 = {
+			owner = ZAO
+			controller = ZAO
+			add_core_of = ZAO
+
+			buildings = {
+				infrastructure = 4
+				arms_factory = 2
+			}
+		}
+
+		52.1.1 = {
+			owner = ZAO
+			controller = ZAO
+		}
+
+		105.2.4 = {
+			owner = ZAO
+			controller = ZAO
+		}
+
+		111.10.30 = {
+			owner = ZAO
+			controller = ZAO
+		}
+	}
+
+	provinces={
+		490 514 873 2529 2963 3129 3883 5527 8937 8956 
+	}
+}

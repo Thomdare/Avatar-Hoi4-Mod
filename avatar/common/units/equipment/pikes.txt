@@ -1,0 +1,213 @@
+equipments = {
+
+	pike_equipment = {
+	
+		is_archetype = yes
+		picture = archetype_pike_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = no
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1.2
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+
+		fuel_consumption = 0.3
+		
+	}
+
+	pike_equipment_1 = {
+	
+		archetype = pike_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+
+
+
+	pike_equipment_2 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_1
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+
+		build_cost_ic = 1.3
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	pike_equipment_3 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_2
+		priority = 10
+		visual_level = 2
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+		
+		build_cost_ic = 1.4
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	pike_equipment_4 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_3
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 1.5
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	pike_equipment_5 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_4
+		priority = 10
+		visual_level = 4
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 1.6
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	pike_equipment_6 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_5
+		priority = 10
+		visual_level = 5
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 1.7
+		resources = {
+			aluminium = 1
+			steel = 3
+		}
+	}
+
+	pike_equipment_7 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_6
+		priority = 10
+		visual_level = 6
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.6
+		ap_attack = 1
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 1.8
+		resources = {
+			steel = 4
+		}
+	}
+
+}

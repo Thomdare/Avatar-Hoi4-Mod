@@ -1,0 +1,16 @@
+units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Fire Marine"
+		naval_base = 8218
+		task_force = {				
+			name = "Atlantic Squadron"			
+			location = 8218
+			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = FIR version_name = "Deutschland Class" } } }
+			ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = FIR version_name = "Deutschland Class" } } }	
+			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FIR version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FIR version_name = "Sanguenay Class" } } }
+		}				
+	}
+}

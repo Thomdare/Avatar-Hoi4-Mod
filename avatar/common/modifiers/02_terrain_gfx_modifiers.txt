@@ -1,0 +1,4 @@
+# Modifiers for unique terrain GFX
+
+terrain_caldera = { }
+terrain_caldera_harbour = { }

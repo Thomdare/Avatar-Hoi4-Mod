@@ -1,0 +1,43 @@
+
+state={
+	id=414
+	name="STATE_414"
+	manpower = 16600
+	state_category = pastoral
+
+	resources={
+		stone=2
+		rubber=3
+	}
+
+	history={
+		12.4.23 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+
+			buildings = {
+				infrastructure = 2
+			}
+		}
+
+		52.1.1 = {
+			owner = FIR
+			controller = FIR
+		}
+
+		105.2.4 = {
+			owner = FIR
+			controller = FIR
+		}
+
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+		}
+	}
+
+	provinces={
+		604 957 1263 1399 1693 1765 1814 2289 2370 2611 2812 3151 3499 3604 4339 4550 4838 5541 8178 8179 8207 8219 8251 8278 8279 8285 8305 8336 8362 8363 8386 8395 8425 8433 10529 
+	}
+}

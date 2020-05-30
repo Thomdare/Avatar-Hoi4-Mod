@@ -1,0 +1,48 @@
+state={
+	id=304
+	name="STATE_304"
+	manpower = 16520
+	state_category = town
+
+	resources={
+		oil = 8
+		aluminium = 6
+		tungsten = 2
+	}
+
+	history={
+	
+		victory_points = { 7696 15 }
+	
+		12.4.23 = {
+			owner = FMB
+			controller = FMB
+			add_core_of = FMB
+
+			buildings = {
+				infrastructure = 4
+				arms_factory = 1
+				industrial_complex = 2
+			}
+		}
+
+		52.1.1 = {
+			owner = FMB
+			controller = FMB
+		}
+
+		105.2.4 = {
+			owner = FMB
+			controller = FMB
+		}
+
+		111.10.30 = {
+			owner = FMB
+			controller = FMB
+		}
+	}
+
+	provinces={
+		325 414 1132 1166 2675 3221 4446 4453 4459 4850 4946 5075 5504 5638 7649 7655 7696 7697 7707 7781 7798 7820 
+	}
+}

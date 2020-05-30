@@ -1,0 +1,47 @@
+
+state={
+	id=29
+	name="STATE_29"
+	resources={
+		aluminium=5.000
+	}
+
+	history={
+		victory_points = {
+			4306 5 
+		}
+		12.4.23 = {
+			owner = GAO
+			controller = GAO
+			add_core_of = GAO
+			buildings = {
+				infrastructure = 2
+
+			}
+
+		}
+		52.1.1 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		105.2.4 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		111.10.30 = {
+			owner = GAO
+			controller = GAO
+
+		}
+
+	}
+
+	provinces={
+		438 494 626 651 712 831 962 1258 1320 1513 2340 2473 2556 2839 2898 3266 3360 3478 3479 3485 3738 4306 4328 4580 4647 4699 5178 8881 8942 8945 8953 8958 8968 8980 9004 9012 9031 9070 9079 9097 
+	}
+	manpower=22400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
