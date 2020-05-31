@@ -1,4 +1,34 @@
 ideas = {
+	country = {
+		Water_Nation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+
+		Earth_Nation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+
+		Fire_Nation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+
+		Air_Nation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+	}
+
 
 	bender_laws = { 
 		law = yes
