@@ -2,6 +2,6 @@ state_categories={
 	metropolis = {
 		local_building_slots = 10
 		
-		color = { 180 80 220 }
+		color = { 180 0 240 }
 	}
 }
