@@ -2,7 +2,7 @@ state_categories={
 	pastoral = {
 		local_building_slots = 2
 	
-		color = { 160 20 20 }
+		color = { 170 40 20 }
 
 	}
 }
