@@ -1,7 +1,7 @@
 state_categories={
 	tiny_island = {
-		local_building_slots = 1
+		local_building_slots = 2
 	
-		color = { 220 40 0 }
+			color = { 220 40 0 }
 	}
 }
