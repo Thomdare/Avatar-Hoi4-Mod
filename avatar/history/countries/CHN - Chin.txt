@@ -50,6 +50,22 @@ set_popularities = {
 	pacifism = 0
 }
 
+create_country_leader = {
+	name = "Chin the Conqueror"
+	desc = "Great Leader of the Chin Village"
+	picture = "chin_leader.dds"
+	expire = "130.1.1"
+	ideology = constitutional_monarchy
+}
+
+create_country_leader = {
+	name = "Mayor Tong"
+	desc = "Mayor of the Chin Village"
+	picture = "tong_leader.dds"
+	expire = "130.1.1"
+	ideology = constitutional_monarchy
+}
+
 set_cosmetic_tag = CHN_puppet
 
 52.1.1 ={
