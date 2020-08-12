@@ -1,8 +1,21 @@
+
+
+ ## #####  ##  ###  #####       #   ##
+#     #   #  # #  #   #        ##  #  #
+ #    #   #### ###    #       # #    #
+  #   #   #  # #  #   #         #   #
+##    #   #  # #  #   #         #  ####
+
+
 capital = 417
 
 OOB = "FIR_12"
+
 set_country_flag = FIR_armor
+set_country_flag = FIR_navy
+set_country_flag = FIR_air_techs
 set_country_flag = FIR_special_forces
+set_country_flag = fire_nation
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -13,52 +26,58 @@ if = {
 }
 
 set_technology = {
-	fire_equipment = 1
 
 	basic_spear_1 = 1
-	
+	spear_2 = 1
+	spear_3 = 1
+	basic_sword_1 = 1
+	sword_2 = 1
+	sword_3 = 1
+	basic_polearm_1 = 1
+	polearm_2 = 1
+	polearm_3 = 1
 	basic_armor = 1
-
-	marines = 1
-	trebuchets = 1
-	the_four_elements = 1
-	power = 1
-
-	tech_support = 1
-	tech_engineers = 1
-	tech_scouts = 1
-	tech_high_command = 1
+	heavy_armor_1 = 1
+	heavy_armor_2 = 1
+	heavy_armor_3 = 1
 
 	ranged_weapons = 1
-	arrow1 = 1
+	bow0 = 1
+	arrow0 = 1
+	ballista0 = 1
+	bolt1 = 1
+	catapult0 = 1
+	projectile1 =1
 
-	standart_factory = 1
+	tech_support = 1
+	tech_military_police = 1
+	tech_engineers = 1
+	tech_scouts = 1
+
+	fire_equipment = 1
+	marines = 1
+	trebuchets = 1
+
+	power = 1
+
 	infrastructure_1 = 1
-	extra_mil_1 = 1
-	dockyard_1 = 1
-	commandpost_1 = 1
-	naval_base_1 = 1
-	scout_tower_1 = 1
+	infrastructure_2 = 1
+	port_1 = 1
+	port_2 = 1
 
 
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	basic_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	basic_heavy_cruiser = 1
-	early_battleship = 1
-	basic_battleship = 1
-	early_battlecruiser = 1
-	trade_interdiction = 1
-	synth_oil_experiments = 1
-	transport = 1
+	light_engine_1 = 1
+	early_fire_cruiser = 1
+	early_fire_frigate = 1
+	invasion_capacity_1 = 1
+	frigate_armor_1 = 1
+	ship_storage_1 = 1
+	ship_binoculars_1 = 1
+	early_convoy = 1
 }
 
 
-set_research_slots = 2
+set_research_slots = 3
 set_convoys = 140
 set_stability = 1 
 set_war_support = 0.6
@@ -81,16 +100,195 @@ set_popularities = {
 
 
 add_ideas = {
-	national_prosperity_1
+	national_prosperity
 
 	#slight_war_exhaustion_gui
 
+	limited_fire_conscription
+	fire_exceptional
 	limited_exports
-	partial_economic_mobilisation 
-	limited_conscription
-	firebender_law_1
+	low_economic_mobilisation 
 	family_support_3
+	average_education
 }
+
+
+create_country_leader = {
+	name = "Sozin"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Firenation_Zosin.dds"
+	expire = "32.4.7"
+	ideology = colonialism
+	traits = {
+		firelord
+		out_of_controll
+	}
+}
+
+
+create_field_marshal = {
+	name = "Sozin"
+	picture = "Portrait_Firenation_Zosin.dds"
+	traits = { skilled_staffer offensive_infantry fast_planner aggressive_assaulter firelord }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+
+	id = 1
+}
+
+create_field_marshal = {
+	name = "Shaozu"
+	picture = "Portrait_Firenation_Generic13.dds"
+	traits = { generic supply_organisation }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yotto"
+	picture = "Portrait_Firenation_Generic14.dds"
+	traits = { generic trait_engineer naval_invader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Track"
+	picture = "Portrait_Firenation_Generic5.dds"
+	traits = { generic offensive_infantry sneak_attack cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Konran"
+	picture = "Portrait_Firenation_Generic3.dds"
+	traits = { generic trait_mountaineer trait_engineer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Waruidesu"
+	picture = "Portrait_Firenation_Generic2.dds"
+	traits = { generic }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jeong"
+	picture = "Portrait_Firenation_Generic7.dds"
+	traits = { generic }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_navy_leader = {
+	name = "Lee"
+	picture = "Portrait_Firenation_Generic8.dds"
+	traits = { generic naval_lineage battleship_adherent }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ogodei"
+	picture = "Portrait_Firenation_Generic7.dds"
+	traits = { generic }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Explorer Class"
+		type = firenation_cruiser_hull_1
+		#name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_storage_slot = storage_room_1
+			fixed_ship_storage_2_slot = storage_room_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			bridge_1_custom_slot = binoculars_1
+			deck_2_custom_slot = ship_ballista_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Destroyer Class"
+		type = firenation_cruiser_hull_1
+		#name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_storage_slot = storage_room_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			deck_1_custom_slot = ship_catapult_1
+			deck_2_custom_slot = ship_catapult_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Invasion Class"
+		type = firenation_frigate_hull_1
+		#name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			fixed_ship_storage_slot = storage_room_1
+			fixed_ship_storage_2_slot = storage_room_1
+			fixed_ship_storage_3_slot = storage_room_1
+			deck_1_custom_slot = ship_firebender_crew
+			deck_2_custom_slot = ship_firebender_crew
+			deck_3_custom_slot = ship_firebender_crew
+			deck_4_custom_slot = ship_firebender_crew
+    	}
+	}
+
+}
+
+
+ ## #####  ##  ###  #####     ####   #
+#     #   #  # #  #   #       #     ##
+ #    #   #### ###    #       ###  # #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###    #
+
 
 52.1.1 ={
 	
@@ -358,6 +556,16 @@ if = {
 
 }
 
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
 106.2.4 ={
 	
 	OOB = "FIR_106"
@@ -404,7 +612,7 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 2
-	id = 2
+	id = 7
 }
 
 create_field_marshal = {
@@ -416,7 +624,7 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 2
-	id = 3
+	id = 8
 }
 
 create_corps_commander = {
@@ -428,7 +636,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 1
-	id = 4
+	id = 9
 }
 
 
@@ -477,6 +685,14 @@ if = {
 }
 
 }
+
+
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
 
 
 
@@ -582,78 +798,4 @@ create_corps_commander = {
 # DIPLOMACY
 	
 
-}
-
-
-
-#################
-
-
-create_country_leader = {
-	name = "Sozin"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Firenation_Zosin.dds"
-	expire = "32.4.7"
-	ideology = colonialism
-	traits = {
-		firelord
-		out_of_controll
-	}
-}
-
-
-create_field_marshal = {
-	name = "Sozin"
-	picture = "Portrait_Firenation_Zosin.dds"
-	traits = { skilled_staffer expert_staffer experienced_general offensive_infantry firelord }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
-	id = 1
-}
-
-create_corps_commander = {
-	name = "Track"
-	picture = "Portrait_Firenation_Generic5.dds"
-	traits = { offensive_infantry sneak_attack cavalry_leader }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Konran"
-	picture = "Portrait_Firenation_Generic3.dds"
-	traits = { trait_mountaineer trait_engineer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Waruidesu"
-	picture = "Portrait_Firenation_Generic2.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Yotto"
-	picture = "Portrait_Firenation_Generic14.dds"
-	traits = { trait_engineer naval_invader }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
 }

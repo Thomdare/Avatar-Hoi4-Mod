@@ -1,11 +1,11 @@
 state={
 	id=129
 	name="STATE_129"
-	manpower = 36700
+	manpower = 26700
 	state_category = large_town
 
 	resources={
-		oil = 10
+		oil = 11
 	}
 
 	history={

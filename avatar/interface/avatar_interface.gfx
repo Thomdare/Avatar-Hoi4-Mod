@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_war_exhaustion"
+		texturefile = "gfx/interface/topbar/war_weariness.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_calendar"
+		texturefile = "gfx/interface/calendar.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_calendar_background"
+		textureFile = "gfx//interface//calendar_background.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_calendar_scroll"
+		textureFile = "gfx//interface//calendar_scroll.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_calendar_scroll2"
+		textureFile = "gfx//interface//calendar_scroll2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_calendar_event_list"
+		textureFile = "gfx//interface//calendar_event_list.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_calendar_effect_list"
+		textureFile = "gfx//interface//calendar_effect_list.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -131,8 +131,8 @@ guiTypes = {
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 17 y = 22 }
-			scale=0.75
+			position = { x = 10 y = 15 }
+			scale=0.8
 			clicksound = click_checkbox
 		}
 	
@@ -154,7 +154,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "country_name"
 			position = { x = 8 y = 247 }
-			font = "hoi_20b"
+			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 131
 			maxHeight = 20
@@ -174,7 +174,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_shield_medium"
 			position = { x = 26 y = 22 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}		
 		
 		buttonType = {
@@ -194,7 +194,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_flag_small2"
 			position = { x = 8 y = 7 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		buttonType = {

@@ -1,11 +1,11 @@
 state={
 	id=302
 	name="STATE_302"
-	manpower = 27400
-	state_category = island
+	manpower = 47400
+	state_category = town
 	
 	resources={
-		oil = 3
+		iron = 3
 		chromium = 5
 		aluminium = 4
 		stone = 2
@@ -22,7 +22,7 @@ state={
 
 			buildings = {
 				arms_factory = 1
-				industrial_complex = 1
+				industrial_complex = 2
 				infrastructure = 2
 			}
 		}

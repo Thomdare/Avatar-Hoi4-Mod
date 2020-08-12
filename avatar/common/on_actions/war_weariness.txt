@@ -7,13 +7,13 @@ on_actions = {
 				}
 				set_variable = { war_exhaustion_variable = 0 }
 				set_variable = { war_exhaustion_daily = 1 }
-				set_variable = { peace_exhaustion_daily = -3 }
+				set_variable = { peace_exhaustion_daily = -5 }
 				set_variable = { war_exhaustion_max = 9000 }
 			}
 		}
 	}
 
-    on_daily = {
+	on_monthly = {
 		effect = {
             if = {
 				limit = { country_has_war_exhaustion = yes }
@@ -22,11 +22,29 @@ on_actions = {
 					limit = { has_war = yes }
 	                add_to_variable = { war_exhaustion_variable = war_exhaustion_daily }
 				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+            if = {
+				limit = { country_has_war_exhaustion = yes }
 
 				if = {
 					limit = { has_war = no }
-	                add_to_variable = { war_exhaustion_variable = peace_exhaustion_daily }
+					add_to_variable = { war_exhaustion_variable = peace_exhaustion_daily }
 				}
+
+                clamp_variable = { var = war_exhaustion_variable min = 0 max = war_exhaustion_max }
+			}
+		}
+	}
+
+    on_daily = {
+		effect = {
+            if = {
+				limit = { country_has_war_exhaustion = yes }
 
 				if = {
 					limit = {
@@ -505,7 +523,6 @@ on_actions = {
 						remove_ideas = war_weariness_9
 					}
 				}
-                clamp_variable = { var = war_exhaustion_variable min = 0 max = war_exhaustion_max }
 			}
 		}
 	}

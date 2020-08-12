@@ -24,14 +24,12 @@ sub_unit_categories = {
 
 
 	category_all_melee
-
 	category_light_infantry
 	category_heavy_infantry
 	category_sword_infantry
 	category_pike_infantry
 
 	category_all_ranged
-
 	category_archers
 	category_skirmisher
 	

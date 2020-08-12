@@ -1,14 +1,11 @@
 equipments = {
 
 	ballista_equipment = {
-		year = 1934
 
 		is_archetype = yes
-		picture = archetype_artillery_equipment		
+		picture = archetype_ballista_equipment		
 		type = {
-			artillery
-			infantry #adding infantry type
-			#motorized #Removing motorized type
+			infantry 
 		}
 		group_by = archetype
 		
@@ -16,6 +13,7 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.8
+		maximum_speed = 4
 
 		#Defensive Abilities
 		defense = 10
@@ -39,19 +37,49 @@ equipments = {
 		}
 	}
 
-	ballista_equipment_1 = {
-		year = 1934
+	ballista_equipment_0 = {
 
-		archetype = artillery_equipment
+		archetype = ballista_equipment
 		priority = 50
 		visual_level = 0
 	}
+
+	ballista_equipment_1 = {
+
+		archetype = ballista_equipment
+		parent = ballista_equipment_0
+		priority = 50
+		visual_level = 1
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 8
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 2
+		ap_attack = 10
+		air_attack = 30
+
+		#Space taken in convoy
+		lend_lease_cost = 4
+		
+		build_cost_ic = 3.5
+		resources = {
+			tungsten = 3
+			steel = 1
+		}
+	}
 	
 	ballista_equipment_2 = {
-		year = 1939
 
-		archetype = artillery_equipment
-		parent = catapult_equipment_1
+		archetype = ballista_equipment
+		parent = ballista_equipment_1
 		priority = 50
 		visual_level = 1
 
@@ -81,10 +109,9 @@ equipments = {
 	}
 	
 	ballista_equipment_3 = {
-		year = 1940
 
-		archetype = artillery_equipment
-		parent = catapult_equipment_1
+		archetype = ballista_equipment
+		parent = ballista_equipment_2
 		priority = 50
 		visual_level = 1
 
@@ -113,10 +140,9 @@ equipments = {
 	}
 	
 	ballista_equipment_4 = {
-		year = 1941
 
-		archetype = artillery_equipment
-		parent = catapult_equipment_1
+		archetype = ballista_equipment
+		parent = ballista_equipment_3
 		priority = 50
 		visual_level = 1
 
@@ -146,10 +172,9 @@ equipments = {
 	}
 	
 	ballista_equipment_5 = {
-		year = 1941
 
-		archetype = artillery_equipment
-		parent = catapult_equipment_1
+		archetype = ballista_equipment
+		parent = ballista_equipment_4
 		priority = 50
 		visual_level = 1
 

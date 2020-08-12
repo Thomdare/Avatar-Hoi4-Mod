@@ -1,50 +1,54 @@
+
 state={
 	id=71
 	name="STATE_71"
-	manpower = 46500
-	state_category = large_city
-
 	resources={
-		tungsten = 17
-		rubber = 8
+		tungsten=17.000
+		steel=8.000
 	}
 
 	history={
-	
-		victory_points = { 5605 50 }
-	
+		victory_points = {
+			5605 50 
+		}
 		12.4.23 = {
 			owner = GAR
 			controller = GAR
 			add_core_of = GAR
-
 			buildings = {
 				infrastructure = 6
-				arms_factory = 2
+				arms_factory = 3
 				industrial_complex = 2
 				4867 = {
 					naval_base = 1
-				}
-			}
-		}
 
+				}
+
+			}
+
+		}
 		52.1.1 = {
 			owner = GAR
 			controller = GAR
-		}
 
+		}
 		105.2.4 = {
 			owner = GAR
 			controller = GAR
-		}
 
+		}
 		111.10.30 = {
 			owner = GAR
 			controller = GAR
+
 		}
+
 	}
 
 	provinces={
-		472 738 928 1359 2083 2341 2727 2825 2899 2922 3954 4867 5367 5605 6181 6204 6215 6220 6238 6264 6271 6272 6276 6294 6295 6302 6311 
+		472 738 1359 2083 2341 2727 2825 2899 2922 3954 4867 5367 5605 6181 6204 6215 6220 6238 6264 6271 6272 6276 6294 6295 6302 6311 
 	}
+	manpower=56500
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

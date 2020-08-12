@@ -3,13 +3,12 @@ state={
 	id=122
 	name="STATE_122"
 	resources={
-		oil=11.000
-		rubber=14.000
+		chromium = 14
 	}
 
 	history={
 		victory_points = {
-			9881 30 
+			9881 15 
 		}
 		12.4.23 = {
 			owner = ISL
@@ -19,7 +18,7 @@ state={
 				infrastructure = 5
 				arms_factory = 1
 				industrial_complex = 1
-				dockyard = 3
+				dockyard = 2
 				9881 = {
 					naval_base = 3
 				}
@@ -47,7 +46,7 @@ state={
 	provinces={
 		1287 1392 2009 4598 4831 5025 9881 9915 9929 9942 
 	}
-	manpower=14300
+	manpower=18300
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 }

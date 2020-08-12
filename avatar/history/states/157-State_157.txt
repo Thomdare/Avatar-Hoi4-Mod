@@ -1,48 +1,52 @@
+
 state={
 	id=157
 	name="STATE_157"
-	manpower = 29500
-	state_category = large_town
-
 	resources={
-		aluminium = 4
-		stone = 5
-		chromium = 7
+		oil = 4
+		chromium=7.000
 	}
 
 	history={
-	
-		victory_points = { 3841 20 }
-		victory_points = { 572 8 }
-	
+		victory_points = {
+			3841 20 
+		}
+		victory_points = {
+			572 8 
+		}
 		12.4.23 = {
 			owner = ZIN
 			controller = ZIN
 			add_core_of = ZIN
-
 			buildings = {
 				infrastructure = 3
 				arms_factory = 1
+				industrial_complex = 1
 			}
-		}
 
+		}
 		52.1.1 = {
 			owner = ZIN
 			controller = ZIN
-		}
 
+		}
 		105.2.4 = {
 			owner = ZIN
 			controller = ZIN
-		}
 
+		}
 		111.10.30 = {
 			owner = ZIN
 			controller = ZIN
+
 		}
+
 	}
 
 	provinces={
-		272 350 425 526 572 573 668 796 1047 1093 1110 1182 1211 1622 1721 1742 2106 2265 2477 2499 2710 2765 2876 3841 3863 3996 4023 4146 4338 4718 4734 4877 5373 9005 9006 9013 9015 9028 9038 9044 9048 9061 9062 9073 9098 9116 9117 9134 9135 9142 9162 9192 
+		573 668 990 1047 1093 1110 1635 1721 2106 2265 2601 2710 3559 3841 4023 4734 4877 8927 8948 8963 8993 9005 9006 9013 9015 9028 9038 9044 9061 9073 
 	}
+	manpower=32500
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

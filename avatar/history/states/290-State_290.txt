@@ -1,13 +1,11 @@
+
 state={
 	id=290
 	name="STATE_290"
-	manpower = 18300
-	state_category = large_town
-
 	resources={
-		oil = 11
-		chromium = 8
-		aluminium = 6
+		oil=11.000
+		chromium=8.000
+		aluminium=6.000
 	}
 
 	history={
@@ -15,30 +13,35 @@ state={
 			owner = FMB
 			controller = FMB
 			add_core_of = FMB
-
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
-			}
-		}
 
+			}
+
+		}
 		52.1.1 = {
 			owner = FMB
 			controller = FMB
-		}
 
+		}
 		105.2.4 = {
 			owner = FMB
 			controller = FMB
-		}
 
+		}
 		111.10.30 = {
 			owner = FMB
 			controller = FMB
+
 		}
+
 	}
 
 	provinces={
-		51 237 251 608 731 781 1122 1487 1610 1963 2089 2101 2516 2525 2631 2793 3015 3089 3183 3277 3688 4139 4155 4303 4419 4495 4768 4776 4880 4899 5002 5210 5363 5462 7554 7606 7623 7647 7661 7672 7686 7726 7754 7789 7814 
+		237 251 608 731 781 1122 1487 1610 2089 2101 2516 2525 3015 3089 3183 3277 3688 4139 4155 4419 4776 4899 5002 5210 5363 7554 7606 7661 7726 7754 7789 7814 
 	}
+	manpower=18300
+	buildings_max_level_factor=1.000
+	state_category=town
 }

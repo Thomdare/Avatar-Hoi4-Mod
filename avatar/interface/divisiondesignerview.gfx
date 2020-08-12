@@ -86,6 +86,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_adjuster_village_bg"
+		textureFile = "gfx//interface//village_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_adjuster_forest_bg"
 		textureFile = "gfx//interface//forest_icon.dds"
 	}
@@ -93,6 +98,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_adjuster_mountain_bg"
 		textureFile = "gfx//interface//mountain_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_adjuster_high_mountain_bg"
+		textureFile = "gfx//interface//high_mountain_icon.dds"
 	}
 
 	spriteType = {
@@ -108,6 +118,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_adjuster_water_fjords_bg"
 		textureFile = "gfx//interface//archipelago_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_adjuster_water_great_river_bg"
+		textureFile = "gfx//interface//river_big_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_adjuster_water_great_lake_bg"
+		textureFile = "gfx//interface//lake_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_adjuster_water_uncharted_ocean_bg"
+		textureFile = "gfx//interface//uncharted_icon.dds"
 	}
 
 	spriteType = {

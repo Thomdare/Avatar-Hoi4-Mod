@@ -568,6 +568,108 @@ spriteTypes = {
 		name = "GFX_terrain_water_fjords_night_snow_storm"
 		textureFile = "gfx/interface/terrains/terrain_archipelago_night_snow_storm.dds"
 	}
+
+	# Uncharted Ocean
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_night_rain"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_night_storm"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_night_snow_storm"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_night_snow"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_day"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_day_rain"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_day_storm"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_day_snow"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_day_snow_storm"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_water_uncharted_ocean_night"
+		textureFile = "gfx/interface/terrains/terrain_uncharted_ocean.dds"
+	}
+
+	# River
+	spriteType = {
+		name = "GFX_terrain_water_great_river_day"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_water_great_river_day_rain"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day_rain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_terrain_water_great_river_day_storm"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_day_storm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_day_snow"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_day_snow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_day_snow_storm"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_day_snow_storm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_night"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_night.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_night_rain"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_night_rain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_night_storm"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_night_storm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_night_snow"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_night_snow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_water_great_river_night_snow_storm"
+		textureFile = "gfx/interface/terrains/terrain_great_river_day.dds"#terrain_great_river_night_snow_storm.dds"
+	}
 	
 	
 	###

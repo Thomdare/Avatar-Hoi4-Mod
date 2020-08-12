@@ -5,6 +5,7 @@ state={
 	resources={
 		iron=6.000
 		rubber=4.000
+		steel=8.000
 	}
 
 	history={
@@ -16,7 +17,7 @@ state={
 			controller = FIR
 			add_core_of = FIR
 			buildings = {
-				dockyard = 3
+				dockyard = 1
 				industrial_complex = 2
 				infrastructure = 6
 				arms_factory = 2

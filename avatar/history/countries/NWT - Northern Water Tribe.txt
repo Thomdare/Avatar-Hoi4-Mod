@@ -3,18 +3,24 @@ capital = 17
 OOB = "NWT_12"
 
 set_technology = {
-	water_equipment = 1
+	basic_armor = 1
+	basic_spear_1 = 1
+	basic_sword_1 = 1
+	ranged_weapons = 1
+	tech_support = 1
+	change = 1
+	reform_0 = 1
+	spear_update_1 = 1
+	sidearm_update_1 = 1
+	shield_upate_1 = 1
+	tip0 = 1
+	uniform0 = 1
 
-	basic_weapons = 1
-	spear1 = 1
-	sword1 = 1
-	pike1 = 1
-	armor = 1
-	light_armor1 = 1
-	heavy_armor1 = 1
+	water_equipment = 1
 }
 
-set_research_slots = 2
+set_research_slots = 1
+set_country_flag = water_nation 
 
 set_convoys = 60
 
@@ -36,9 +42,11 @@ set_popularities = {
 
 add_ideas = {
 	export_focus
-	early_economic_mobilisation 
-	volunteer_only
+	water_exceptional
+	civilian_economy
+	limited_water_conscription
 	family_support_3
+	no_education
 }
 
 106.2.4 ={

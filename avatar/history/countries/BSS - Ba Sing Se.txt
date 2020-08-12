@@ -18,8 +18,7 @@ set_popularities = {
 	pacifism = 5
 }
 
-
-
+set_country_flag = earth_nation
 
 create_country_leader = {
 	name = "Earthking Kuei"

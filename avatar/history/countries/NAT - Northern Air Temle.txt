@@ -3,21 +3,22 @@ capital = 5
 OOB = "NAT_12"
 
 set_technology = {
+	flying_bisons = 1
 	air_equipment = 1
-
-	basic_weapons = 1
-	spear1 = 1
-	sword1 = 1
-	pike1 = 1
-	armor = 1
-	light_armor1 = 1
-	heavy_armor1 = 1
+	basic_armor = 1
+	basic_spear_1
+	basic_sword_1
+	ranged_weapons = 1
+	tech_support = 1
+	change = 1
 }
+
 
 set_research_slots = 2
 
 set_convoys = 100
 
+set_country_flag = air_nation 
 
 set_politics = {
 	ruling_party = pacifism
@@ -33,7 +34,14 @@ set_popularities = {
 	monarchism = 0
 	pacifism = 70
 }
-
+add_ideas = {
+	limited_exports
+	civilian_economy
+	disarmed_air_nation
+	air_benders_only
+	family_support_3
+	mandatory_education
+}
 
 52.1.1 ={
 	

@@ -3,15 +3,14 @@ capital = 63
 OOB = "EAT_12"
 
 set_technology = {
+	flying_bisons = 1
 	air_equipment = 1
-
-	basic_weapons = 1
-	spear1 = 1
-	sword1 = 1
-	pike1 = 1
-	armor = 1
-	light_armor1 = 1
-	heavy_armor1 = 1
+	basic_armor = 1
+	basic_spear_1
+	basic_sword_1
+	ranged_weapons = 1
+	tech_support = 1
+	change = 1
 }
 
 set_research_slots = 2
@@ -34,7 +33,16 @@ set_popularities = {
 	pacifism = 70
 }
 
+add_ideas = {
+	limited_exports
+	civilian_economy
+	disarmed_air_nation
+	air_benders_only
+	family_support_3
+	mandatory_education
+}
 
+set_country_flag = air_nation 
 
 52.1.1 ={
 	

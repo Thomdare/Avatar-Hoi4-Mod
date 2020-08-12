@@ -82,9 +82,9 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrydivisiondesignerview"
 		position = { x=0 y=0}	
-		size = { width = 1253 height = 553 }
+		size = { width = 1132 height = 553 }
 		moveable = yes
-		fade_time = 500
+		fade_time = 1200
 		fade_type = linear
 		orientation = CENTER
 		origo = center
@@ -94,7 +94,7 @@ guiTypes = {
 		background = {
 			name = "Background"		
 			spriteType ="GFX_division_designer_popup_bg"
-			position = { x=-80 y=0}
+			position = { x=0 y=0}
 		}
 		
 		iconType = {
@@ -157,7 +157,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "support_grid"
-				position = { x = 23 y = 57 }
+				position = { x = 446 y = 57 }
 				size = { width = 85 height = 100%% }
 				slotsize = { width = 82 height = 51 }
 				format = "UPPER_LEFT"
@@ -174,7 +174,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "info"
-			position = { x=536 y=13}	
+			position = { x=576 y=13}	
 			size = { width=100% height=100%% }
 			
 			containerWindowType = {
@@ -316,13 +316,13 @@ guiTypes = {
 			iconType = {
 				name = "softness"
 				spriteType = "GFX_softness_ratio"
-				position = {x=282 y=305}
+				position = {x=272 y=305}
 			}
 
 			iconType = {
 				name = "softness_ratio_frame"
 				spriteType = "GFX_softness_ratio_frame"
-				position = {x=277 y=300}
+				position = {x=267 y=300}
 				allwaystransparent = yes
 			}
 
@@ -330,7 +330,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "armor_softness"
 				size = { width = 42 height = 23 }
-				position = { x=235 y=300 }
+				position = { x=225 y=300 }
 			
 				background = {
 					name = "armor_softness_bg"
@@ -342,13 +342,13 @@ guiTypes = {
 			iconType = {
 				name = "armor_softness_icon"
 				spriteType = "GFX_armor_softness_icon"
-				position = {x=240 y=305}
+				position = {x=230 y=305}
 			}			
 
 			containerWindowType = {
 				name = "inf_softness"
 				size = { width = 42 height = 23 }
-				position = { x=485 y=300 }
+				position = { x=475 y=300 }
 			
 				background = {
 					name = "inf_softness_bg"
@@ -360,7 +360,7 @@ guiTypes = {
 			iconType = {
 				name = "inf_softness_icon"
 				spriteType = "GFX_inf_softness_icon"
-				position = {x=497 y=303}
+				position = {x=487 y=303}
 			}
 
 		}
@@ -391,7 +391,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "duplicate_button"
-			position = { x=150 y=495 }
+			position = { x=170 y=495 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "DESIGNER_DUPLICATE"
 			pdx_tooltip = "DESIGNER_DUPLICATE_DESC"
@@ -401,7 +401,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "reset_button"
-			position = { x=20 y=495 }
+			position = { x=34 y=495 }
 			quadTextureSprite ="GFX_button_reset_123x34"
 			buttonText = "DESIGNER_RESET"
 			pdx_tooltip = "DESIGNER_RESET_DESC"
@@ -634,6 +634,17 @@ guiTypes = {
 			}
 		}
 
+		instantTextboxType = {
+			name = "support_header_label"
+			position = { x = 420 y = 196 }
+			font = "hoi_18mbs"
+			text = "SUPPORT_HEADER"
+			maxWidth = 110
+			maxHeight = 20
+			format = center
+			pdx_tooltip = "DESIGNER_SUPPORT_COLUMN_TITLE"
+		}
+
 		
 		containerWindowType = {
 			name = "designerregimentswindow"
@@ -680,7 +691,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -196 y = -1 }
+			position = { x = -66 y = -1 }
 			quadTextureSprite ="GFX_dd_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -691,7 +702,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_resources"
-			position = { x= 550 y= 504 }
+			position = { x= 580 y= 504 }
 			font = "hoi_18mbs"
 			maxWidth = 350
 			maxHeight = 25
@@ -701,7 +712,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_value"
-			position = { x= 700 y=503 }
+			position = { x= 740 y=503 }
 			font = "hoi_18mbs"
 			maxWidth = 350
 			maxHeight = 25
@@ -995,7 +1006,7 @@ guiTypes = {
 		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_locked_icon"
-			position = {x=2 y=20}
+			position = {x=2 y=16}
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
@@ -1003,7 +1014,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "invisible_icon"
-			position = { x = 2 y = 21 }
+			position = { x = 2 y = 15 }
 			spriteType = "GFX_cost_textbox_inv"
 			Orientation = CENTER_LOWER
 			scale = 0.8

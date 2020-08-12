@@ -1,7 +1,7 @@
 state={
 	id=375
 	name="STATE_375"
-	manpower = 10000
+	manpower = 20000
 	state_category = enclave
 
 	resources={
@@ -19,7 +19,7 @@ state={
 
 			buildings = {
 				infrastructure = 6
-				arms_factory = 3
+				arms_factory = 2
 			}
 		}
 

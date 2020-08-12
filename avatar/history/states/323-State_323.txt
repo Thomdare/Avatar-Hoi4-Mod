@@ -5,9 +5,9 @@ state={
 	state_category = wasteland
 
 	resources={
-		stone=3
-		iron=4
-		rubber=6
+		stone=5
+		iron=6
+		rubber=4
 	}
 
 	history={

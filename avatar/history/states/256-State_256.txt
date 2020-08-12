@@ -3,7 +3,7 @@ state={
 	id=256
 	name="STATE_256"
 	resources={
-		aluminium=7.000
+		aluminium=12.000
 	}
 
 	history={
@@ -39,7 +39,7 @@ state={
 	provinces={
 		406 575 654 662 808 1457 2408 2432 2717 2975 3370 3661 3748 4787 4873 7352 7389 7423 7426 7449 7461 7463 7471 7473 7483 7495 7500 10464 10465 
 	}
-	manpower=8670
+	manpower=19670
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

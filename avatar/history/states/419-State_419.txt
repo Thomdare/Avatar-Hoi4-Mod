@@ -9,7 +9,7 @@ state={
 
 	history={
 		victory_points = {
-			5597 5 
+			5597 30 
 		}
 		12.4.23 = {
 			owner = ISL
@@ -46,7 +46,7 @@ state={
 	provinces={
 		396 693 1324 2077 2665 2722 3023 3259 3728 4249 5597 9080 9128 9174 9176 9262 9287 9349 
 	}
-	manpower=15560
+	manpower=32560
 	buildings_max_level_factor=1.000
 	state_category=town
 }

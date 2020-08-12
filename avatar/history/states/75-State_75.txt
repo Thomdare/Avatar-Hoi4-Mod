@@ -1,14 +1,17 @@
 state={
 	id=75
 	name="STATE_75"
-	manpower = 4200
-	state_category = pastoral
+	manpower = 14200
+	state_category = rural
 
 	resources={
 		stone = 14
 	}
 
 	history={
+	
+	victory_points = { 6205 20 }
+	
 		12.4.23 = {
 			owner = LAM
 			controller = LAM

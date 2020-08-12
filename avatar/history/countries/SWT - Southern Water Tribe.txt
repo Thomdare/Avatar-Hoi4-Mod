@@ -1,22 +1,28 @@
 capital = 260
 
-
+OOB = "SWT_12"
 
 set_technology = {
-	water_equipment = 1
+	basic_armor = 1
+	basic_spear_1 = 1
+	basic_sword_1 = 1
+	ranged_weapons = 1
+	tech_support = 1
+	change = 1
+	reform_0 = 1
+	spear_update_0 = 1
+	sidearm_update_0 = 1
+	shield_upate_0 = 1
+	tip0 = 1
+	uniform0 = 1
 
-	basic_weapons = 1
-	spear1 = 1
-	sword1 = 1
-	pike1 = 1
-	armor = 1
-	light_armor1 = 1
-	heavy_armor1 = 1
+	water_equipment = 1
 }
 
-set_research_slots = 2
+set_research_slots = 1
 
 set_convoys = 200
+set_country_flag = water_nation 
 
 
 set_politics = {
@@ -34,6 +40,14 @@ set_popularities = {
 	pacifism = 10
 }
 
+add_ideas = {
+	export_focus
+	water_volunteers
+	civilian_economy
+	volunteer_water_nation
+	family_support_3
+	no_education
+}
 
 106.2.4 ={
 

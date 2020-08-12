@@ -36,7 +36,7 @@ sub_units = {
 		manpower = 100
 
 		#Misc Abilities
-		training_time = 900
+		training_time = 600
 		suppression = 1.5
 		weight = 0.5
 
@@ -58,11 +58,12 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 2
-		priority = 3000
+		priority = 600
 		active = no
 
 		type = {
 			infantry
+			bender
 		}
 		
 		group = special
@@ -83,7 +84,7 @@ sub_units = {
 		manpower = 100
 
 		#Misc Abilities
-		training_time = 900
+		training_time = 600
 		suppression = 1
 		weight = 0.5
 
@@ -111,11 +112,12 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 50
-		priority = 3000
+		priority = 600
 		active = no
 
 		type = {
 			infantry
+			bender
 		}
 		
 		group = special
@@ -136,7 +138,7 @@ sub_units = {
 		manpower = 50
 
 		#Misc Abilities
-		training_time = 900
+		training_time = 600
 		suppression = 0.5
 		weight = 0.5
 
@@ -157,9 +159,9 @@ sub_units = {
 			movement = 1
 		}
 		marsh = {
-			attack = 0.25
-			defence = 0.25
-			movement = 0.25
+			attack = 0.5
+			defence = 0.5
+			movement = 0.5
 		}
 	}
 #	
@@ -170,11 +172,12 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		ai_priority = 2
-		priority = 3000
+		priority = 600
 		active = no
 
 		type = {
 			infantry
+			bender
 		}
 		
 		group = special
@@ -195,7 +198,7 @@ sub_units = {
 		manpower = 40
 
 		#Misc Abilities
-		training_time = 90
+		training_time = 900
 		suppression = 0
 		weight = 0.5
 

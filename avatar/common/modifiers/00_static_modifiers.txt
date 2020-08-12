@@ -455,11 +455,12 @@ pride_of_the_fleet_sunk_temporary = {
 }
 
 water_modifier_shark_infested = {
-	navy_casualty_on_sink = 0.6
+	navy_casualty_on_sink = 0.9
 }
 
 screening_bonus = { 
   naval_retreat_speed = 0.2 
+  convoy_retreat_speed = 0.2
   naval_hit_chance = 0.4
 }
 
@@ -538,38 +539,4 @@ operative_nationality_operation = {
 
 #LaR Compliance
 
-FRA_host_the_german_exiles = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.25
-}
 
-FRA_reorganized_departments = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = neutrality
-		}
-	}
-	compliance_gain = 0.25
-}
-
-GER_rescued_mussolini = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = fascism
-		}
-	}
-	compliance_gain = 0.5
-}
-
-FRA_carry_the_revolution_south = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.4
-}

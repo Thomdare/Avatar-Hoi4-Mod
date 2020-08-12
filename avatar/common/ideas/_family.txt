@@ -20,6 +20,7 @@ ideas = {
 				fuel_gain_factor = -0.1
 				#stability_weekly = -0.001
 				stability_factor = -0.1
+				army_morale_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -38,7 +39,7 @@ ideas = {
 			modifier = {
 				#MONTHLY_POPULATION = 3
 				#political_power_gain = -0.1
-				fuel_gain_factor = -0.3
+				fuel_gain_factor = -0.2
 			}
 			
 			cancel_if_invalid = no
@@ -48,6 +49,7 @@ ideas = {
 						
 			cost = 150
 			removal_cost = -1
+			default = yes
 			level = 3
 			
 			available = {
@@ -55,9 +57,11 @@ ideas = {
 			}
 
 			modifier = {
-				MONTHLY_POPULATION = 2.5
+				MONTHLY_POPULATION = 0.25
 				#political_power_gain = -0.1
-				fuel_gain_factor = -0.5
+				fuel_gain_factor = -0.3
+
+				monthly_war_weariness_good = 1
 			}
 			
 			cancel_if_invalid = no
@@ -74,9 +78,11 @@ ideas = {
 			}
 
 			modifier = {
-				MONTHLY_POPULATION = 5
+				MONTHLY_POPULATION = 0.5
 				#political_power_gain = -0.2
-				fuel_gain_factor = -0.7
+				fuel_gain_factor = -0.4
+
+				weekly_war_weariness_good = 1
 			}
 			
 			cancel_if_invalid = no
@@ -93,9 +99,11 @@ ideas = {
 			}
 
 			modifier = {
-				MONTHLY_POPULATION = 10
+				MONTHLY_POPULATION = 1
 				#political_power_gain = -0.2
-				fuel_gain_factor = -0.9
+				fuel_gain_factor = -0.5
+
+				daily_war_weariness_good = 1
 			}
 			
 			cancel_if_invalid = no

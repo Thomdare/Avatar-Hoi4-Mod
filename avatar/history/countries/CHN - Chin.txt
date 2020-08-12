@@ -3,35 +3,38 @@ capital = 233
 OOB = "CHN_12"
 
 set_technology = {
+	basic_spear_1 = 1
+	spear_2 = 1
+	basic_sword_1 = 1
+	sword_2 = 1
+	basic_polearm_1 = 1	
+	polearm_2 = 1
+
+
+	heavy_armor_1 = 1
+	heavy_armor_2 = 1
 
 	earth_equipment = 1
-	basic_weapons_1 = 1
-	line_formation = 1
-	spear_1 = 1
-	close_combat_training = 1
-	sword_1 = 1
-	basic_armor = 1
-	light_armor_1 = 1
-	armor_inovation = 1
-	heavy_armor_1 = 1
+
 	substance = 1
 
 	ranged_weapons = 1
-	arrow1 = 1
-
-	trade = 1
-	tool_use = 1
-	artisanship = 1
-	maritime_trade = 1
-
-	transport = 1
+	bow0 = 1
+	arrow0 = 1
+	arrowb0 = 1
+	basic_armor = 1
+	light_armor_1 = 1
+	
+	infrastructure_1 = 1
+	reform_0 = 1
 }
 
 set_research_slots = 2
-set_convoys = 75
+set_convoys = 10
 set_stability = 0.4 
 set_war_support = 0.6
 
+set_country_flag = earth_nation 
 
 
 
@@ -50,10 +53,19 @@ set_popularities = {
 	pacifism = 0
 }
 
+add_ideas = {
+	volunteer_earth_nation
+	earth_volunteers
+	export_focus
+	civilian_economy
+	family_support_3
+	no_education
+}
+
 create_country_leader = {
 	name = "Chin the Conqueror"
 	desc = "Great Leader of the Chin Village"
-	picture = "chin_leader.dds"
+	picture = "chin.dds"
 	expire = "130.1.1"
 	ideology = constitutional_monarchy
 }
@@ -61,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mayor Tong"
 	desc = "Mayor of the Chin Village"
-	picture = "tong_leader.dds"
+	picture = "tong.dds"
 	expire = "130.1.1"
 	ideology = constitutional_monarchy
 }

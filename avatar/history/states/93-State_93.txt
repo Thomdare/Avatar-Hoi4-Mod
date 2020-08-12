@@ -1,12 +1,10 @@
+
 state={
 	id=93
 	name="STATE_93"
-	manpower = 14300
-	state_category = large_town
-
 	resources={
-		aluminium = 5
-		oil = 7
+		aluminium=5.000
+		oil=7.000
 	}
 
 	history={
@@ -14,30 +12,35 @@ state={
 			owner = LAM
 			controller = LAM
 			add_core_of = LAM
-
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
-			}
-		}
 
+			}
+
+		}
 		52.1.1 = {
 			owner = LAM
 			controller = LAM
-		}
 
+		}
 		105.2.4 = {
 			owner = LAM
 			controller = LAM
-		}
 
+		}
 		111.10.30 = {
 			owner = LAM
 			controller = LAM
+
 		}
+
 	}
 
 	provinces={
-		556 1089 1559 1644 2137 2199 3518 3924 4001 4304 4417 5102 6248 6303 6309 6336 6370 6379 6410 6429 6480 317 1924 2834 3205 3933 6179 6210 6234 6280
+		317 556 1559 1644 1924 2137 2834 3205 3518 3924 3933 4001 4304 4417 5102 6179 6210 6234 6248 6280 6303 6309 6336 6370 6379 6410 
 	}
+	manpower=13300
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

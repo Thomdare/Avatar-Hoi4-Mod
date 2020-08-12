@@ -1,0 +1,7 @@
+war_weariness = {
+	icon = generic_propaganda
+
+	visible = {
+		check_variable = { war_exhaustion_variable > 0 }
+	}
+}

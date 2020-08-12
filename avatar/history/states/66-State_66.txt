@@ -3,8 +3,8 @@ state={
 	id=66
 	name="STATE_66"
 	resources={
-		rubber=5.000
-		chromium=4.000
+		rubber=0
+		chromium=0
 	}
 
 	history={
@@ -14,7 +14,6 @@ state={
 			add_core_of = ZIN
 			buildings = {
 				infrastructure = 2
-				arms_factory = 1
 				industrial_complex = 1
 
 			}
@@ -39,9 +38,9 @@ state={
 	}
 
 	provinces={
-		23 314 379 726 990 1221 1323 1635 2457 2601 3062 3559 3943 4437 4557 5132 8795 8842 8844 8927 8948 8962 8963 8993 
+		23 314 379 726 1221 1323 2457 3062 3943 4437 4557 5132 8795 8842 8844 8962 
 	}
-	manpower=14500
+	manpower=21500
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

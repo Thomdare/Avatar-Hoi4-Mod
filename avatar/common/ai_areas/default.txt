@@ -3,28 +3,28 @@ areas = {
 	firelands = {
 
 		continents = { 
-			firelands
+			australia
 		}
 	}
 
 	earth_plate = {
 
 		continents = { 
-			earth_plate
+			europe
 		}
 	}
 
 	northpole = {
 
 		continents = { 
-			northpole
+			north_america
 		}
 	}
 
 	southpole = {
 
 		continents = { 
-			southpole 
+			south_america
 		}
 	}
 

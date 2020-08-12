@@ -1,12 +1,13 @@
 state={
 	id=105
 	name="STATE_105"
-	manpower = 19670
+	manpower = 26670
 	state_category = town
 
 	resources={
 		tungsten = 6
 		iron = 4
+		oil = 5
 	}
 
 	history={
@@ -22,6 +23,7 @@ state={
 				infrastructure = 5
 				arms_factory = 1
 				dockyard = 1
+				industrial_complex = 1
 			}
 		}
 

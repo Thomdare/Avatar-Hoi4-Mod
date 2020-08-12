@@ -6,10 +6,10 @@ state={
 		oil=3.000
 		chromium=0.000
 		tungsten=0.000
-		aluminium=0.000
-		stone=2.000
-		iron=3.000
-		rubber=4.000
+		aluminium=3.000
+		stone=0.000
+		iron=0.000
+		rubber=0.000
 		steel=0.000
 	}
 

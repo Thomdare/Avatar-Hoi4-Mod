@@ -292,7 +292,7 @@ tactic_scattered_defense = {
 	base = { factor = 4 }
 	picture = scattered_defense
 
-	countered_by = tactic_calvary_charge
+	countered_by = tactic_cavalry_charge
 
 	combat_width = 0.25
 	defender = 0.10
@@ -370,7 +370,7 @@ tactic_hold_chokepoint = {
 tactic_infiltration = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 
@@ -404,7 +404,7 @@ tactic_ambush = {
 tactic_mass_charge = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 
@@ -416,7 +416,7 @@ tactic_mass_charge = {
 	countered_by = tactic_field_traps
 
 	attacker = 0.15
-	defender - 0.05
+	defender = 0.05
 	combat_width = 0.50
 }
 tactic_field_traps = {
@@ -438,7 +438,7 @@ tactic_field_traps = {
 tactic_cautious_advance = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 
@@ -472,7 +472,7 @@ tactic_hit_and_run = {
 tactic_feint_retreat = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 
@@ -504,7 +504,7 @@ tactic_evade_battle = {
 tactic_bait_distraction = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 
@@ -536,7 +536,7 @@ tactic_shield_wall = {
 tactic_defeat_in_detail = {
 	is_attacker = yes
 	trigger = {
-		is _attacker = yes
+		is_attacker = yes
 		phase = no
 	}
 

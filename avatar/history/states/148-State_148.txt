@@ -5,7 +5,6 @@ state={
 	state_category = wasteland
 
 	resources={
-		oil = 6
 		stone = 3
 	}
 

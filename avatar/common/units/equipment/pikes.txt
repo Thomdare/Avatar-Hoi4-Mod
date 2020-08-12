@@ -14,18 +14,18 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
-		maximum_speed = 4
+		maximum_speed = 3
 
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
+		defense = 50
+		breakthrough = 6
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
+		soft_attack = 4
+		hard_attack = 1
+		ap_attack = 4
 		air_attack = 0
 
 		#Space taken in convoy
@@ -34,14 +34,13 @@ equipments = {
 		build_cost_ic = 1.2
 		resources = {
 			aluminium = 1
-			steel = 1
 		}
 
-		fuel_consumption = 0.3
+		fuel_consumption = 2.0
 		
 	}
 
-	pike_equipment_1 = {
+	pike_equipment_0 = {
 	
 		archetype = pike_equipment
 		active = no
@@ -49,6 +48,29 @@ equipments = {
 		visual_level = 0
 	}
 
+
+	pike_equipment_1 = {
+	
+		archetype = pike_equipment
+		parent = pike_equipment_0
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 52
+		breakthrough = 7
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 1.2
+		ap_attack = 6
+
+		build_cost_ic = 2.4
+		resources = {
+			aluminium = 1
+			iron = 1
+		}
+	}
 
 
 	pike_equipment_2 = {
@@ -59,21 +81,18 @@ equipments = {
 		visual_level = 1
 
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
+		defense = 54
+		breakthrough = 8
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
+		soft_attack = 6
+		hard_attack = 1.5
+		ap_attack = 10
 
-		build_cost_ic = 1.3
+		build_cost_ic = 2.6
 		resources = {
 			aluminium = 1
-			steel = 1
+			iron = 2
 		}
 	}
 
@@ -85,21 +104,18 @@ equipments = {
 		visual_level = 2
 		
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
+		defense = 56
+		breakthrough = 9
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
+		soft_attack = 7
+		hard_attack = 1.7
+		ap_attack = 14
 		
-		build_cost_ic = 1.4
+		build_cost_ic = 2.8
 		resources = {
 			aluminium = 1
-			steel = 1
+			iron = 3
 		}
 	}
 	
@@ -111,22 +127,19 @@ equipments = {
 		visual_level = 3
 		
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
+		defense = 58
+		breakthrough = 10
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
+		soft_attack = 8
+		hard_attack = 2
+		ap_attack = 18
 		
 		reliability = 0.8
-		build_cost_ic = 1.5
+		build_cost_ic = 3.0
 		resources = {
 			aluminium = 1
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -138,19 +151,16 @@ equipments = {
 		visual_level = 4
 		
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
+		defense = 60
+		breakthrough = 11
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
+		soft_attack = 9
+		hard_attack = 2.2
+		ap_attack = 22
 		
 		reliability = 0.8
-		build_cost_ic = 1.6
+		build_cost_ic = 3.2
 		resources = {
 			aluminium = 1
 			steel = 2
@@ -165,48 +175,19 @@ equipments = {
 		visual_level = 5
 		
 		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
+		defense = 62
+		breakthrough = 12
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
+		soft_attack = 10
+		hard_attack = 2.5
+		ap_attack = 26
 		
 		reliability = 0.8
-		build_cost_ic = 1.7
+		build_cost_ic = 3.4
 		resources = {
 			aluminium = 1
 			steel = 3
-		}
-	}
-
-	pike_equipment_7 = {
-	
-		archetype = pike_equipment
-		parent = pike_equipment_6
-		priority = 10
-		visual_level = 6
-		
-		#Defensive Abilities
-		defense = 0
-		breakthrough = 0
-		hardness = 0
-		armor_value = 0
-
-		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.6
-		ap_attack = 1
-		air_attack = 0
-		
-		reliability = 0.8
-		build_cost_ic = 1.8
-		resources = {
-			steel = 4
 		}
 	}
 

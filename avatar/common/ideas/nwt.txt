@@ -1,5 +1,7 @@
 ideas = {
-          NWT_Research_Modifier = {
+	country = {
+
+	          NWT_Research_Modifier = {
 			
 			allowed = {
 				always = no
@@ -19,3 +21,5 @@ ideas = {
 				research_speed_factor = 0.07
 			}
 		}
+	}
+}

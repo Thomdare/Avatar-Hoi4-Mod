@@ -6,6 +6,96 @@ spriteTypes = {
 	### equipment ###
 
 	SpriteType = {
+		name = "GFX_basic_spear_1_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_spear_2_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_spear_3_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_spear_4_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_spear_5_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_spear_6_medium"
+		texturefile = "gfx/interface/technologies/spear_equipment_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_basic_polearm_1_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_polearm_2_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_polearm_3_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_polearm_4_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_polearm_5_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_polearm_6_medium"
+		texturefile = "gfx/interface/technologies/pike_equipment_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_basic_sword_1_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_2_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_3_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_4_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_5_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_6_medium"
+		texturefile = "gfx/interface/technologies/sword_equipment_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/light_armor_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bow0_medium"
+		texturefile = "gfx/interface/technologies/bow_equipment_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_arrow0_medium"
+		texturefile = "gfx/interface/technologies/arrow_equipment_0.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_tech_support_medium"
 		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
 	}	
@@ -54,6 +144,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/bison_equipment.dds"
 	}
 
+	### ships ###
+
+	SpriteType = {
+		name = "GFX_convoy_medium"
+		texturefile = "gfx/interface/technologies/naval/convoy.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_convoy_medium"
+		texturefile = "gfx/interface/technologies/naval/early_convoy.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_convoy_medium"
+		texturefile = "gfx/interface/technologies/naval/modern_convoy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_early_fire_cruiser_medium"
+		texturefile = "gfx/interface/technologies/naval/firenation_cruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_fire_frigate_medium"
+		texturefile = "gfx/interface/technologies/naval/firenation_frigate_1.dds"
+	}
 
 	### land doctrines ###
 
@@ -124,48 +237,85 @@ spriteTypes = {
 	}
 
 
+	### society ###
+
+	SpriteType = {
+		name = "GFX_reform_0_medium"
+		texturefile = "gfx/interface/technologies/society/leaving_the_lion_turtles.dds"
+		alwaystransparent = yes
+	}
+
+
 	### construction ###
 
 	SpriteType = {
-		name = "GFX_road_1_medium"
-		texturefile = "gfx/interface/technologies/road_1.dds"
-		alwaystransparent = yes
-	}
-	SpriteType = {
 		name = "GFX_infrastructure_1_medium"
-		texturefile = "gfx/interface/technologies/infrastructure_1.dds"
+		texturefile = "gfx/interface/technologies/construction/infrastructure_1.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = {
 		name = "GFX_infrastructure_2_medium"
-		texturefile = "gfx/interface/technologies/infrastructure_2.dds"
+		texturefile = "gfx/interface/technologies/construction/infrastructure_2.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_infrastructure_3_medium"
+		texturefile = "gfx/interface/technologies/construction/infrastructure_3.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_infrastructure_4_medium"
+		texturefile = "gfx/interface/technologies/construction/infrastructure_4.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_infrastructure_5_medium"
+		texturefile = "gfx/interface/technologies/construction/infrastructure_5.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_granary_1_medium"
+		texturefile = "gfx/interface/technologies/construction/granary_1.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_farm_and_lumber_medium"
+		texturefile = "gfx/interface/technologies/construction/farm_and_lumber.dds"
 		alwaystransparent = yes
 	}
 
+
+	### industry ###
+
 	SpriteType = {
-		name = "GFX_commandpost_1_medium"
-		texturefile = "gfx/interface/technologies/commandpost_1.dds"
+		name = "GFX_basic_construction_medium"
+		texturefile = "gfx/interface/technologies/industry/engineering.dds"
 		alwaystransparent = yes
 	}
-
-
-
 	SpriteType = {
-		name = "GFX_basic_weapons_1_medium"
-		texturefile = "gfx/interface/technologies/spear_equipment_0.dds"
+		name = "GFX_construction_l1_medium"
+		texturefile = "gfx/interface/technologies/industry/packed_clay.dds"
+		alwaystransparent = yes
 	}
 	SpriteType = {
-		name = "GFX_basic_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/spear_equipment_1.dds"
+		name = "GFX_construction_l2_medium"
+		texturefile = "gfx/interface/technologies/industry/rudimentary_brickmaking.dds"
+		alwaystransparent = yes
 	}
 	SpriteType = {
-		name = "GFX_spear_1_medium"
-		texturefile = "gfx/interface/technologies/spear_equipment_2.dds"
+		name = "GFX_construction_r1_medium"
+		texturefile = "gfx/interface/technologies/industry/timber_frame.dds"
+		alwaystransparent = yes
 	}
-
 	SpriteType = {
-		name = "GFX_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/light_armor_1.dds"
+		name = "GFX_basic_production_medium"
+		texturefile = "gfx/interface/technologies/industry/hand_tool_production.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_basic_gathering_medium"
+		texturefile = "gfx/interface/technologies/industry/logging_axes.dds"
+		alwaystransparent = yes
 	}
 
 
@@ -2044,12 +2194,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
 	
-	### NAVAL TECH ###
-
-	SpriteType = {
-		name = "GFX_convoy_medium"
-		texturefile = "gfx/interface/technologies/convoy.dds"
-	}	
+	### NAVAL TECH ###	
 	
 	SpriteType = {
 		name = "GFX_tank_landing_craft_medium"

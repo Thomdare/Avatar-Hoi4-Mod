@@ -1,24 +1,25 @@
+# Updated upstream
 technologies = {
-	tool_use = {
+
+	reform_0 = {
 		
 		path = {
-			leads_to_tech = domesticating
+			leads_to_tech = progressive_0
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = artisanship
+			leads_to_tech = conservative_0
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = trade
-			research_cost_coeff = 1
-		}
+		
+		production_factory_max_efficiency_factor = 0.02
+		global_building_slots_factor = 0.05
 		
 		research_cost = 1
-		start_year = 2000
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 0 }
+			position = { x = 1 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -36,57 +37,31 @@ technologies = {
 		}	
 	}
 	
-	domesticating = {
-
-		enable_building = {
-			building = farm
-			level = 6
-		}
+	progressive_0 = {
 		
 		path = {
-			leads_to_tech = public_security
+			leads_to_tech = progressive_economy_0
 			research_cost_coeff = 1
 		}
-		
-		research_cost = 1
-		start_year = 15
-		folder = {
-			name = electronics_folder
-			position = { x = -4 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	artisanship = {
-
-		enable_building = {
-			building = factory
-			level = 20
-		}
-		
 		path = {
-			leads_to_tech = public_security
+			leads_to_tech = progressive_resources_0
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = progressive_education_0
+			research_cost_coeff = 1
+		}
+		XOR = {
+			conservative_0
+		}
+		
+		global_building_slots_factor = 0.10
 		
 		research_cost = 1
-		start_year = 15
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 2 }
+			position = { x = -3 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -104,23 +79,31 @@ technologies = {
 		}	
 	}
 	
-	trade = {
-
-		enable_building = {
-			building = infrastructure
-			level = 10
-		}
+	conservative_0 = {
 		
 		path = {
-			leads_to_tech = public_security
+			leads_to_tech = conservative_economy_0
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = conservative_resources_0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_education_0
+			research_cost_coeff = 1
+		}
+		XOR = {
+			progressive_0
+		}
+		
+		consumer_goods_factor = -0.01
 		
 		research_cost = 1
-		start_year = 15
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 2 }
+			position = { x = 5 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -137,29 +120,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	public_security = {
-
-		enable_building = {
-			building = scout_tower
-			level = 1
-		}
-		
-		path = {
-			leads_to_tech = fortifications
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = boatbuilding
-			research_cost_coeff = 1
-		}
+	
+	progressive_economy_0 = {
+	
+		production_factory_start_efficiency_factor = 0.02
+		line_change_production_efficiency_factor = 0.04
 		
 		research_cost = 1
-		start_year = 20
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 4 }
+			position = { x = -1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -176,25 +147,45 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	progressive_resources_0 = {
+	
+		fuel_gain_factor_from_states = 0.05
+		local_resources_factor = 0.04
 
-	fortifications = {
-
-		enable_building = {
-			building = wall
-			level = 30
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 4 }
 		}
-		enable_building = {
-			building = coastal_fortress
-			level = 10
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
 		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_education_0 = {
+		
+		research_speed_factor = 0.08
 		
 		path = {
-			leads_to_tech = standing_army
+			leads_to_tech = reform_1
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1
-		start_year = 25
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = -3 y = 6 }
@@ -214,22 +205,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	standing_army = {
-
-		conscription = 0.02
-		training_time_factor = -0.1
+	
+	conservative_economy_0 = {
 		
-		path = {
-			leads_to_tech = command_structure
-			research_cost_coeff = 1
-		}
+		production_factory_efficiency_gain_factor = 0.02
+		production_factory_max_efficiency_factor = 0.04
 		
 		research_cost = 1
-		start_year = 30
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 8 }
+			position = { x = 7 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -246,24 +232,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	boatbuilding = {
-
-		enable_building = {
-			building = dockyard
-			level = 20
-		}
+	
+	conservative_resources_0 = {
 		
-		path = {
-			leads_to_tech = maritime_trade
-			research_cost_coeff = 1
-		}
-		
+		fuel_gain_factor = 0.05
+		local_resources_factor = 0.04
+
 		research_cost = 1
-		start_year = 25
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 6 }
+			position = { x = 3 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -280,24 +259,22 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	maritime_trade = {
-
-		enable_building = {
-			building = naval_base 
-			level = 10
-		}
+	
+	conservative_education_0 = {
+		
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.04
 		
 		path = {
-			leads_to_tech = command_structure
+			leads_to_tech = reform_1
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1
-		start_year = 30
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 8 }
+			position = { x = 5 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -314,29 +291,26 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	command_structure = {
-
-		enable_building = {
-			building = commandpost
-			level = 1
-		}
+	
+	reform_1 = {
 		
 		path = {
-			leads_to_tech = war_logistics
+			leads_to_tech = progressive_1
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = mathematics
+			leads_to_tech = conservative_1
 			research_cost_coeff = 1
 		}
+		
+		production_factory_max_efficiency_factor = 0.04
+		global_building_slots_factor = 0.10
 		
 		research_cost = 1
-		start_year = 35
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 1 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -353,31 +327,158 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	war_logistics = {
-
-		enable_building = {
-			building = supply_depot
-			level = 1
-		}
+	
+	progressive_1 = {
 		
 		path = {
-			leads_to_tech = anti_espionage
+			leads_to_tech = progressive_economy_1
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = espionage
+			leads_to_tech = progressive_resources_1
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = iron_smelting
+			leads_to_tech = progressive_education_1
 			research_cost_coeff = 1
 		}
+		XOR = {
+			conservative_1
+		}
+		
+		conversion_cost_civ_to_mil_factor = -0.2
+		equipment_conversion_speed = 0.05
 		
 		research_cost = 1
-		start_year = 45
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_1 = {
+		
+		path = {
+			leads_to_tech = conservative_economy_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_resources_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_education_1
+			research_cost_coeff = 1
+		}
+		XOR = {
+			progressive_1
+		}
+		
+		industry_free_repair_factor = 0.15
+		industry_air_damage_factor = -0.05
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_economy_1 = {
+	
+		production_factory_start_efficiency_factor = 0.02
+		line_change_production_efficiency_factor = 0.04
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_resources_1 = {
+	
+		fuel_gain_factor = 0.05
+		local_resources_factor = 0.04
+
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_education_1 = {
+		
+		path = {
+			leads_to_tech = reform_2
+			research_cost_coeff = 1
+		}
+		
+		research_speed_factor = 0.08
+
+		research_cost = 1
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = -3 y = 14 }
@@ -397,16 +498,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	espionage = {
-
-		decryption = 1
+	
+	conservative_economy_1 = {
+		
+		production_factory_efficiency_gain_factor = 0.02
+		production_factory_max_efficiency_factor = 0.04
 		
 		research_cost = 1
-		start_year = 45
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 14 }
+			position = { x = 7 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -423,244 +525,13 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	conservative_resources_1 = {
 
-	anti_espionage = {
+		local_resources_factor = 0.06
 
-		encryption = 1
-		
 		research_cost = 1
-		start_year = 45
-		folder = {
-			name = electronics_folder
-			position = { x = -5 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	iron_smelting = {
-
-		category_all_infantry = {
-			defense = 0.05
-		}
-		
-		path = {
-			leads_to_tech = watchtowers
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 55
-		folder = {
-			name = electronics_folder
-			position = { x = -3 y = 18 }
-		}
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	watchtowers = {
-
-		enable_building = {
-			building = scout_tower
-			level = 2
-		}
-		
-		path = {
-			leads_to_tech = messenger_animals
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = interception
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = camouflaged_outposts
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 65
-		folder = {
-			name = electronics_folder
-			position = { x = -3 y = 22 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	messenger_animals = {
-
-		encryption = 1
-		
-		research_cost = 1
-		start_year = 65
-		folder = {
-			name = electronics_folder
-			position = { x = -5 y = 22 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	interception = {
-
-		decryption = 1
-		
-		research_cost = 1
-		start_year = 65
-		folder = {
-			name = electronics_folder
-			position = { x = -1 y = 22 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	camouflaged_outposts = {
-
-		enable_building = {
-			building = scout_tower
-			level = 3
-		}
-		
-		path = {
-			leads_to_tech = steel_casting
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 70
-		folder = {
-			name = electronics_folder
-			position = { x = -3 y = 24 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	steel_casting = {
-
-		category_all_infantry = {
-			defense = 0.05
-		}
-		
-		path = {
-			leads_to_tech = steam_power
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 75
-		folder = {
-			name = electronics_folder
-			position = { x = -3 y = 26 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	mathematics = {
-
-		research_speed_factor = 0.02
-		
-		path = {
-			leads_to_tech = engineering
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 40
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = 3 y = 12 }
@@ -680,26 +551,22 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	engineering = {
-
-		production_speed_buildings_factor = 0.05
+	
+	conservative_education_1 = {
 		
 		path = {
-			leads_to_tech = philosophy
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = apothecary
+			leads_to_tech = reform_2
 			research_cost_coeff = 1
 		}
 		
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.04
+
 		research_cost = 1
-		start_year = 50
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 16 }
+			position = { x = 5 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -716,21 +583,26 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	philosophy = {
-
-		research_speed_factor = 0.03
+	
+	reform_2 = {
 		
 		path = {
-			leads_to_tech = alchemy
+			leads_to_tech = progressive_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_2
 			research_cost_coeff = 1
 		}
 		
+		production_factory_max_efficiency_factor = 0.08
+		global_building_slots_factor = 0.15
+		
 		research_cost = 1
-		start_year = 55
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 1 y = 18 }
+			position = { x = 1 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -747,18 +619,73 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	apothecary = {
-
-		monthly_population = 0.05
+	
+	progressive_2 = {
 		
 		path = {
-			leads_to_tech = alchemy
+			leads_to_tech = progressive_economy_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = progressive_resources_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = progressive_education_2
+			research_cost_coeff = 1
+		}
+		XOR = {
+			conservative_2
+		}
+		
+		conversion_cost_civ_to_mil_factor = -0.2
+		equipment_conversion_speed = 0.05
 		
 		research_cost = 1
-		start_year = 55
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_2 = {
+		
+		path = {
+			leads_to_tech = conservative_economy_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_resources_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_education_2
+			research_cost_coeff = 1
+		}
+		XOR = {
+			progressive_2
+		}
+		
+		industry_free_repair_factor = 0.15
+		industry_air_damage_factor = -0.05
+		
+		research_cost = 1
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = 5 y = 18 }
@@ -778,18 +705,125 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	progressive_economy_2 = {
+	
+		production_factory_start_efficiency_factor = 0.02
+		line_change_production_efficiency_factor = 0.04
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_resources_2 = {
+	
+		fuel_gain_factor = 0.05
+		local_resources_factor = 0.04
 
-	alchemy = {
-
-		research_speed_factor = 0.03
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_education_2 = {
 		
 		path = {
-			leads_to_tech = literature
+			leads_to_tech = reform_3
 			research_cost_coeff = 1
 		}
 		
+		research_speed_factor = 0.08
+
 		research_cost = 1
-		start_year = 60
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_economy_2 = {
+		
+		production_factory_efficiency_gain_factor = 0.02
+		production_factory_max_efficiency_factor = 0.04
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_resources_2 = {
+
+		local_resources_factor = 0.06
+
+		research_cost = 1
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = 3 y = 20 }
@@ -809,26 +843,22 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	literature = {
-
-		research_speed_factor = 0.03
+	
+	conservative_education_2 = {
 		
 		path = {
-			leads_to_tech = chemistry
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = physics
+			leads_to_tech = reform_3
 			research_cost_coeff = 1
 		}
 		
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.04
+
 		research_cost = 1
-		start_year = 70
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 24 }
+			position = { x = 5 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -845,21 +875,26 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	chemistry = {
-
-		research_speed_factor = 0.05
+	
+	reform_3 = {
 		
 		path = {
-			leads_to_tech = steam_power
+			leads_to_tech = progressive_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_3
 			research_cost_coeff = 1
 		}
 		
+		production_factory_max_efficiency_factor = 0.10
+		global_building_slots_factor = 0.20
+		
 		research_cost = 1
-		start_year = 65
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 1 y = 26 }
+			position = { x = 1 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -876,18 +911,73 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	physics = {
-
-		research_speed_factor = 0.05
+	
+	progressive_3 = {
 		
 		path = {
-			leads_to_tech = steam_power
+			leads_to_tech = progressive_economy_3
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = progressive_resources_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = progressive_education_3
+			research_cost_coeff = 1
+		}
+		XOR = {
+			conservative_3
+		}
+		
+		conversion_cost_civ_to_mil_factor = -0.2
+		equipment_conversion_speed = 0.05
 		
 		research_cost = 1
-		start_year = 65
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_3 = {
+		
+		path = {
+			leads_to_tech = conservative_economy_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_resources_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_education_3
+			research_cost_coeff = 1
+		}
+		XOR = {
+			progressive_3
+		}
+		
+		industry_free_repair_factor = 0.15
+		industry_air_damage_factor = -0.05
+		
+		research_cost = 1
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = 5 y = 26 }
@@ -907,26 +997,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	steam_power = {
-
-		production_factory_max_efficiency_factor = 0.1
-		
-		path = {
-			leads_to_tech = factories
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = telescopes
-			research_cost_coeff = 1
-		}
+	
+	progressive_economy_3 = {
+	
+		production_factory_start_efficiency_factor = 0.02
+		line_change_production_efficiency_factor = 0.04
 		
 		research_cost = 1
-		start_year = 80
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 28 }
+			position = { x = -1 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -943,21 +1024,45 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	progressive_resources_3 = {
+	
+		fuel_gain_factor = 0.05
+		local_resources_factor = 0.04
 
-	factories = {
-
-		enable_building = {
-			building = factory1
-			level = 20
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 28 }
 		}
 		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_education_3 = {
+		
 		path = {
-			leads_to_tech = fossile_fuels
+			leads_to_tech = reform_4
 			research_cost_coeff = 1
 		}
 		
+		research_speed_factor = 0.08
+
 		research_cost = 1
-		start_year = 85
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = -3 y = 30 }
@@ -977,21 +1082,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	fossile_fuels = {
-
-		local_resources_factor = 0.05
+	
+	conservative_economy_3 = {
 		
-		path = {
-			leads_to_tech = blast_furnace
-			research_cost_coeff = 1
-		}
+		production_factory_efficiency_gain_factor = 0.02
+		production_factory_max_efficiency_factor = 0.04
 		
 		research_cost = 1
-		start_year = 90
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 32 }
+			position = { x = 7 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -1008,20 +1109,129 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	conservative_resources_3 = {
 
-	blast_furnace = {
+		local_resources_factor = 0.06
 
-		category_all_infantry = {
-			defense = 0.05
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 28 }
 		}
 		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_education_3 = {
+		
 		path = {
-			leads_to_tech = industrial_revolution
+			leads_to_tech = reform_4
 			research_cost_coeff = 1
 		}
 		
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.04
+
 		research_cost = 1
-		start_year = 95
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	reform_4 = {
+		
+		path = {
+			leads_to_tech = progressive_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_4
+			research_cost_coeff = 1
+		}
+		
+		production_factory_max_efficiency_factor = 0.12
+		global_building_slots_factor = 0.25
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 32 }
+		}
+
+		folder = {
+			name = construction_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_4 = {
+		
+		path = {
+			leads_to_tech = progressive_economy_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = progressive_resources_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = progressive_education_4
+			research_cost_coeff = 1
+		}
+		XOR = {
+			conservative_4
+		}
+		
+		conversion_cost_civ_to_mil_factor = -0.2
+		equipment_conversion_speed = 0.05
+		
+		research_cost = 1
+		start_year = 1
 		folder = {
 			name = electronics_folder
 			position = { x = -3 y = 34 }
@@ -1041,24 +1251,118 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	telescopes = {
-
-		enable_building = {
-			building = scout_tower
-			level = 4
-		}
+	
+	conservative_4 = {
 		
 		path = {
-			leads_to_tech = medicine
+			leads_to_tech = conservative_economy_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_resources_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = conservative_education_4
+			research_cost_coeff = 1
+		}
+		XOR = {
+			progressive_4
+		}
+		
+		industry_free_repair_factor = 0.15
+		industry_air_damage_factor = -0.05
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_economy_4 = {
+	
+		production_factory_start_efficiency_factor = 0.02
+		line_change_production_efficiency_factor = 0.04
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_resources_4 = {
+	
+		fuel_gain_factor = 0.05
+		local_resources_factor = 0.04
+
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = -5 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	progressive_education_4 = {
+		
+		path = {
+			leads_to_tech = reform_5
 			research_cost_coeff = 1
 		}
 		
+		research_speed_factor = 0.08
+
 		research_cost = 1
-		start_year = 85
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 30 }
+			position = { x = -3 y = 38 }
 		}
 		
 		ai_will_do = {
@@ -1075,21 +1379,75 @@ technologies = {
 			society_reforms
 		}	
 	}
+	
+	conservative_economy_4 = {
+		
+		production_factory_efficiency_gain_factor = 0.02
+		production_factory_max_efficiency_factor = 0.04
+		
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_resources_4 = {
 
-	medicine = {
+		local_resources_factor = 0.06
 
-		monthly_population = 0.15
+		research_cost = 1
+		start_year = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			society_reforms
+		}	
+	}
+	
+	conservative_education_4 = {
 		
 		path = {
-			leads_to_tech = public_schooling
+			leads_to_tech = reform_5
 			research_cost_coeff = 1
 		}
 		
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.04
+
 		research_cost = 1
-		start_year = 90
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 32 }
+			position = { x = 5 y = 38 }
 		}
 		
 		ai_will_do = {
@@ -1106,21 +1464,17 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	public_schooling = {
-
-		research_speed_factor = 0.05
+	
+	reform_5 = {
 		
-		path = {
-			leads_to_tech = industrial_revolution
-			research_cost_coeff = 1
-		}
+		production_factory_max_efficiency_factor = 0.15
+		global_building_slots_factor = 0.30
 		
 		research_cost = 1
-		start_year = 95
+		start_year = 1
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 34 }
+			position = { x = 1 y = 40 }
 		}
 		
 		ai_will_do = {
@@ -1137,307 +1491,4 @@ technologies = {
 			society_reforms
 		}	
 	}
-
-	industrial_revolution = {
-
-		local_resources_factor = 0.05
-		production_speed_buildings_factor = 0.10
-		
-		path = {
-			leads_to_tech = mechanization
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = radio_signal
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = airships
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 100
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 36 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	mechanization = {
-
-		production_factory_max_efficiency_factor = 0.05
-		
-		path = {
-			leads_to_tech = mechanical_engineering
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 105
-		folder = {
-			name = electronics_folder
-			position = { x = -4 y = 38 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	mechanical_engineering = {
-
-		category_tanks = {
-			max_organisation = 3
-			breakthrough = 0.20
-		}
-		
-		research_cost = 1
-		start_year = 110
-		folder = {
-			name = electronics_folder
-			position = { x = -4 y = 40 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	radio_signal = {
-
-		enable_building = {
-			building = scout_tower
-			level = 5
-		}
-		
-		path = {
-			leads_to_tech = signal_encryption
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = improved_communication
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = radio_interception
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 105
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 38 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	signal_encryption = {
-
-		encryption = 1
-		
-		research_cost = 1
-		start_year = 105
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 38 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	improved_communication = {
-
-		enable_building = {
-			building = scout_tower
-			level = 6
-		}
-		
-		research_cost = 1
-		start_year = 110
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 40 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	radio_interception = {
-
-		decryption = 1
-		
-		research_cost = 1
-		start_year = 105
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 38 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	airships = {
-
-		enable_building = {
-			building = air_base
-			level = 10
-		}
-		
-		path = {
-			leads_to_tech = aerodynamics
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		start_year = 105
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 38 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-	aerodynamics = {
-
-		
-		
-		research_cost = 1
-		start_year = 110
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 40 }
-		}
-		
-		ai_will_do = {
-			factor = 30
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			society_reforms
-		}	
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

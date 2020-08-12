@@ -5,7 +5,7 @@ state={
 	state_category = pastoral
 
 	resources={
-		
+		iron=5.000
 	}
 
 	history={
@@ -19,6 +19,8 @@ state={
 
 			buildings = {
 				infrastructure = 2
+				dockyard = 1
+				arms_factory = 1
 			}
 		}
 

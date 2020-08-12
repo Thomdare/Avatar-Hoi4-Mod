@@ -10,7 +10,7 @@ state={
 		stone=0.000
 		iron=6.000
 		rubber=0.000
-		steel=0.000
+		steel=12.000
 	}
 
 	history={
@@ -22,13 +22,15 @@ state={
 			controller = FIR
 			add_core_of = FIR
 			buildings = {
-				arms_factory = 3
-				industrial_complex = 2
+				arms_factory = 2
+				industrial_complex = 1
 				infrastructure = 6
-				dockyard = 3
+				dockyard = 2
 				8445 = {
 					naval_base = 5
+
 				}
+
 			}
 
 		}
@@ -51,9 +53,9 @@ state={
 	}
 
 	provinces={
-		240 354 607 1367 1425 1923 2347 2440 2841 3146 3406 4072 4106 4357 4397 4703 5131 8405 8420 8445 8454 8465 8468 8476 8488 8491 8503 8515 
+		240 354 607 1367 1425 2347 2440 2841 3146 3406 4072 4106 4357 4397 4703 8420 8445 8454 8465 8468 8476 8488 8491 8503 8515 
 	}
-	manpower=47400
+	manpower=54400
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

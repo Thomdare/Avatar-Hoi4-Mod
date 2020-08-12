@@ -5,8 +5,8 @@ state={
 	state_category = pastoral
 
 	resources={
-		iron = 8
-		stone = 5
+		iron = 0
+		stone = 0
 	}
 
 	history={

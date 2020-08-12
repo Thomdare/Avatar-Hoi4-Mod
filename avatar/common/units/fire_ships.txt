@@ -1,0 +1,110 @@
+sub_units = {
+	firenation_cruiser = {
+		sprite = light_cruiser
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { firenation_cruiser_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { burning_engine on_fire rudder_jammed damaged_trebuchets damaged_catapults }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	firenation_heavy_cruiser = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { screen_ship }
+		need = { firenation_cruiser_hull = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { burning_engine on_fire rudder_jammed damaged_trebuchets damaged_catapults }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	firenation_frigate = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { capital_ship }
+		need = { firenation_frigate_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { burning_engine on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	firenation_battleship = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { capital_ship }
+		need = { firenation_battleship_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { burning_engine on_fire rudder_jammed damaged_trebuchets damaged_catapults }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	jet_ski = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { jet_ski_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { burning_engine on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	river_boat = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { river_boat_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { burning_engine on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+}

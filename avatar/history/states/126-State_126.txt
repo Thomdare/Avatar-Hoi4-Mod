@@ -1,13 +1,13 @@
 state={
 	id=126
 	name="STATE_126"
-	manpower = 34800
+	manpower = 24800
 	state_category = large_town
 
 	resources={
 		stone = 6
-		aluminium = 12
-		iron = 15
+		aluminium = 8
+		iron = 10
 		rubber = 4
 	}
 

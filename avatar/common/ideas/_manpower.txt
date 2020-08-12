@@ -1,10 +1,231 @@
 ideas = {
 	mobilization_laws = {
 		law = yes
-		
+	 	use_list_view = yes	
+
+		disarmed_water_nation = {
+			visible = { 
+				has_country_flag = water_nation
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			modifier = {
+				conscription = 0.02
+				mobilization_speed = 0.01
+				industrial_capacity_dockyard = 0.15
+				local_resources_factor = 0.2
+			}
+			cancel_if_invalid = no
+		}
+		volunteer_water_nation = {
+			visible = {
+				has_country_flag = water_nation
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 6
+
+			modifier = {
+				conscription = 0.05
+				mobilization_speed = 0.015
+				industrial_capacity_dockyard = 0.15
+				local_resources_factor = 0.10
+			}
+
+			cancel_if_invalid = no
+		}
+		limited_water_conscription = {
+			visible = {
+				has_country_flag = water_nation
+			}
+			available = {
+				has_war_support > 0.1
+			}
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			modifier = {
+				conscription = 0.08
+				mobilization_speed = 0.025
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		disarmed_earth_nation = {
+			visible = {
+				has_country_flag = earth_nation
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			modifier = {
+				conscription = 0.02
+				mobilization_speed = 0.01
+				industry_repair_factor = 0.15
+				production_speed_buildings_factor = 0.2
+			}
+
+			cancel_if_invalid = no
+		}
+		volunteer_earth_nation = {
+			visible = {
+				has_country_flag = earth_nation
+			}
+			cost = 150
+			removal_cost = -1
+			level = 6
+
+			modifier = {
+				conscription = 0.05
+				mobilization_speed = 0.015
+				industry_repair_factor = 0.1
+				production_speed_buildings_factor = 0.15
+			}
+
+			cancel_if_invalid = no
+		}
+		limited_earth_conscription = {
+			visible = {
+				has_country_flag = earth_nation
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			modifier = {
+				conscription = 0.08
+				mobilization_speed = 0.025
+				industry_repair_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+                disarmed_fire_nation = {
+                        visible = {
+				has_country_flag = fire_nation
+                        }
+
+                        cost = 150
+                        removal_cost = -1
+                        level = 7
+
+                        modifier = {
+                                conscription = 0.02
+                                mobilization_speed = 0.01
+                                industrial_capacity_dockyard = 0.12
+                                industrial_capacity_factory = 0.15
+                        }
+
+                        cancel_if_invalid = no
+                }
+                volunteer_fire_nation = {
+                        visible = {
+				has_country_flag = fire_nation
+                        }
+
+                        cost = 150
+                        removal_cost = -1
+                        level = 6
+
+                        modifier = {
+                                conscription = 0.05
+                                mobilization_speed = 0.015
+                                industrial_capacity_dockyard = 0.08
+                                industrial_capacity_factory = 0.10
+                        }
+
+                        cancel_if_invalid = no
+                }
+                limited_fire_conscription = {
+                        visible = {
+				has_country_flag = fire_nation
+                        }
+                        cost = 150
+                        removal_cost = -1
+                        level = 5
+
+                        modifier = {
+                                conscription = 0.08 
+                                mobilization_speed = 0.025
+                                industrial_capacity_dockyard = 0.04
+                                industrial_capacity_factory = 0.05
+                        }
+
+                        cancel_if_invalid = no
+                }
+                disarmed_air_nation = {
+                        visible = {
+				has_country_flag = air_nation
+                        }
+			
+                        cost = 150
+                        removal_cost = -1
+                        level = 7
+                        modifier = {
+                                conscription = 0.02
+                                mobilization_speed = 0.01
+                                industrial_capacity_dockyard = 0.06
+                                industrial_capacity_factory = 0.06
+                                production_speed_buildings_factor = 0.08
+				local_resources_factor = 0.08
+                        }
+
+                        cancel_if_invalid = no
+                }
+                volunteer_air_nation = {
+                        visible = {
+				has_country_flag = air_nation
+                        }
+
+                        cost = 150
+                        removal_cost = -1
+                        level = 6
+
+                        modifier = {
+                                conscription = 0.05
+                                mobilization_speed = 0.015
+                                industrial_capacity_dockyard = 0.04
+                                industrial_capacity_factory = 0.04
+                                production_speed_buildings_factor = 0.06
+				local_resources_factor = 0.06
+                        }
+
+                        cancel_if_invalid = no
+                }
+                limited_air_conscription = {
+                        visible = {
+				has_country_flag = air_nation
+                        }
+
+                        cost = 150
+                        removal_cost = -1
+                        level = 5
+
+                        modifier = {
+                                conscription = 0.08 
+                                mobilization_speed = 0.025
+                                industrial_capacity_dockyard = 0.02
+                                industrial_capacity_factory = 0.02
+                                production_speed_buildings_factor = 0.04
+				local_resources_factor = 0.04
+                        }
+
+                        cancel_if_invalid = no
+                }
 		extensive_conscription = {
 			cost = 150
-
+			default = yes
 			available = {
 				has_war_support > 0.2
 			}
@@ -12,7 +233,7 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			modifier = {
-				conscription = 0.05
+				conscription = 0.12
 				mobilization_speed = 0.05
 				training_time_factor = 0.1
 			}
@@ -22,7 +243,6 @@ ideas = {
 
 		service_by_requirement = {
 			cost = 150
-
 			available = {
 				OR = {
 					has_government = imperialism
@@ -43,7 +263,7 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.1
+				conscription = 0.16
 				mobilization_speed = 0.1
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -57,7 +277,6 @@ ideas = {
 		all_adults_serve = {
 			
 			cost = 150
-
 			available = {
 				has_war = yes
 				OR = {
@@ -71,7 +290,7 @@ ideas = {
 			level = 2
 
 			modifier = {
-				conscription = 0.2
+				conscription = 0.20
 				mobilization_speed = 0.2
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
@@ -85,7 +304,6 @@ ideas = {
 		scraping_the_barrel = {
 			
 			cost = 150
-
 			available = {
 				has_war = yes
 
@@ -103,7 +321,7 @@ ideas = {
 				conscription = 0.25
 				mobilization_speed = 0.25
 				industrial_capacity_factory = -0.4
-				indutrial_capacity_dockyard = -0.4
+				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.5
 			}
@@ -111,239 +329,6 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		disamerd_water_nation = {
-			visible = { 
-				has_idea = Water_Nation
-			}
-
-			cost = 150
-			removal_cost = -1
-			level = 7
-
-			modifier = {
-				conscription = 0.01
-				mobilization_speed = 0.01
-				industrial_capacity_dockyard = 0.4
-				indutrial_capacity_factory = 0.2
-				production_speed_building_factor = 0.2
-			}
-			cancel_if_invalid = no
-		}
-		volunteer_water_only = {
-			visible = {
-				has_idea = Water_Nation
-			}
-			
-			cost = 150
-			removal_cost = -1
-			level = 6
-
-			modifier = {
-				conscription = 0.015
-				mobilization_speed = 0.015
-				industrial_capacity_dockyard = 0.3
-				industrial_capacity_factory = 0.15
-				production_speed_building_factor = 0.15
-			}
-			default = yes
-
-			cancel_if_invalid = no
-		}
-		limited_water_conscription = {
-			visible = {
-				has_idea = Water_Nation
-			}
-			available = {
-				has_war_support > 0.1
-			}
-			cost = 150
-			removal_cost = -1
-			level = 5
-
-			modifier = {
-				conscription = 0.025
-				mobilization_speed = 0.025
-				industrial_capacity_dockyard = 0.2
-				industrial_capacity_factory = 0.1
-				production_speed_building_factor = 0.1
-			}
-			
-			cancel_if_invalid = no
-		}
-		disarmed_earth_nation = {
-			visible = {
-				has_idea = Earth_Nation
-			}
-
-			cost = 150
-			removal_cost = -1
-			level = 7
-
-			modifier = {
-				conscription = 0.01
-				mobilization_speed = 0.01
-				industrial_capacity_dockyard = 0.2
-				industrial_capacity_factory = 0.2
-				production_speed_building_factor = 0.4
-			}
-
-			cancel_if_invalid = no
-		}
-		volunteer_earth_nation = {
-			visible = {
-				has_idea = Earth_Nation
-			}
-			default = yes
-			cost = 150
-			removal_cost = -1
-			level = 5
-
-			modifier = {
-				conscription = 0.015
-				mobilization_speed = 0.015
-				industrial_capacity_dockyard = 0.15
-				industrial_capacity_factory = 0.15
-				production_speed_building_factor = 0.3
-			}
-
-			cancel_if_invalid = no
-		}
-		limited_earth_conscription = {
-			visible = {
-				has_idea = Earth_Nation
-			}
-
-			cost = 150
-			removal_cost = -1
-			level = 4
-
-			modifier = {
-				conscription = 0.025
-				mobilization_speed = 0.025
-				industrial_capacity_dockyard = 0.1
-				industrial_capacity_factory = 0.1
-				production_speed_building_factor = 0.2
-			}
-			
-			cancel_if_invalid = no
-		}
-                disarmed_fire_nation = {
-                        visible = {
-                                has_idea = Fire_Nation
-                        }
-
-                        cost = 150
-                        removal_cost = -1
-                        level = 7
-
-                        modifier = {
-                                conscription = 0.01
-                                mobilization_speed = 0.01
-                                industrial_capacity_dockyard = 0.2
-                                industrial_capacity_factory = 0.4
-                                production_speed_building_factor = 0.2
-                        }
-
-                        cancel_if_invalid = no
-                }
-                volunteer_fire_nation = {
-                        visible = {
-                                has_idea = Fire_Nation
-                        }
-
-                        cost = 150
-                        removal_cost = -1
-                        level = 5
-
-                        modifier = {
-                                conscription = 0.015
-                                mobilization_speed = 0.015
-                                industrial_capacity_dockyard = 0.15
-                                industrial_capacity_factory = 0.30
-                                production_speed_building_factor = 0.15
-                        }
-
-                        cancel_if_invalid = no
-                }
-                limited_fire_conscription = {
-                        visible = {
-                                has_idea = Fire_Nation
-                        }
-			default = yes
-                        cost = 150
-                        removal_cost = -1
-                        level = 4
-
-                        modifier = {
-                                conscription = 0.025 
-                                mobilization_speed = 0.025
-                                industrial_capacity_dockyard = 0.1
-                                industrial_capacity_factory = 0.2
-                                production_speed_building_factor = 0.1
-                        }
-
-                        cancel_if_invalid = no
-                }
-                disarmed_air_nation = {
-                        visible = {
-                                has_idea = Air_Nation
-                        }
-
-                        cost = 150
-                        removal_cost = -1
-                        level = 7
-			default = yes
-                        modifier = {
-				political_power_gain = 0.5
-                                conscription = 0.01
-                                mobilization_speed = 0.01
-                                industrial_capacity_dockyard = 0.2
-                                industrial_capacity_factory = 0.2
-                                production_speed_building_factor = 0.4
-                        }
-
-                        cancel_if_invalid = no
-                }
-                volunteer_air_nation = {
-                        visible = {
-                                has_idea = Air_Nation
-                        }
-
-                        cost = 150
-                        removal_cost = -1
-                        level = 5
-
-                        modifier = {
-				political_power_gain = 0.3
-                                conscription = 0.015
-                                mobilization_speed = 0.015
-                                industrial_capacity_dockyard = 0.15
-                                industrial_capacity_factory = 0.15
-                                production_speed_building_factor = 0.3
-                        }
-
-                        cancel_if_invalid = no
-                }
-                limited_air_conscription = {
-                        visible = {
-                                has_idea = Air_Nation
-                        }
-
-                        cost = 150
-                        removal_cost = -1
-                        level = 4
-
-                        modifier = {
-				political_power_gain = 0.1
-                                conscription = 0.025 
-                                mobilization_speed = 0.025
-                                industrial_capacity_dockyard = 0.1
-                                industrial_capacity_factory = 0.1
-                                production_speed_building_factor = 0.2
-                        }
-
-                        cancel_if_invalid = no
-                }
 
 	}
 

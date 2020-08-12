@@ -399,23 +399,25 @@ guiTypes = {
 		buttonType ={
 			name ="threat_button"
 			spriteType = "GFX_world_tension_icon_big_strip"
-			position = { x=-96 y=20 }
+			position = { x=-138 y=53 }
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_default
+			scale = 0.5
 		}
 
 		iconType ={
 			name ="threat_icon_glow"
 			spriteType = "GFX_WT_anim_strip"
-			position = { x=-111 y=5 }
+			position = { x=-145 y=46 }
 			Orientation = "UPPER_RIGHT"
 			alwaystransparent = yes
+			scale = 0.5
 		}
 		
 		buttonType ={
 			name ="threat_value_button"
 			spriteType = "GFX_world_tension_icon_big_strip"
-			position = { x=-98 y=74 }
+			position = { x=-152 y=76 }
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_default
 			size = { x=50 y=20 }
@@ -424,7 +426,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="threat_value"
-			position = { x=-98 y=74 }
+			position = { x=-152 y=76 }
 			font = "hoi_18mbs"
 			text = "50%"
 			format = center
@@ -582,7 +584,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "achievements_button"
-			position = { x = -131 y = 62 }
+			position = { x = 1031 y = 62 }
 			quadTextureSprite ="GFX_achievements_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"

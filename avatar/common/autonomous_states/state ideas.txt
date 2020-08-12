@@ -1,4 +1,0 @@
-Monarchist: Royal state, supervised state, state
-Imperialist: imperial colony, imperial dominion, imperial subject
-Tribalist: tribal colony, tribal puppet, tribal protectorate
-Pacifist: investure (I could set it up so there is only one. Making it seem the air nomads just help this nation stand on its own)

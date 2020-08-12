@@ -1,26 +1,5 @@
 division_template = {
-	name = "Infantry Division"
-
-	regiments = {
-		spearmen = { x = 0 y = 0 }
-		spearmen = { x = 0 y = 1 }
-		spearmen = { x = 0 y = 2 }
-		spearmen = { x = 1 y = 0 }
-        spearmen = { x = 1 y = 1 }
-		spearmen = { x = 1 y = 2 }
-	}
-	
-	support = {
-
-	}
-
-	priority = 1
-
-	template_counter = 5
-}
-
-division_template = {
-	name = "Infantry Brigade"
+	name = "Town Guard"
 
 	regiments = {
 		spearmen = { x = 0 y = 0 }
@@ -28,29 +7,29 @@ division_template = {
 		spearmen = { x = 1 y = 0 }
         spearmen = { x = 1 y = 1 }
 	}
-	
-	support = {
 
-	}
-
-	priority = 1
-
-	template_counter = 5
 }
 
 division_template = {
-	name = "Earthbender Unit"
+	name = "Militia Brigade"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		swordsmen = { x = 1 y = 0 }
+		skirmishers = { x = 2 y = 0 }
+	}
+
+}
+
+division_template = {
+	name = "Earthbender Brigade"
 
 	regiments = {
 		earthbender = { x = 0 y = 0 }
 		earthbender = { x = 0 y = 1 }
-		earthbender = { x = 1 y = 0 }
-		earthbender = { x = 1 y = 1 }
+		earthbender = { x = 0 y = 2 }
 	}
 
-	priority = 1
-
-	template_counter = 1
 }
 
 #############################################
@@ -61,10 +40,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		location = 3623
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
 	}
 
 	division= {	
@@ -72,10 +50,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		location = 6533
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
 	}
 
 	division= {	
@@ -83,40 +60,69 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Earthbender Unit"
+		location = 3866
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1526
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5261
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7207
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
+
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Earthbender Unit"
+		location = 1977
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
+
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Earthbender Unit"
+		location = 4858
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
+
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 7247
-		division_template = "Earthbender Unit"
+		location = 6640
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
 
 	division= {	
@@ -125,22 +131,37 @@ units = {
 				name_order = 1
 		}
 		location = 7247
-		division_template = "Earthbender Unit"
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
+	
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7247
-		division_template = "Earthbender Unit"
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
 
-
-
-
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1872
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6914
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
 }

@@ -1,11 +1,9 @@
+
 state={
 	id=355
 	name="STATE_355"
-	manpower = 3460
-	state_category = rural
-
 	resources={
-		stone= 4
+		stone=4.000
 	}
 
 	history={
@@ -13,29 +11,34 @@ state={
 			owner = OMS
 			controller = OMS
 			add_core_of = OMS
-
 			buildings = {
 				infrastructure = 3
-			}
-		}
 
+			}
+
+		}
 		52.1.1 = {
 			owner = OMS
 			controller = OMS
-		}
 
+		}
 		105.2.4 = {
 			owner = OMS
 			controller = OMS
-		}
 
+		}
 		111.10.30 = {
 			owner = OMS
 			controller = OMS
+
 		}
+
 	}
 
 	provinces={
-		102 234 549 658 790 1068 1532 1937 1940 2476 3533 4631 4710 5464 7881 7891 7912 7933 7953 8033 8057 
+		47 102 234 460 549 658 790 1068 1532 1698 1937 1940 2476 3322 3533 4345 4631 4710 4760 5464 7881 7891 7912 7933 7953 8033 8057 8069 8112 8153 
 	}
+	manpower=8460
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

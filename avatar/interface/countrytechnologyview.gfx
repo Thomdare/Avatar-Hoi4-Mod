@@ -27,6 +27,16 @@ spriteTypes = {
 		textureFile = "gfx//interface//techtree//construction_techtree_bg.dds"
 		allwaystransparent = yes		
 	}
+	spriteType = {
+		name = "GFX_construction_techtree_bg2"
+		textureFile = "gfx//interface//techtree//construction_techtree_bg2.dds"
+		allwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_construction_techtree_bg3"
+		textureFile = "gfx//interface//techtree//construction_techtree_bg3.dds"
+		allwaystransparent = yes		
+	}
 
 	spriteType = {
 		name = "GFX_society_techtree_bg1"

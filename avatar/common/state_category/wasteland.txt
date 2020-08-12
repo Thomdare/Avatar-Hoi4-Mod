@@ -1,6 +1,6 @@
 state_categories={
 	wasteland = {
-		local_building_slots = 1
+		local_building_slots = 0
 	
 		color = { 50 30 30 }
 

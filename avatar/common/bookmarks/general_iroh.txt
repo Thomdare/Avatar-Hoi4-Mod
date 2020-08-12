@@ -80,10 +80,7 @@ bookmarks = {
 			}
 		}
 
-		
-		"---"={
-			history = "OTHER_GENERAL_IROH_DESC"
-		}
+
 
 
 		"NAT"={

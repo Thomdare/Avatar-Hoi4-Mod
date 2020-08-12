@@ -3,9 +3,9 @@ state={
 	id=415
 	name="STATE_415"
 	resources={
-		oil=4.000
-		chromium=3.000
-		stone=2.000
+		oil=3.000
+		chromium=4.000
+		stone=0.000
 	}
 
 	history={
@@ -18,8 +18,8 @@ state={
 			add_core_of = FIR
 			buildings = {
 				infrastructure = 5
-				arms_factory = 2
-				industrial_complex = 2
+				dockyard = 1
+				industrial_complex = 1
 
 			}
 

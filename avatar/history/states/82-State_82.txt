@@ -17,6 +17,7 @@ state={
 			add_core_of = WAT
 
 			buildings = {
+				industrial_complex = 1
 				infrastructure = 2
 			}
 		}

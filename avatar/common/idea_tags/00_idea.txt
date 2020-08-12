@@ -16,9 +16,9 @@ idea_categories = {
 	
 	laws = {
 		slot = mobilization_laws
+		slot = bender_laws
 		slot = trade_laws
 		slot = economy
-		slot = bender_laws
 		slot = family_support
 		slot = education_laws
 		

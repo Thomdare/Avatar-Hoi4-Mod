@@ -1,75 +1,38 @@
 division_template = {
-	name = "Infantry Regiment"
-
-	regiments = {
-		swordsmen = { x = 0 y = 0 }
-		swordsmen = { x = 0 y = 1 }
-		swordsmen = { x = 0 y = 2 }
-		swordsmen = { x = 1 y = 0 }
-        swordsmen = { x = 1 y = 1 }
-		swordsmen = { x = 1 y = 2 }
-	}
-}
-
-division_template = {
-	name = "Archer Regiment"
-
-	regiments = {
-		archers = { x = 0 y = 0 }
-		archers = { x = 0 y = 1 }
-		archers = { x = 1 y = 0 }
-        archers = { x = 1 y = 1 }
-	}
-	
-	support = {
-
-	}
-}
-
-division_template = {
-	name = "Spearmen Regiment"
+	name = "Town Guard"
 
 	regiments = {
 		spearmen = { x = 0 y = 0 }
 		spearmen = { x = 0 y = 1 }
-		spearmen = { x = 0 y = 2 }
 		spearmen = { x = 1 y = 0 }
         spearmen = { x = 1 y = 1 }
-		spearmen = { x = 1 y = 2 }
-
 	}
-	
-	support = {
 
-	}
 }
 
 division_template = {
-	name = "Militia Regiment"
+	name = "Militia Brigade"
 
 	regiments = {
-		skirmishers = { x = 0 y = 0 }
-		skirmishers = { x = 0 y = 1 }
-		spearmen  = { x = 0 y = 2 }
+		spearmen = { x = 0 y = 0 }
 		swordsmen = { x = 1 y = 0 }
-		swordsmen = { x = 1 y = 1 }
+		skirmishers = { x = 2 y = 0 }
 	}
+
 }
 
 division_template = {
-	name = "Earthbender Regiment"
+	name = "Earthbender Brigade"
 
 	regiments = {
 		earthbender = { x = 0 y = 0 }
 		earthbender = { x = 0 y = 1 }
 		earthbender = { x = 0 y = 2 }
-		earthbender = { x = 0 y = 3 }
-		earthbender = { x = 0 y = 4 }
 	}
+
 }
 
 #############################################
-
 units = {
 
 	division= {	
@@ -78,7 +41,67 @@ units = {
 				name_order = 1
 		}
 		location = 3524
-		division_template = "Militia Regiment"
+		division_template = "Town Guard"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1250
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9036
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.05
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 980
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 980
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3524
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9124
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
 	}
 	
@@ -87,47 +110,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3524
-		division_template = "Militia Regiment"
+		location = 9198
+		division_template = "Earthbender Brigade"
 		start_experience_factor = 0.1
 	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 3524
-		division_template = "Militia Regiment"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		name = "Peasant Levy"
-		location = 3524
-		division_template = "Spearmen Regiment"
-		start_experience_factor = 0.04
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		name = "Town Guardsmen"
-		location = 3524
-		division_template = "Spearmen Regiment"
-		start_experience_factor = 0.15
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		name = "Chin's Guard"
-		location = 3524
-		division_template = "Earthbender Regiment"
-		start_experience_factor = 0.4
-	}
+
 }

@@ -5,12 +5,12 @@ OOB = "EBA_12"
 
 
 set_research_slots = 2
-set_convoys = 400
+set_convoys = 10
 set_stability = 0.4 
 set_war_support = 0.6
 
 
-
+set_country_flag = earth_nation 
 
 set_politics = {
 	ruling_party = monarchism

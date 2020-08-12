@@ -1,14 +1,14 @@
 state={
 	id=316
 	name="STATE_316"
-	manpower = 20000
+	manpower = 40000
 	state_category = enclave
 
 	
 
 	resources={
-		tungsten = 9
-		iron = 3
+		tungsten = 11.000
+		iron = 3.000
 	}
 
 	history={
@@ -22,8 +22,8 @@ state={
 
 			buildings = {
 				infrastructure = 8
-				arms_factory = 3
-				industrial_complex = 4
+				arms_factory = 2
+				industrial_complex = 3
 			}
 		}
 

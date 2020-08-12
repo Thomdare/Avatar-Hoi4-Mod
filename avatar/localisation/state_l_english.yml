@@ -55,8 +55,8 @@
  metropolis:0 "Urban Region"
  megalopolis:0 "Large Urban Region"
  
- tiny_island:0 "Small Island"
- small_island:0 "Large Island"
+ tiny_island:0 "Tiny Island"
+ small_island:0 "Small Island"
  
  OCCUPATION_BREAKDOWN:0 "Occupation Breakdown:"
  OCCUPATION_BREAKDOWN_ENTRY:0 "\n$COUNTRY|Y$: $OCCUPATION|Y%0$"

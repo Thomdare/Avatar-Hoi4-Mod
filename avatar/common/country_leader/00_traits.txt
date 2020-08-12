@@ -22,7 +22,7 @@ leader_traits = {
 
 	extinguished_population = {
 		random = no
-		conscription = -1.0
+		conscription_factor = -1.0
 		stability_factor = -1
 		war_support_factor = -1
 		production_factory_max_efficiency_factor = -10
@@ -152,18 +152,6 @@ leader_traits = {
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor 
 	
-	dislikes_germany = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			id = "GER"			
-			value = 200
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	tenacious_defender = {
 		random = no
@@ -331,8 +319,8 @@ leader_traits = {
 
 	anti_democrat = {
 		random = no
-		democratic_acceptance = -50
-		democratic_drift = -0.02
+		democratica_acceptance = -50
+		democratica_drift = -0.02
 		stability_factor = 0.10
 
 		ai_will_do = {
@@ -436,7 +424,7 @@ leader_traits = {
    democratic_reformer = {
    		random = no
    		sprite = 13
-   		democratic_drift = 0.1
+   		democratica_drift = 0.1
 
    		ai_will_do = {
 			factor = 0
@@ -537,7 +525,7 @@ leader_traits = {
 	rural_industrie_expert = {
 		sprite = 10
 		random = yes
-		production_speed_manufactory_factor = 0.3
+		production_speed_industrial_complex_factor = 0.3
 		production_speed_infrastructure_factor = 0.2
 		production_speed_mine_factor = 0.2
 		
@@ -549,7 +537,7 @@ leader_traits = {
 	captain_of_industry = {
 		sprite = 10
 		random = yes
-		production_speed_factory_factor = 0.2
+		production_speed_arms_factory_factor = 0.2
 		production_speed_infrastructure_factor = 0.3
 		production_speed_mine_factor = 0.3
 		

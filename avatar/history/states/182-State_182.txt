@@ -1,16 +1,16 @@
 state={
 	id=182
 	name="STATE_182"
-	manpower = 16470
+	manpower = 21470
 	state_category = town
 
 	resources={
-		oil = 13
+		oil = 9
 	}
 
 	history={
 	
-		victory_points = { 5527 10 }
+		victory_points = { 2529 10 }
 	
 		12.4.23 = {
 			owner = ZAO
@@ -19,7 +19,7 @@ state={
 
 			buildings = {
 				infrastructure = 4
-				arms_factory = 2
+				industrial_complex = 2
 			}
 		}
 

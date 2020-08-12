@@ -10,6 +10,7 @@ sub_units = {
 
 		type = {
 			infantry
+			ranged
 		}
 		
 		group = ranged
@@ -24,7 +25,7 @@ sub_units = {
 		combat_width = 1
 		
 		#Size Definitions
-		max_strength = 1
+		max_strength = 4
 		max_organisation = 10
 		default_morale = 0.25
 		manpower = 100
@@ -35,9 +36,13 @@ sub_units = {
 		weight = 0.5
 		
 		supply_consumption = 1
+
+		essential = {
+			arrow_equipment
+		}
 	
 		need = {
-			arrow_equipment = 2000
+			arrow_equipment = 3000
 			bow_equipment = 100
 		}
 	}
@@ -52,6 +57,7 @@ sub_units = {
 
 		type = {
 			infantry
+			ranged
 		}
 		
 		group = ranged
@@ -66,9 +72,9 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 80
-		max_organisation = 60
-		default_morale = 0.8
+		max_strength = 10
+		max_organisation = 24
+		default_morale = 1
 		manpower = 100
 
 		#Misc Abilities
@@ -82,6 +88,16 @@ sub_units = {
 			javelin_equipment = 100
 			light_armor_equipment = 100
 		}
+
+		forest = {
+			attack = 0.2
+			defence = 0.2
+		}
+		jungle = {
+			attack = 0.4
+			defence = 0.4
+		}
+
 	}
 
 	catapult_brigade = {
@@ -89,11 +105,12 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1198
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			infantry
-			artillery
+			ranged
+			siege
 		}
 
 		group = ranged
@@ -160,15 +177,15 @@ sub_units = {
 
 
 	ballista = {
-		sprite = infantry
+		sprite = artillery
 		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
+		priority = 600
+		ai_priority = 400
+		active = no
 
 		type = {
-			infantry
-			support
+			ranged
+			siege
 		}
 
 		group = ranged
@@ -185,8 +202,6 @@ sub_units = {
 		need = {
 			ballista_equipment = 20
 		}
-
-		can_be_parachuted = yes
 		
 		#Size Definitions
 		max_strength = 0.2

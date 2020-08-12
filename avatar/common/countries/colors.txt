@@ -162,3 +162,17 @@ MER = {
 	color = rgb { 54 163 7 }
 	color_ui = rgb { 54 163 7 }
 }
+
+
+PFC = {
+	color = rgb { 180 10 10 }
+	color_ui = rgb { 180 10 10 }
+}
+YFC = {
+	color = rgb { 180 10 10 }
+	color_ui = rgb { 180 10 10 }
+}
+HFC = {
+	color = rgb { 180 10 10 }
+	color_ui = rgb { 180 10 10 }
+}

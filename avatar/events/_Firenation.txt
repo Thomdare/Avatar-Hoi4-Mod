@@ -21,6 +21,7 @@ country_event = {
 			factor = 100
 		}
 		WAT = {
+			leave_faction = yes
 			transfer_state = 167
 			transfer_state = 232
 			transfer_state = 181
@@ -49,7 +50,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_global_flag = west_temple_fallen 
 			WAT = {
 				white_peace = FIR
 				leave_faction = yes
@@ -113,6 +113,7 @@ country_event = {
 			factor = 100
 		}
 		SAT = {
+			leave_faction = yes
 			transfer_state = 242
 			transfer_state = 319
 			transfer_state = 274
@@ -146,7 +147,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_global_flag = south_temple_fallen
 			SAT = {
 				white_peace = FIR
 				leave_faction = yes
@@ -216,6 +216,7 @@ country_event = {
 			factor = 100
 		}
 		NAT = {
+			leave_faction = yes
 			transfer_state = 316
 			transfer_state = 34
 			give_military_access = FIR
@@ -232,7 +233,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_global_flag = north_temple_fallen
 			NAT = {
 				white_peace = FIR
 				leave_faction = yes
@@ -297,6 +297,7 @@ country_event = {
 			factor = 100
 		}
 		EAT = {
+			leave_faction = yes
 			transfer_state = 320
 			transfer_state = 371
 			transfer_state = 373
@@ -320,7 +321,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_global_flag = east_temple_fallen
 			EAT = {
 				white_peace = FIR
 			}
@@ -409,89 +409,46 @@ country_event = {
 	}
 }
 
-
-#Air Nomade Genocide
-country_event = {
-	id = firenation.10
-	title = firenation.10.t
-	desc = firenation.10.d
-	picture = GFX_report_event_air_nomad_genocide
-
-	trigger = {
-		has_global_flag = north_temple_fallen
-		has_global_flag = east_temple_fallen
-		has_global_flag = south_temple_fallen
-		has_global_flag = west_temple_fallen
-	}
-
-	fire_only_once = yes
-
-	option = {
-		name = firenation.10.a
-		ai_chance = { 
-			factor = 100
-		}
-		
-		hidden_effect = {
-			FIR = {
-				delete_unit_template_and_units = { division_template = "Special Attack Forces" }
-			}
-			SAT = {
-				dismantle_faction = yes
-			}
-			WAT = {
-				dismantle_faction = yes
-			}
-			NAT = {
-				dismantle_faction = yes
-			}
-			EAT = {
-				dismantle_faction = yes
-			}
-		}
-
-	}
-	#option = {
-	#	name = firenation.7.b
-	#}
-}
-
 Sozin Dies :´(
 country_event = {
 	id = firenation.11
-	title = firenation.11.t
-	desc = firenation.11.d
-	picture = GFX_report_event_sozin_dies
+	hidden = yes
 
-	is_triggered_only = yes
+	trigger = {
+		date > 32.1.1
+		has_country_leader = {
+   			name = "Sozin"
+    		ruling_only = yes
+		}
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			FIR = {
+				set_country_flag = sozin_dead
+				kill_country_leader = yes
+				remove_unit_leader = 1
+				load_focus_tree = firenation_no_leader_sozin
+				create_country_leader = {
+					name = "Empty Throne"
+					desc = "POLITICS_ADOLF_HITLER_DESC"
+					picture = "Portrait_Firenation_No_Leader.dds"
+					expire = "200.1.1"
+					ideology = colonialism
+					traits = {
+						no_leader
+					}
+				}
+			}
+ 		} 		
+ 		random_list = {
+			100 = { FIR = { news_event = { hours = 12 id = news.6 } } }
+		}
+ 	}
 
 	fire_only_once = yes
 
 	option = {
 		name = firenation.11.a
-		ai_chance = { 
-			factor = 100
-		}
-		FIR = {
-			set_country_flag = sozin_dead
-			kill_country_leader = yes
-			create_country_leader = {
-				name = "Empty Throne"
-				desc = "POLITICS_ADOLF_HITLER_DESC"
-				picture = "Portrait_Firenation_No_Leader.dds"
-				expire = "200.1.1"
-				ideology = colonialism
-				traits = {
-					no_leader
-				}
-			}
-		}
-
-		immediate = {
-			random_list = {
-				100 = { FIR = { news_event = { hours = 36 id = news.14 } } }
-			}
-		}
-		
 	}
 }

@@ -1,7 +1,5 @@
 ﻿l_english:
  cliff:0 "Cliff"
- omashu:0 "Omashu"
- serpentspass:0 "Serpent´s Pass"
  farmland:0 "Farmland"
  fire_capital:0 "City"
  village:0 "Village"
@@ -11,6 +9,10 @@
  beach:0 "Beach"
  canyon:0 "Canyon"
  marsh:0 "Swamp"
+
+ water_great_river:0 "River"
+ water_great_lake:0 "Lake"
+ water_uncharted_ocean:0 "Uncharted Ocean"
 
 
  unknown:0 "Unknown"

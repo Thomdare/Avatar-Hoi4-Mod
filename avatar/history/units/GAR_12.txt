@@ -1,0 +1,156 @@
+division_template = {
+	name = "Earthbender Brigade"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Infantry Banner"
+
+	regiments = {
+		pikemen = { x = 0 y = 0 }
+		pikemen = { x = 0 y = 1 }
+		pikemen = { x = 1 y = 0 }
+		pikemen = { x = 1 y = 1 }
+		archers = { x = 2 y = 0 }
+		archers = { x = 2 y = 1 }
+	}
+
+}
+
+division_template = {
+	name = "Town Guard"
+
+	regiments = {
+		spearmen = { x = 0 y = 0 }
+		spearmen = { x = 0 y = 1 }
+		spearmen = { x = 1 y = 0 }
+		spearmen = { x = 1 y = 1 }
+	}
+	
+}
+
+division_template = {
+	name = "Archer Brigade"
+
+	regiments = {
+		spearmen = { x = 1 y = 0 }
+		spearmen = { x = 1 y = 1 }
+		archers = { x = 0 y = 0 }
+		archers = { x = 0 y = 1 }
+		archers = { x = 0 y = 2 }
+		archers = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Militia Brigade"
+
+	regiments = {
+		swordsmen = { x = 1 y = 0 }
+		swordsmen = { x = 1 y = 1 }
+		skirmishers = { x = 0 y = 0 }
+		skirmishers = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5605
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4490
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6218
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1013
+		division_template = "Earthbender Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5605
+		division_template = "Town Guard"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2083
+		division_template = "Archer Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6238
+		division_template = "Archer Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1359
+		division_template = "Archer Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6264
+		division_template = "Archer Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2825
+		division_template = "Infantry Banner"
+		start_experience_factor = 0.3
+	}
+	
+	
+}

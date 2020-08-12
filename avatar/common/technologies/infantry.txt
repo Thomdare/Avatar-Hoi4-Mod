@@ -65,12 +65,10 @@ technologies = {
 			leads_to_tech = blade_update_1
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = polearm_2
 			research_cost_coeff = 1
 		}	
-
 		path = {
 			leads_to_tech = pole_update_1
 			research_cost_coeff = 1
@@ -94,8 +92,9 @@ technologies = {
 
 	sidearm_update_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			hard_attack = 0.04
+			defense = 0.02
 		}
 		
 		path = {
@@ -121,8 +120,9 @@ technologies = {
 
 	spear_update_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			soft_attack = 0.04
+			max_organisation = 2
 		}
 		
 		path = {
@@ -189,8 +189,8 @@ technologies = {
 
 	blade_update_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		pikemen = {
+			ap_attack = 0.25
 		}
 		
 		path = {
@@ -216,8 +216,13 @@ technologies = {
 
 	pole_update_1 = {
 
-		category_light_infantry = {
+		spearmen = {
 			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+		pikemen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
 		}
 		
 		path = {
@@ -243,14 +248,18 @@ technologies = {
 
 	shield_update_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			hard_attack = 0.02
+			defense = 0.01
 		}
-		
+		swordsmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
 		path = {
-			leads_to_tech = shield_update_2
+			leads_to_tech = armored_tactics_1
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 10
@@ -268,10 +277,36 @@ technologies = {
 		}
 	}
 
+	armored_tactics_1 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		swordsmen = {
+			max_organisation = 2
+		}	
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	sparring_1 = {
 
-		category_light_infantry = {
+		swordsmen = {
 			soft_attack = 0.02
+			hard_attack = 0.04
 		}
 		
 		path = {
@@ -296,10 +331,20 @@ technologies = {
 	}
 
 	drilling_a_1 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+	
+		path = {
+			leads_to_tech = defensive_a_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_1
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			max_organisation = 4
+			breakthrough = 0.02
+		}
 
 		research_cost = 1.5
 		start_year = 15
@@ -316,12 +361,47 @@ technologies = {
 			factor = 1
 		}
 	}
+	
+	drilling_b_1 = {
+	
+		path = {
+			leads_to_tech = offensive_a_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_1
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			breakthrough = 0.04
+		}		
 
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	polearm_tactics_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}		
+		spearmen = {
+			max_organisation = 2
+		}
+		pikemen = {
+			max_organisation = 2
+		}
 
 		research_cost = 1.5
 		start_year = 15
@@ -339,6 +419,94 @@ technologies = {
 		}
 	}
 
+	defensive_a_1 = {
+
+		category_light_infantry = {
+			ap_attack = 0.50
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_1 = {
+
+		max_dig_in = 5
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_1 = {
+
+		category_light_infantry = {
+			breakthrough = 0.04
+		}
+		land_reinforce_rate = 0.02
+		
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_1 = {
+
+		category_light_infantry = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	spear_2 = {
 
 		enable_equipments = {
@@ -364,7 +532,7 @@ technologies = {
 		start_year = 15
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -377,16 +545,25 @@ technologies = {
 	}
 
 	shield_update_2 = {
-
-		category_light_infantry = {
+	
+		path = {
+			leads_to_tech = armored_tactics_2
+			research_cost_coeff = 1
+		}
+		spearmen = {
 			soft_attack = 0.02
+			defense = 0.01
+		}
+		swordsmen = {
+			soft_attack = 0.02
+			defense = 0.01
 		}	
 
 		research_cost = 1.5
-		start_year = 15
+		start_year = 25
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = 6 }
+			position = { x = 3 y = 12 }
 		}
 		
 		categories = {
@@ -398,17 +575,20 @@ technologies = {
 		}
 	}
 
-	drilling_b_1 = {
+	armored_tactics_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			max_organisation = 2
+		}
+		swordsmen = {
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
-		start_year = 15
+		start_year = 30
 		folder = {
 			name = infantry_folder
-			position = { x = 7 y = 6 }
+			position = { x = 3 y = 14 }
 		}
 		
 		categories = {
@@ -419,7 +599,7 @@ technologies = {
 			factor = 1
 		}
 	}
-
+	
 	polearm_2 = {
 
 		enable_equipments = {
@@ -445,7 +625,7 @@ technologies = {
 		start_year = 20
 		folder = {
 			name = infantry_folder
-			position = { x = -5 y = 8 }
+			position = { x = -5 y = 10 }
 		}
 		
 		categories = {
@@ -459,20 +639,21 @@ technologies = {
 
 	sidearm_update_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
 		path = {
 			leads_to_tech = pole_update_2
 			research_cost_coeff = 1
 		}
-
+		
+		spearmen = {
+			hard_attack = 0.04
+			defense = 0.02
+		}	
+		
 		research_cost = 1.5
 		start_year = 20
 		folder = {
 			name = infantry_folder
-			position = { x = -1 y = 8 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -485,21 +666,22 @@ technologies = {
 	}
 
 	spear_update_2 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+	
 		path = {
-			leads_to_tech = shield_update_3
+			leads_to_tech = shield_update_2
 			research_cost_coeff = 1
 		}
+		
+		spearmen = {
+			soft_attack = 0.04
+			max_organisation = 2
+		}	
 
 		research_cost = 1.5
 		start_year = 20
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = 8 }
+			position = { x = 1 y = 10 }
 		}
 		
 		categories = {
@@ -518,7 +700,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = shield_update_3
+			leads_to_tech = shield_update_2
 			research_cost_coeff = 1
 		}
 		
@@ -536,7 +718,7 @@ technologies = {
 		start_year = 20
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = 8 }
+			position = { x = 5 y = 10 }
 		}
 		
 		categories = {
@@ -550,9 +732,9 @@ technologies = {
 
 	blade_update_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		pikemen = {
+			ap_attack = 0.25
+		}
 
 		path = {
 			leads_to_tech = drilling_a_2
@@ -560,110 +742,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 30
-		folder = {
-			name = infantry_folder
-			position = { x = -7 y = 10 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	pole_update_2 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		path = {
-			leads_to_tech = polearm_tactics_2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 30
-		folder = {
-			name = infantry_folder
-			position = { x = -3 y = 10 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	shield_update_3 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		path = {
-			leads_to_tech = shield_update_4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 30
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = 10 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	sparring_2 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		path = {
-			leads_to_tech = drilling_b_2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 30
-		folder = {
-			name = infantry_folder
-			position = { x = 7 y = 10 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	drilling_a_2 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		research_cost = 1.5
-		start_year = 40
+		start_year = 25
 		folder = {
 			name = infantry_folder
 			position = { x = -7 y = 12 }
@@ -678,14 +757,24 @@ technologies = {
 		}
 	}
 
-	polearm_tactics_2 = {
+	pole_update_2 = {
 
-		category_light_infantry = {
+		spearmen = {
 			soft_attack = 0.02
-		}	
+			breakthrough = 0.01
+		}
+		pikemen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+
+		path = {
+			leads_to_tech = polearm_tactics_2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
-		start_year = 40
+		start_year = 25
 		folder = {
 			name = infantry_folder
 			position = { x = -3 y = 12 }
@@ -700,6 +789,235 @@ technologies = {
 		}
 	}
 
+	shield_update_3 = {
+
+		spearmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
+		swordsmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}	
+		path = {
+			leads_to_tech = armored_tactics_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_3 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		swordsmen = {
+			max_organisation = 2
+		}		
+
+		research_cost = 1.5
+		start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sparring_2 = {
+
+		swordsmen = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}	
+
+		path = {
+			leads_to_tech = drilling_b_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_2 = {
+	
+		path = {
+			leads_to_tech = defensive_a_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_2
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			max_organisation = 4
+			breakthrough = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 14 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_tactics_2 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		pikemen = {
+			max_organisation = 2
+		}
+
+		research_cost = 1.5
+		start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_2 = {
+
+		category_light_infantry = {
+			ap_attack = 0.50
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_2 = {
+
+		max_dig_in = 5
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_2 = {
+
+		category_light_infantry = {
+			breakthrough = 0.04
+		}
+		land_reinforce_rate = 0.02
+		
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	spear_3 = {
 
 		enable_equipments = {
@@ -722,32 +1040,10 @@ technologies = {
 		}	
 
 		research_cost = 2
-		start_year = 40
+		start_year = 30
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	shield_update_4 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		research_cost = 1.5
-		start_year = 40
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = 12 }
+			position = { x = 0 y = 16 }
 		}
 		
 		categories = {
@@ -760,16 +1056,26 @@ technologies = {
 	}
 
 	drilling_b_2 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
+	
+		path = {
+			leads_to_tech = offensive_a_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_2
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			breakthrough = 0.04
 		}	
 
 		research_cost = 1.5
-		start_year = 40
+		start_year = 30
 		folder = {
 			name = infantry_folder
-			position = { x = 7 y = 12 }
+			position = { x = 7 y = 14 }
 		}
 		
 		categories = {
@@ -798,15 +1104,15 @@ technologies = {
 		}	
 
 		path = {
-			leads_to_tech = polearm_tactics_3
+			leads_to_tech = pole_update_3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 50
+		start_year = 35
 		folder = {
 			name = infantry_folder
-			position = { x = -5 y = 14 }
+			position = { x = -5 y = 18 }
 		}
 		
 		categories = {
@@ -820,20 +1126,21 @@ technologies = {
 
 	sidearm_update_3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
 		path = {
-			leads_to_tech = polearm_tactics_3
+			leads_to_tech = pole_update_3
 			research_cost_coeff = 1
 		}
-
+		
+		spearmen = {
+			hard_attack = 0.04
+			defense = 0.02
+		}
+		
 		research_cost = 1.5
-		start_year = 50
+		start_year = 35
 		folder = {
 			name = infantry_folder
-			position = { x = -1 y = 14 }
+			position = { x = -1 y = 18 }
 		}
 		
 		categories = {
@@ -846,16 +1153,22 @@ technologies = {
 	}
 
 	spear_update_3 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
+	
+		path = {
+			leads_to_tech = shield_update_3
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			soft_attack = 0.04
+			max_organisation = 2
 		}	
-
+		
 		research_cost = 1.5
-		start_year = 50
+		start_year = 35
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = 14 }
+			position = { x = 1 y = 18 }
 		}
 		
 		categories = {
@@ -872,12 +1185,10 @@ technologies = {
 		enable_equipments = {
 			sword_equipment_3
 		}
-
 		path = {
-			leads_to_tech = armored_tactics_1
+			leads_to_tech = shield_update_3
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = sword_4
 			research_cost_coeff = 1
@@ -889,10 +1200,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 50
+		start_year = 35
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = 14 }
+			position = { x = 5 y = 18 }
 		}
 		
 		categories = {
@@ -906,8 +1217,8 @@ technologies = {
 
 	blade_update_3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		pikemen = {
+			ap_attack = 0.25
 		}	
 
 		path = {
@@ -916,10 +1227,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 60
+		start_year = 40
 		folder = {
 			name = infantry_folder
-			position = { x = -7 y = 16 }
+			position = { x = -7 y = 20 }
 		}
 		
 		categories = {
@@ -930,18 +1241,53 @@ technologies = {
 			factor = 1
 		}
 	}
+	
+	pole_update_3 = {
 
+		spearmen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+		pikemen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+
+		path = {
+			leads_to_tech = polearm_tactics_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 20 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	polearm_tactics_3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			max_organisation = 2
+		}
+		pikemen = {
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
-		start_year = 60
+		start_year = 45
 		folder = {
 			name = infantry_folder
-			position = { x = -3 y = 16 }
+			position = { x = -3 y = 22 }
 		}
 		
 		categories = {
@@ -952,7 +1298,95 @@ technologies = {
 			factor = 1
 		}
 	}
+	
+	defensive_a_3 = {
 
+		category_light_infantry = {
+			ap_attack = 0.50
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_3 = {
+
+		max_dig_in = 5
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_3 = {
+
+		category_light_infantry = {
+			breakthrough = 0.04
+		}
+		land_reinforce_rate = 0.02
+		
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_3 = {
+
+		category_light_infantry = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	spear_4 = {
 
 		enable_equipments = {
@@ -975,10 +1409,70 @@ technologies = {
 		}	
 
 		research_cost = 2
-		start_year = 60
+		start_year = 45
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 16 }
+			position = { x = 0 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_update_4 = {
+	
+		path = {
+			leads_to_tech = shield_update_4
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			soft_attack = 0.04
+			max_organisation = 2
+		}	
+
+		research_cost = 1.5
+		start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shield_update_4 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_4
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
+		swordsmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
+
+		research_cost = 1.5
+		start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 28 }
 		}
 		
 		categories = {
@@ -990,17 +1484,20 @@ technologies = {
 		}
 	}
 
-	armored_tactics_1 = {
+	armored_tactics_4 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		spearmen = {
+			max_organisation = 2
+		}
+		swordsmen = {
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
 		start_year = 60
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = 16 }
+			position = { x = 3 y = 30 }
 		}
 		
 		categories = {
@@ -1011,18 +1508,24 @@ technologies = {
 			factor = 1
 		}
 	}
-
+	
 	sparring_3 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
+	
+		path = {
+			leads_to_tech = drilling_b_3
+			research_cost_coeff = 1
 		}	
 
+		swordsmen = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
 		research_cost = 1.5
-		start_year = 60
+		start_year = 40
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = 16 }
+			position = { x = 7 y = 20 }
 		}
 		
 		categories = {
@@ -1035,16 +1538,58 @@ technologies = {
 	}
 
 	drilling_a_3 = {
+	
+		path = {
+			leads_to_tech = defensive_a_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_3
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			max_organisation = 4
+			breakthrough = 0.02
+		}
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		research_cost = 1.5
+		start_year = 45
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 22 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_b_3 = {
+	
+		path = {
+			leads_to_tech = offensive_a_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_3
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			breakthrough = 0.04
 		}	
 
 		research_cost = 1.5
-		start_year = 70
+		start_year = 45
 		folder = {
 			name = infantry_folder
-			position = { x = -7 y = 18 }
+			position = { x = 7 y = 22 }
 		}
 		
 		categories = {
@@ -1058,37 +1603,21 @@ technologies = {
 
 	sidearm_update_4 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
+		path = {
+			leads_to_tech = pole_update_4
+			research_cost_coeff = 1
+		}
+
+		spearmen = {
+			hard_attack = 0.04
+			defense = 0.02
 		}	
 
 		research_cost = 1.5
-		start_year = 70
+		start_year = 50
 		folder = {
 			name = infantry_folder
-			position = { x = -1 y = 18 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	spear_update_4 = {
-
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
-		research_cost = 1.5
-		start_year = 70
-		folder = {
-			name = infantry_folder
-			position = { x = 1 y = 18 }
+			position = { x = -1 y = 26 }
 		}
 		
 		categories = {
@@ -1107,7 +1636,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = armored_tactics_2
+			leads_to_tech = shield_update_4
 			research_cost_coeff = 1
 		}
 		
@@ -1122,10 +1651,134 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 70
+		start_year = 50
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = 18 }
+			position = { x = 5 y = 26 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sparring_4 = {
+	
+		path = {
+			leads_to_tech = drilling_b_4
+			research_cost_coeff = 1
+		}	
+
+		swordsmen = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1.5
+		start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 28 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	drilling_b_4 = {
+	
+		path = {
+			leads_to_tech = offensive_a_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_4
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			breakthrough = 0.04
+		}	
+
+		research_cost = 1.5
+		start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 30 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_4 = {
+	
+		path = {
+			leads_to_tech = blade_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = pole_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_5
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_4
+		}
+
+		research_cost = 2
+		start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 26 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blade_update_4 = {
+
+		pikemen = {
+			ap_attack = 0.25
+		}
+
+		path = {
+			leads_to_tech = drilling_a_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 28 }
 		}
 		
 		categories = {
@@ -1137,20 +1790,934 @@ technologies = {
 		}
 	}
 
+	drilling_a_4 = {
+	
+		path = {
+			leads_to_tech = defensive_a_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_4
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			max_organisation = 4
+			breakthrough = 0.02
+		}
 
+		research_cost = 1.5
+		start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 30 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
+	pole_update_4 = {
 
+		spearmen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+		pikemen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}	
 
+		path = {
+			leads_to_tech = polearm_tactics_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 28 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_tactics_4 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		pikemen = {
+			max_organisation = 2
+		}
+
+		research_cost = 1.5
+		start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 30 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_4 = {
+
+		category_light_infantry = {
+			ap_attack = 0.50
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_4 = {
+
+		max_dig_in = 5
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_4 = {
+
+		category_light_infantry = {
+			breakthrough = 0.04
+		}
+		land_reinforce_rate = 0.02
+		
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_4 = {
+
+		category_light_infantry = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_5 = {
+
+		enable_equipments = {
+			spear_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = spear_update_5
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = sidearm_update_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spear_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spear_update_5 = {
+	
+		path = {
+			leads_to_tech = shield_update_5
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			soft_attack = 0.04
+			max_organisation = 2
+		}	
+
+		research_cost = 1.5
+		start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sidearm_update_5 = {
+	
+		path = {
+			leads_to_tech = pole_update_5
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.04
+			defense = 0.02
+		}	
+
+		research_cost = 1.5
+		start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shield_update_5 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_5
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
+		swordsmen = {
+			hard_attack = 0.02
+			defense = 0.01
+		}
+
+		research_cost = 1.5
+		start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_5 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		swordsmen = {
+			max_organisation = 2
+		}	
+
+		research_cost = 1.5
+		start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_5 = {
+	
+		path = {
+			leads_to_tech = blade_update_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = pole_update_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_5
+		}
+
+		research_cost = 2
+		start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blade_update_5 = {
+
+		pikemen = {
+			ap_attack = 0.25
+		}
+
+		path = {
+			leads_to_tech = drilling_a_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_5 = {
+	
+		path = {
+			leads_to_tech = defensive_a_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_5
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			max_organisation = 4
+			breakthrough = 0.02
+		}	
+
+		research_cost = 1.5
+		start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_5 = {
+
+		spearmen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}
+		pikemen = {
+			soft_attack = 0.02
+			breakthrough = 0.01
+		}	
+
+		path = {
+			leads_to_tech = polearm_tactics_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_tactics_5 = {
+
+		spearmen = {
+			max_organisation = 2
+		}
+		pikemen = {
+			max_organisation = 2
+		}
+
+		research_cost = 1.5
+		start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_5 = {
+
+		enable_equipments = {
+			sword_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = shield_update_5
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sword_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sparring_5 = {
+
+		path = {
+			leads_to_tech = drilling_b_5
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+
+		research_cost = 1.5
+		start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_b_5 = {
+	
+		path = {
+			leads_to_tech = offensive_a_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_5
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			breakthrough = 0.04
+		}		
+
+		research_cost = 1.5
+		start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_5 = {
+
+		category_light_infantry = {
+			ap_attack = 0.50
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_5 = {
+
+		max_dig_in = 5
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_5 = {
+
+		category_light_infantry = {
+			breakthrough = 0.04
+		}
+		land_reinforce_rate = 0.02
+		
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_5 = {
+
+		category_light_infantry = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_6 = {
+		
+		path = {
+			leads_to_tech = sidearm_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spear_update_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spear_equipment_5
+		}
+
+		research_cost = 2
+		start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_6 = {
+	
+		path = {
+			leads_to_tech = blade_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pole_update_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_6
+		}
+
+		research_cost = 2
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 42 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_6 = {
+	
+		path = {
+			leads_to_tech = shield_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sparring_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			sword_equipment_6
+		}
+
+		research_cost = 2
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 42 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blade_update_6 = {
+	
+		path = {
+			leads_to_tech = drilling_a_6
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			ap_attack = 0.25
+			max_organisation = 2
+		}
+
+		research_cost = 1.5
+		start_year = 85
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 44 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_6 = {
+	
+		path = {
+			leads_to_tech = polearm_tactics_6
+			research_cost_coeff = 1
+		}
+		
+		pikemen = {
+			soft_attack = 0.04
+			breakthrough = 0.02
+		}	
+
+		research_cost = 1.5
+		start_year = 85
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 44 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shield_update_6 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_6
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			hard_attack = 0.04
+			defense = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 85
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 44 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sparring_6 = {
+
+		path = {
+			leads_to_tech = drilling_b_6
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			soft_attack = 0.04
+			breakthrough = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 85
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 44 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_update_6 = {
+		
+		spearmen = {
+			soft_attack = 0.04
+			defense = 0.04
+		}	
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 42 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sidearm_update_6 = {
+		
+		spearmen = {
+			hard_attack = 0.05
+			defense = 0.04
+		}	
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 42 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	
+	
 
 
 	basic_armor = {
 
 		enable_equipments = {
-			light_armor_equipment_0
+			heavy_armor_equipment_0
 		}
 		
 		path = {
-			leads_to_tech = light_armor_1
+			leads_to_tech = heavy_armor_1
 			research_cost_coeff = 1
 		}
 
@@ -1182,10 +2749,12 @@ technologies = {
 
 	armor_a_1 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+		out_of_supply_factor = -0.1	
+		
+		path = {
+			leads_to_tech = armor_e_2
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = armor_a_2
 			research_cost_coeff = 1
@@ -1209,15 +2778,33 @@ technologies = {
 
 	armor_a_2 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		heat_attrition_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 10
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = 4 }
+			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armor_e_2 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 4 }
 		}
 		
 		categories = {
@@ -1232,7 +2819,7 @@ technologies = {
 	armor_b_1 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
 		}	
 
 		path = {
@@ -1259,7 +2846,7 @@ technologies = {
 	armor_b_2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
@@ -1278,14 +2865,14 @@ technologies = {
 		}
 	}
 
-	light_armor_1 = {
+	heavy_armor_1 = {
 
 		enable_equipments = {
-			light_armor_equipment_1
+			heavy_armor_equipment_1
 		}
 		
 		path = {
-			leads_to_tech = light_armor_2
+			leads_to_tech = heavy_armor_2
 			research_cost_coeff = 1
 		}	
 
@@ -1317,10 +2904,12 @@ technologies = {
 
 	armor_a_3 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+		out_of_supply_factor = -0.1	
+		
+		path = {
+			leads_to_tech = armor_e_4
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = armor_a_4
 			research_cost_coeff = 1
@@ -1344,15 +2933,33 @@ technologies = {
 
 	armor_a_4 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		heat_attrition_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 30
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = 10 }
+			position = { x = -1 y = 10 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_4 = {
+	
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 10 }
 		}
 		
 		categories = {
@@ -1367,7 +2974,7 @@ technologies = {
 	armor_b_3 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
 		}	
 
 		path = {
@@ -1394,7 +3001,7 @@ technologies = {
 	armor_b_4 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
@@ -1413,14 +3020,14 @@ technologies = {
 		}
 	}
 
-	light_armor_2 = {
+	heavy_armor_2 = {
 
 		enable_equipments = {
-			light_armor_equipment_2
+			heavy_armor_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = light_armor_3
+			leads_to_tech = heavy_armor_3
 			research_cost_coeff = 1
 		}	
 
@@ -1452,10 +3059,12 @@ technologies = {
 
 	armor_a_5 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+		out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = armor_e_6
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = armor_a_6
 			research_cost_coeff = 1
@@ -1479,15 +3088,33 @@ technologies = {
 
 	armor_a_6 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		heat_attrition_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 60
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = 16 }
+			position = { x = -1 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_6 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 16 }
 		}
 		
 		categories = {
@@ -1502,7 +3129,7 @@ technologies = {
 	armor_b_5 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
 		}	
 
 		path = {
@@ -1529,7 +3156,7 @@ technologies = {
 	armor_b_6 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
@@ -1548,14 +3175,14 @@ technologies = {
 		}
 	}
 
-	light_armor_3 = {
+	heavy_armor_3 = {
 
 		enable_equipments = {
-			light_armor_equipment_3
+			heavy_armor_equipment_3
 		}
 		
 		path = {
-			leads_to_tech = light_armor_4
+			leads_to_tech = heavy_armor_4
 			research_cost_coeff = 1
 		}	
 
@@ -1587,10 +3214,12 @@ technologies = {
 
 	armor_a_7 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+		out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = armor_e_8
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = armor_a_8
 			research_cost_coeff = 1
@@ -1614,15 +3243,33 @@ technologies = {
 
 	armor_a_8 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		heat_attrition_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 90
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = 22 }
+			position = { x = -1 y = 22 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_8 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 22 }
 		}
 		
 		categories = {
@@ -1637,7 +3284,7 @@ technologies = {
 	armor_b_7 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
 		}	
 
 		path = {
@@ -1664,7 +3311,7 @@ technologies = {
 	armor_b_8 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
@@ -1683,14 +3330,14 @@ technologies = {
 		}
 	}
 
-	light_armor_4 = {
+	heavy_armor_4 = {
 
 		enable_equipments = {
-			light_armor_equipment_4
+			heavy_armor_equipment_4
 		}
 		
 		path = {
-			leads_to_tech = light_armor_5
+			leads_to_tech = heavy_armor_5
 			research_cost_coeff = 1
 		}	
 
@@ -1722,10 +3369,12 @@ technologies = {
 
 	armor_a_9 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
-
+		out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = armor_e_10
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = armor_a_10
 			research_cost_coeff = 1
@@ -1749,15 +3398,33 @@ technologies = {
 
 	armor_a_10 = {
 
-		category_light_infantry = {
-			soft_attack = 0.02
-		}	
+		heat_attrition_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 105
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = 28 }
+			position = { x = -1 y = 28 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_10 = {
+
+		winter_attrition_factor = -0.1
+		
+		research_cost = 1.5
+		start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 28 }
 		}
 		
 		categories = {
@@ -1772,7 +3439,7 @@ technologies = {
 	armor_b_9 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
 		}	
 
 		path = {
@@ -1799,7 +3466,7 @@ technologies = {
 	armor_b_10 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
@@ -1818,19 +3485,26 @@ technologies = {
 		}
 	}
 
-	light_armor_5 = {
+	heavy_armor_5 = {
 
 		enable_equipments = {
-			light_armor_equipment_5
+			heavy_armor_equipment_5
 		}
 		
 		path = {
-			leads_to_tech = articulation
+			leads_to_tech = heavy_armor_6
 			research_cost_coeff = 1
 		}	
-
+		path = {
+			leads_to_tech = armor_a_11
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_b_11
+			research_cost_coeff = 1
+		}
 		research_cost = 2.0
-		start_year = 110
+		start_year = 75
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = 30 }
@@ -1845,17 +3519,287 @@ technologies = {
 		}
 	}	
 
-	articulation = {
+	armor_a_11 = {
+
+		out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = armor_e_12
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_12
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_12 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_12 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_11 = {
 
 		category_light_infantry = {
-			soft_attack = 0.02
+			defense = 0.03
+		}	
+
+		path = {
+			leads_to_tech = armor_b_12
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 32 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_12 = {
+
+		category_light_infantry = {
+			max_organisation = 2
 		}	
 
 		research_cost = 1.5
-		start_year = 115
+		start_year = 90
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 32 }
+			position = { x = 2 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_armor_6 = {
+
+		enable_equipments = {
+			heavy_armor_equipment_6
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_7
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = armor_a_13
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_b_13
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armor_a_13 = {
+
+		out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = armor_e_14
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_14
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_14 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_14 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_13 = {
+
+		category_light_infantry = {
+			defense = 0.03
+		}	
+
+		path = {
+			leads_to_tech = armor_b_14
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 38 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_14 = {
+
+		category_light_infantry = {
+			max_organisation = 2
+		}	
+
+		research_cost = 1.5
+		start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_armor_7 = {
+
+		enable_equipments = {
+			heavy_armor_equipment_7
+		}
+
+		research_cost = 2.0
+		start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 42 }
 		}
 		
 		categories = {

@@ -81,10 +81,6 @@ bookmarks = {
 			}
 		}
 
-		
-		"---"={
-			history = "OTHER_WAR_WATER_DESC"
-		}
 
 
 		"NAT"={

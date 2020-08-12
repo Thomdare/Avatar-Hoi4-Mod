@@ -5,7 +5,7 @@ strategic_region={
 	provinces={
 		11848 11975 12017 12072 12127 12220 12475 12502 12606 12674 12715 13364 13555 13602 13675 13752 13756 14352 14357 14359 14365 14366 14367 14368 14377 14381 14402 14418 
 	}
-	naval_terrain=water_fjords
+	naval_terrain=water_great_river
 	weather={
 		period={
 			between={ 0.0 30.0 }

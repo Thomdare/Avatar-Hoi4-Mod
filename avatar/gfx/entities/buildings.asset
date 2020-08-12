@@ -467,8 +467,8 @@ entity = {
 }
 
 entity = {
-	name = "building_manufactory"
-	pdxmesh = "building_manufactory"
+	name = "building_industrial_complex"
+	pdxmesh = "building_industrial_complex"
 	
 	locator = { name = "damage_locator_01"	position = { 0.4 0.1 0.4 } }
 	locator = { name = "damage_locator_02"	position = { -0.1 0.45 -0.3 } }
@@ -486,8 +486,8 @@ entity = {
 }
 
 entity = {
-	name = "building_factory"
-	pdxmesh = "building_factory"
+	name = "building_arms_factory"
+	pdxmesh = "building_arms_factory"
 	
 	default_state = "idle"
 	state = { name = "idle" 

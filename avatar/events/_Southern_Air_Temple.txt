@@ -20,9 +20,9 @@ country_event = {
 		ai_chance = { 
 			factor = 99
 		}
-		hidden_effect = {
-			load_oob = "southern_airbender_defenders_0_5"
-		}
+		#hidden_effect = {
+		#	load_oob = "southern_airbender_defenders_0_5"
+		#}
 	}
 
 	option = {
@@ -30,8 +30,8 @@ country_event = {
 		ai_chance = { 
 			factor = 1
 		}
-		hidden_effect = {
-			load_oob = "southern_airbender_defenders_1"
-		}
+		#hidden_effect = {
+		#	load_oob = "southern_airbender_defenders_1"
+		#}
 	}
 }

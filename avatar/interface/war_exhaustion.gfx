@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_war_exhaustion"
-		texturefile = "gfx/interface/topbar/war_weariness.dds"
-		legacy_lazy_load = no
-	}
-}

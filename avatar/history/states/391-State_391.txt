@@ -3,8 +3,8 @@ state={
 	id=391
 	name="STATE_391"
 	resources={
-		oil=8.000
-		tungsten=11.000
+		oil=11.000
+		tungsten=6.000
 	}
 
 	history={
@@ -18,6 +18,7 @@ state={
 			buildings = {
 				infrastructure = 6
 				industrial_complex = 1
+				arms_factory = 1
 				dockyard = 2
 				8182 = {
 					naval_base = 2
@@ -46,7 +47,7 @@ state={
 	provinces={
 		1173 1512 1597 1614 1818 1871 2242 3114 3184 3887 3944 4489 4905 5435 8078 8095 8100 8117 8127 8142 8166 8182 8201 8267 8299 8313 
 	}
-	manpower=26600
+	manpower=32600
 	buildings_max_level_factor=1.000
 	state_category=city
 }

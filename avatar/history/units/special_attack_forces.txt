@@ -5,8 +5,7 @@ division_template = {
 	regiments = {
 		firebender = { x = 0 y = 0 }
 		firebender = { x = 0 y = 1 }
-		firebender = { x = 1 y = 0 }
-		firebender = { x = 1 y = 1 }
+		firebender = { x = 0 y = 2 }
 	}
 
 	#template_counter = 0

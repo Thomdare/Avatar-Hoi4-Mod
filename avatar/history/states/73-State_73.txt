@@ -1,7 +1,7 @@
 state={
 	id=73
 	name="STATE_73"
-	manpower = 1280
+	manpower = 4280
 	state_category = tiny_island
 
 	resources={
@@ -13,9 +13,9 @@ state={
 		victory_points = { 10554 4 }
 	
 		12.4.23 = {
-			owner = FIR
-			controller = FIR
-			add_core_of = EAR
+			owner = CHN
+			controller = CHN
+			add_core_of = CHN
 
 			buildings = {
 				infrastructure = 1

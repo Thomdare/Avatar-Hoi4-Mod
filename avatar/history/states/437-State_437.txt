@@ -13,7 +13,7 @@ state={
 			add_core_of = FIR
 			buildings = {
 				infrastructure = 4
-				industrial_complex = 1
+				arms_factory = 1
 
 			}
 
@@ -37,9 +37,9 @@ state={
 	}
 
 	provinces={
-		279 449 1568 2478 4313 4644 4985 5288 8375 8382 8406 8436 10531 
+		279 449 1568 2478 4313 4644 4985 5288 8375 8382 8406 10531 
 	}
-	manpower=26300
+	manpower=37300
 	buildings_max_level_factor=1.000
 	state_category=town
 }

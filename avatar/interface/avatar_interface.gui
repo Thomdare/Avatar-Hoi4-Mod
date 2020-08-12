@@ -1,0 +1,186 @@
+guiTypes = {
+	containerWindowType = {
+		name = "war_exhaustion_container"
+		position = { x = 751 y = 4 }
+		Orientation = UPPER_LEFT
+
+		iconType ={
+			name ="war_exhaustion_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+
+		iconType = {
+			name ="war_exhaustion_icon"
+			spriteType = "GFX_war_exhaustion"
+			position = { x= 7 y = 6 }
+		}
+
+		instantTextBoxType = {
+			name ="war_exhaustion_text"
+			position = { x= 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?war_exhaustion_variable]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "WAR_WEARINESS_TOOLTIP"
+			pdx_tooltip_delayed = "WAR_WEARINESS_TOOLTIP_DELAYED"
+		}
+	}
+
+
+	############## calendar ################
+
+	containerWindowType = {
+		name = "calendar_container"
+		position = { x = 0 y = 0 }
+		Orientation = UPPER_RIGHT
+
+		buttonType ={
+			name ="calendar_button"
+			spriteType = "GFX_calendar"
+			position = { x=-110 y=7 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_default
+			scale = 0.63
+
+			pdx_tooltip = "DATE_TOOLTIP"
+			pdx_tooltip_delayed = "DATE_TOOLTIP_DELAYED"
+		}
+	}
+
+	containerWindowType = {
+		name = "calendar_window_container"
+		position = { x = -253 y = -390 }
+		size = { width=507 height=760 }
+		Orientation = CENTER
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_calendar_background"
+		}
+
+		buttonType ={
+			name ="calendar_close"
+			spriteType = "GFX_closebutton"
+			position = { x=-38 y=7 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "calendar_headline"
+			position = {x=224 y=24}
+			font = "hoi_18mbs"
+			text = "CALENDAR_TITLE"
+			maxWidth = 250
+			maxHeight = 50
+			format = left
+		}
+
+		buttonType = {
+			name = "calendar_list_button"
+			position = {x=58 y=103}
+			spriteType = "GFX_calendar_event_list"
+			scale = 0.75
+
+			pdx_tooltip = "EVENT_LIST_TOOLTIP"
+			pdx_tooltip_delayed = "EVENT_LIST_TOOLTIP_DELAYED"
+		}
+
+		instantTextboxType = {
+			name = "event_list"
+			position = {x=56 y=202}
+			font = "hoi_18mbs"
+			text = "EVENT_LIST"
+			maxWidth = 120
+			maxHeight = 20
+			format = left
+
+			pdx_tooltip = "EVENT_LIST_TOOLTIP"
+			pdx_tooltip_delayed = "EVENT_LIST_TOOLTIP_DELAYED"
+		}
+
+		buttonType = {
+			name = "calendar_effects_button"
+			position = {x=338 y=103}
+			spriteType = "GFX_calendar_effect_list"
+			scale = 0.7
+
+			pdx_tooltip = "EVENT_EFFECTS_TOOLTIP"
+			pdx_tooltip_delayed = "EVENT_EFFECTS_TOOLTIP_DELAYED"
+		}
+
+		instantTextboxType = {
+			name = "event_effects"
+			position = {x=364 y=202}
+			font = "hoi_18mbs"
+			text = "EVENT_EFFECTS"
+			maxWidth = 80
+			maxHeight = 20
+			format = left
+
+			pdx_tooltip = "EVENT_EFFECTS_TOOLTIP"
+			pdx_tooltip_delayed = "EVENT_EFFECTS_TOOLTIP_DELAYED"
+		}
+
+	}
+
+	containerWindowType = {
+		name = "calendar_list_window_container"
+		position = { x = -253 y = -140 }
+		size = { width=507 height=500 }
+		Orientation = CENTER
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_calendar_scroll"
+		}
+
+		buttonType ={
+			name ="calendar_list_close"
+			spriteType = "GFX_dd_closebutton"
+			position = { x=-124 y=27 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_default
+		}
+
+	}
+
+	containerWindowType = {
+		name = "calendar_effects_window_container"
+		position = { x = -253 y = -140 }
+		size = { width=507 height=500 }
+		Orientation = CENTER
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_calendar_scroll2"
+		}
+
+		buttonType ={
+			name ="calendar_effects_close"
+			spriteType = "GFX_dd_closebutton"
+			position = { x=-124 y=27 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_default
+		}
+
+	}
+
+}

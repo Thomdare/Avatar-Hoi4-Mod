@@ -28,7 +28,7 @@
  DESIGNER_DUPLICATE_DESC:0 "Duplicating of division template will create a copy of the current division template for §GFree§!. Good to use if you want to create a new specific template based on current one."
  DESIGNER_NO_XP:0 "No experience points to spend"
  DESIGNER_EXPENSIVE:0 "Design is too expensive"
- DESIGNER_NOT_ENOUGH_SPECIAL_FORCES:0 "Design change would put us over the Special Forces limit"
+ DESIGNER_NOT_ENOUGH_SPECIAL_FORCES:0 "Design change would put us over the Bender Unit limit"
  DESIGNER_NO_CHANGES:0 "§TNo changes to save§!"
  DESIGNER_ARMY_SAVE:1 "Save £army_experience $VALUE|Y0$"
  DESIGNER_NAVY_SAVE:1 "Save £navy_experience $VALUE|Y0$"

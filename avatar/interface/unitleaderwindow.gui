@@ -131,17 +131,17 @@ guiTypes = {
 		
 		buttonType = {
 			name = "no_leader_button"
-			position = { x = 150 y = -32 }
+			position = { x = -250 y = -32 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_18mbs"
-			Orientation = "LOWER_LEFT"
+			Orientation = "LOWER_RIGHT"
 			buttonText = "UNASSIGN"
 			pdx_tooltip = "UNASSIGN"
 		}
 		
 		buttonType = {
 			name = "new_leader_button"
-			position = { x = 100 y = -32 }
+			position = { x = -535 y = -32 }
 			quadTextureSprite = "GFX_button_261x34"
 			buttonFont = "hoi_18mbs"
 			Orientation = "LOWER_RIGHT"

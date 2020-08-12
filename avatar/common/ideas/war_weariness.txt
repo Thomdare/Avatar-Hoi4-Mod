@@ -10,11 +10,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.05
 				army_org_factor = -0.05
+				breakthrough_factor = -0.1
+				invasion_preparation = 0.05
+
 				production_speed_arms_factory_factor = -0.05
-				war_support_factor = -0.05
+				war_support_factor = -0.1
 				stability_factor = -0.1
 
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 
@@ -26,11 +29,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.1
 				army_org_factor = -0.1
+				breakthrough_factor = -0.2
+				invasion_preparation = 0.1
+
 				production_speed_arms_factory_factor = -0.1
-				war_support_factor = -0.1
+				war_support_factor = -0.2
 				stability_factor = -0.2
 
-				research_time_factor = 0.20
+				research_speed_factor = -0.20
 			}
 		}
 
@@ -42,11 +48,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.15
 				army_org_factor = -0.15
+				breakthrough_factor = -0.3
+				invasion_preparation = 0.15
+
 				production_speed_arms_factory_factor = -0.15
-				war_support_factor = -0.15
+				war_support_factor = -0.3
 				stability_factor = -0.3
 
-				research_time_factor = 0.30
+				research_speed_factor = -0.30
 			}
 		}
 
@@ -58,11 +67,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.2
 				army_org_factor = -0.2
+				breakthrough_factor = -0.4
+				invasion_preparation = 0.2
+
 				production_speed_arms_factory_factor = -0.2
-				war_support_factor = -0.2
+				war_support_factor = -0.4
 				stability_factor = -0.4
 
-				research_time_factor = 0.40
+				research_speed_factor = -0.40
 			}
 		}
 
@@ -74,11 +86,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.25
 				army_org_factor = -0.25
+				breakthrough_factor = -0.5
+				invasion_preparation = 0.25
+
 				production_speed_arms_factory_factor = -0.25
-				war_support_factor = -0.25
+				war_support_factor = -0.5
 				stability_factor = -0.5
 
-				research_time_factor = 0.50
+				research_speed_factor = -0.50
 			}
 		}
 
@@ -90,11 +105,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.3
 				army_org_factor = -0.3
+				breakthrough_factor = -0.6
+				invasion_preparation = 0.3
+
 				production_speed_arms_factory_factor = -0.3
-				war_support_factor = -0.3
+				war_support_factor = -0.6
 				stability_factor = -0.6
 
-				research_time_factor = 0.60
+				research_speed_factor = -0.60
 			}
 		}
 
@@ -106,11 +124,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.35
 				army_org_factor = -0.35
+				breakthrough_factor = -0.7
+				invasion_preparation = 0.35
+
 				production_speed_arms_factory_factor = -0.35
-				war_support_factor = -0.35
+				war_support_factor = -0.7
 				stability_factor = -0.7
 
-				research_time_factor = 0.70
+				research_speed_factor = -0.70
 			}
 		}
 
@@ -122,11 +143,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.4
 				army_org_factor = -0.4
+				breakthrough_factor = -0.8
+				invasion_preparation = 0.4
+
 				production_speed_arms_factory_factor = -0.4
-				war_support_factor = -0.4
+				war_support_factor = -0.8
 				stability_factor = -0.8
 
-				research_time_factor = 0.80
+				research_speed_factor = -0.80
 			}
 		}
 
@@ -138,11 +162,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.45
 				army_org_factor = -0.45
+				breakthrough_factor = -0.9
+				invasion_preparation = 0.45
+
 				production_speed_arms_factory_factor = -0.45
-				war_support_factor = -0.45
+				war_support_factor = -0.9
 				stability_factor = -0.9
 
-				research_time_factor = 0.90
+				research_speed_factor = -0.90
 			}
 		}
 
@@ -154,11 +181,14 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.5
 				army_org_factor = -0.5
+				breakthrough_factor = -1.0
+				invasion_preparation = 0.5
+				
 				production_speed_arms_factory_factor = -0.5
-				war_support_factor = -0.5
+				war_support_factor = -1
 				stability_factor = -1
 
-				research_time_factor = 1
+				research_speed_factor = -1
 			}
 		}
 	}

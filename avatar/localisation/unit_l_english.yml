@@ -1,13 +1,4 @@
 ﻿l_english:
- spearmen:0 "Spearmen"
- spearmen_desc:0 "Used to hold a position or limited attacks."
- swordsmen:0 "Swordsmen"
- swordsmen_desc:0 "Really close combat."
- pikemen:0 "Pikemen"
- pikemen_desc:0 "Heavy Infantry."
-
-
-
  night:0 "Night"
  fort:0 "Wall"
  river:0 "River"
@@ -333,8 +324,6 @@
  amphibious_armor_desc:0 "A battalion of amphibious tanks."
  amphibious_mechanized_desc:0 "An armored infantry unit in amphibious vehicles."
  
- swordsmen_company:0 "Swordsmen"
- swordsmen_company_desc:0 ""
 
  UNIT_LEADER_TRAITS:1 "Details"
  UNIT_LEADER_PROMOTE:0 "Promote"
@@ -485,7 +474,7 @@
  CHOOSE_INSIGNIA:0 "Choose Insignia"
  CLICK_TO_ASSIGN_TRAITS:0 "§HClick§! to assign a new §HTrait§! to this §HUnit Leader§!"
  CLICK_TO_ASSIGN_TRAITS_DETAIL:0 "$LEADER|H$ has $NUM|H$ remaining trait slots to assign."
- category_special_forces:0 "Special Forces"
+ category_special_forces:0 "Bender Units"
  LEADER_GAIN_TRAIT_LEVEL:0 "Leader can assign a new trait every $NUM|.0H$ levels.\n"
  FM_GAIN_TRAIT_LEVEL:0 "Field Marshals can assign a new trait when they are promoted.\n"
  DELETE_ARMY:0 "§RDelete Army§!"

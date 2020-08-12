@@ -1,11 +1,12 @@
 state={
 	id=162
 	name="STATE_162"
-	manpower = 504000
+	manpower = 364000
 	state_category = megalopolis
 
 	resources={
-		tungsten = 6
+		tungsten = 6.000
+		steel = 8.000
 	}
 
 	history={
@@ -19,7 +20,7 @@ state={
 			add_core_of = EAR
 
 			buildings = {
-				arms_factory = 3
+				arms_factory = 2
 				industrial_complex = 2
 				infrastructure = 10
 				6802 = {

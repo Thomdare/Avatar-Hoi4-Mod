@@ -10,15 +10,35 @@ bookmarks = {
 		default_country = "FIR"
 		default = yes
 		
-		"SWT"={
-			history = "SWT_THE_HUNDRED_YEARS_WAR_DESC"
-			ideology = tribalism
-			
-		}
 		"NWT"={
 			history = "NWT_THE_HUNDRED_YEARS_WAR_DESC"
 			ideology = tribalism
-			
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WAT"={
+			history = "WAT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = pacifism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SAT"={
+			history = "SAT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = pacifism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
 		}
 		"FIR"={
 			history = "FIR_THE_HUNDRED_YEARS_WAR_DESC"
@@ -36,43 +56,93 @@ bookmarks = {
 		"EAR"={
 			history = "EAR_THE_HUNDRED_YEARS_WAR_DESC"
 			ideology = monarchism
-			
-		}
-		"KYI"={
-			history = "KYI_THE_HUNDRED_YEARS_WAR_DESC"
-			ideology = democratic
-			
-		}
-		"WAT"={
-			history = "WAT_THE_HUNDRED_YEARS_WAR_DESC"
-			ideology = pacifism
-			
-		}
-		"SAT"={
-			history = "SAT_THE_HUNDRED_YEARS_WAR_DESC"
-			ideology = pacifism
-			
-		}
+			ideas = {
 
-		
-		"---"={
-			history = "OTHER_THE_HUNDRED_YEARS_WAR_DESC"
+			}
+			focuses = {
+
+			}
 		}
-
-
 		"NAT"={
-			minor = yes
 			history = "NAT_THE_HUNDRED_YEARS_WAR_DESC"
 			ideology = pacifism
-			
+			ideas = {
+
+			}
+			focuses = {
+
+			}
 		}
 		"EAT"={
-			minor = yes
 			history = "EAT_THE_HUNDRED_YEARS_WAR_DESC"
 			ideology = pacifism
-		
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SWT"={
+			history = "SWT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = tribalism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
 		}
 
 
+		"KYI"={
+			minor = yes
+			history = "KYI_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"POH"={
+			minor = yes
+			history = "EAT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = monarchism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"TAK"={
+			minor = yes
+			history = "EAT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = monarchism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"OMS"={
+			minor = yes
+			history = "EAT_THE_HUNDRED_YEARS_WAR_DESC"
+			ideology = monarchism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
 	}
 }

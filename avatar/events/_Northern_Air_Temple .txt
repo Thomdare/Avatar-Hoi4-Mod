@@ -30,8 +30,8 @@ country_event = {
 		ai_chance = { 
 			factor = 1
 		}
-		hidden_effect = {
-			load_oob = "northern_airbender_defenders_1"
-		}
+		#hidden_effect = {
+		#	load_oob = "northern_airbender_defenders_1"
+		#}
 	}
 }

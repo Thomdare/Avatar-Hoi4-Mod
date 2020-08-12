@@ -81,9 +81,6 @@ bookmarks = {
 		}
 
 
-		"---"={
-			history = "OTHER_THE_BOY_IN_THE_ICEBERG_DESC"
-		}
 
 
 		"NAT"={

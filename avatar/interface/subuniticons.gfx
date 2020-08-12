@@ -91,6 +91,16 @@ spriteTypes = {
 	noOfFrames = 2
 	}
 	spriteType = { 
+	name = "GFX_unit_ballista_icon_medium"        
+	textureFile = "gfx/interface/counters/divisions_large/unit_ballista_icon.dds"
+	noOfFrames = 2
+	}
+	spriteType = { 
+	name = "GFX_unit_ballista_icon_medium_white"            
+	textureFile = "gfx/interface/counters/divisions_small/onmap_ballista_icon.dds"
+	noOfFrames = 2
+	}
+	spriteType = { 
 	name = "GFX_unit_trebuchet_icon_medium"        
 	textureFile = "gfx/interface/counters/divisions_large/unit_trebuchet_icon.dds"
 	noOfFrames = 2
@@ -150,16 +160,20 @@ spriteTypes = {
 	textureFile = "gfx/interface/counters/divisions_large/unit_catapult_icon.dds" noOfFrames = 2 
 	}
 	spriteType = { 
-	name = "GFX_unit_engineer_icon_medium"
-	textureFile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds" noOfFrames = 2 
+	name = "GFX_unit_avatar_engineer_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_avatar_engineer_icon.dds" noOfFrames = 2 
 	}
 	spriteType = { 
-	name = "GFX_unit_field_hospital_icon_medium"
-	textureFile = "gfx/interface/counters/divisions_large/unit_field_hospital_icon.dds" noOfFrames = 2 
+	name = "GFX_unit_combat_pioneer_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_combat_pioneer_icon.dds" noOfFrames = 2 
 	}
 	spriteType = { 
-	name = "GFX_unit_high_command_icon_medium"
-	textureFile = "gfx/interface/counters/divisions_large/unit_high_command_icon.dds" noOfFrames = 2 
+	name = "GFX_unit_avatar_field_hospital_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_avatar_field_hospital_icon.dds" noOfFrames = 2 
+	}
+	spriteType = { 
+	name = "GFX_unit_field_commander_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_field_commander_icon.dds" noOfFrames = 2 
 	}
 	spriteType = { 
 	name = "GFX_unit_scavenger_icon_medium"
@@ -170,9 +184,14 @@ spriteTypes = {
 	textureFile = "gfx/interface/counters/divisions_large/unit_supply_wagon_icon.dds" noOfFrames = 2 
 	}
 	spriteType = { 
-	name = "GFX_unit_military_police_icon_medium"
-	textureFile = "gfx/interface/counters/divisions_large/unit_military_police_icon.dds" noOfFrames = 2 
+	name = "GFX_unit_infantry_guards_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_infantry_guards_icon.dds" noOfFrames = 2 
 	}
+
+
+	### avatar ships ###
+
+	spriteType = { name = "GFX_unit_firenation_cruiser_1_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/firenation_cruiser.dds"		noOfFrames = 2 }
 	
 	##################################
 	### Large images for DIVISIONS ###

@@ -76,7 +76,7 @@ buildings = {
 		base_cost = 2000
 		icon_frame = 5
 		air_base = yes
-		max_level = 10
+		max_level = 20
 		value = 1
 		damage_factor = 0.5
 	}
@@ -172,7 +172,6 @@ buildings = {
 		show_on_map = 1
 		base_cost = 12000
 		icon_frame = 19
-		local_resources_oil = tungsten
 		max_level = 6
 		shares_slots = yes
 		value = 6

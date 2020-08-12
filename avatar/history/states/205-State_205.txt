@@ -5,7 +5,8 @@ state={
 	state_category = metropolis
 
 	resources={
-		tungsten = 28
+		tungsten = 22
+		steel = 12
 	}
 
 	history={

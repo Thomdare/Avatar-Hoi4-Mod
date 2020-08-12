@@ -1,16 +1,17 @@
 state={
 	id=394
 	name="STATE_394"
-	manpower = 21300
+	manpower = 25300
 	state_category = pastoral
 
 	resources={
 		oil = 9
+		rubber = 14
 	}
 
 	history={
 	
-		victory_points = { 8134 5 }
+		victory_points = { 8134 15 }
 	
 		12.4.23 = {
 			owner = NCB
@@ -20,6 +21,7 @@ state={
 			buildings = {
 				infrastructure = 2
 				arms_factory = 1
+				dockyard = 1
 				8134 = {
 					naval_base = 4
 				}

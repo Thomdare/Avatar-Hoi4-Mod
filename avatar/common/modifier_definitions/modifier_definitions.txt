@@ -30,3 +30,71 @@
 #	category = air
 #	category = country
 #}
+
+daily_war_weariness = {
+
+	color_type = bad 
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}
+weekly_war_weariness = {
+
+	color_type = bad 
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}
+monthly_war_weariness = {
+
+	color_type = bad 
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}
+
+daily_war_weariness_good = {
+
+	color_type = good
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}
+weekly_war_weariness_good = {
+
+	color_type = good
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}
+monthly_war_weariness_good = {
+
+	color_type = good
+
+	value_type = number
+
+	precision = 0
+	
+	postfix = none
+	
+}

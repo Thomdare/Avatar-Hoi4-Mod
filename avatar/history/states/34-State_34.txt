@@ -5,9 +5,9 @@ state={
 	state_category = town
 
 	resources={
-		stone = 11
-		aluminium = 15
-		oil = 14
+		stone = 5.000
+		aluminium = 3.000
+		oil = 4.000
 	}
 
 	history={
@@ -20,7 +20,7 @@ state={
 			add_core_of = NAT
 
 			buildings = {
-				industrial_complex = 1
+				industrial_complex = 3
 				infrastructure = 2
 				6068 = {
 					naval_base = 2

@@ -1,0 +1,501 @@
+equipments = {
+
+	firenation_battleship_hull = {
+
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
+		interface_category = interface_category_capital_ships
+		alias = light_cruiser
+		priority = 1900
+
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_storage_slot = empty
+			fixed_ship_storage_2_slot = empty
+			fixed_ship_armor_slot = empty
+			bridge_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+		}
+		
+		lg_armor_piercing = 0
+		lg_attack = 0
+		
+		hg_armor_piercing = 0
+		hg_attack = 0
+		
+		torpedo_attack = 0
+		sub_attack = 0
+		
+		anti_air_attack = 0
+		
+		armor_value = 0
+
+		
+		surface_detection = 20
+		sub_detection = 1
+		surface_visibility = 15
+		naval_speed = 20
+		reliability = 0.80
+		
+		naval_range = 1400
+		
+		max_strength = 100		
+		
+		fuel_consumption = 10
+		manpower = 400
+		
+		build_cost_ic = 1200
+		resources = {
+			steel = 1
+		}
+	}
+
+	firenation_battleship_hull_1 = {
+
+		visual_level = 0
+		archetype = firenation_battleship_hull
+		priority = 1900
+		
+		
+		module_slots = inherit
+	}
+
+	firenation_battleship_hull_2 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		parent = firenation_battleship_hull_1
+		manpower = 800
+		naval_speed = 25
+		reliability = 0.85
+		build_cost_ic = 1900
+		naval_range = 3000
+		max_strength = 110
+		resources = {
+			steel = 2
+		}
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			
+		}
+	}
+
+	firenation_battleship_hull_3 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		parent = firenation_battleship_hull_2
+		manpower = 800
+		naval_speed = 25
+		reliability = 0.85
+		build_cost_ic = 1900
+		naval_range = 3000
+		max_strength = 110
+		resources = {
+			steel = 2
+		}
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			
+		}
+	}
+
+	firenation_battleship_hull_4 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		parent = firenation_battleship_hull_3
+		manpower = 800
+		naval_speed = 25
+		reliability = 0.85
+		build_cost_ic = 1900
+		naval_range = 3000
+		max_strength = 110
+		resources = {
+			steel = 2
+		}
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			
+		}
+	}
+
+	empire_class_hull_1 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		model = super_heavy_battleship
+		manpower = 800
+		naval_speed = 25
+		reliability = 0.85
+		build_cost_ic = 1900
+		naval_range = 3000
+		max_strength = 110
+		resources = {
+			steel = 2
+		}
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			
+		}
+	}
+	empire_class_hull_2 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		parent = empire_class_hull_1
+		manpower = 800
+		naval_speed = 25
+		reliability = 0.85
+		build_cost_ic = 1900
+		naval_range = 3000
+		max_strength = 110
+		resources = {
+			steel = 2
+		}
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { steam_engine }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { light_armor_plates medium_armor_plates }	
+			}
+			fixed_ship_storage_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_2_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			fixed_ship_storage_3_slot = {
+				required = no
+				allowed_module_categories = { storage_room ship_boarding }
+			}
+			bridge_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					binoculars
+					maintenance_crew
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_crew
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+		}
+		
+		module_count_limit = {
+			category = ship_boarding
+			count < 2
+		}
+		
+		default_modules = {
+			
+		}
+	}
+
+	firenation_battleship_1 = {
+
+		visual_level = 0
+		archetype = firenation_battleship_hull
+		priority = 1900
+		module_slots = inherit
+
+		type = { 
+			capital_ship
+			anti_air
+		}
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+		module_slots = inherit
+		default_modules = {
+			
+		}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 2
+		sub_attack = 0
+		
+		anti_air_attack = 0
+		
+		armor_value = 5
+
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 15
+		naval_speed = 20
+		reliability = 0.8
+		resources = {
+			#oil = 1
+			steel = 2
+		}
+	}
+
+	firenation_battleship_2 = {
+
+		visual_level = 1
+		archetype = firenation_battleship_hull
+		priority = 1900
+		parent = firenation_battleship_1
+		module_slots = inherit
+		default_modules = {
+			
+		}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 2
+		sub_attack = 5
+		
+		anti_air_attack = 0
+		
+		armor_value = 6
+
+		
+		surface_detection = 20
+		sub_detection = 5
+		naval_speed = 25
+		reliability = 0.85
+
+		naval_range = 3000
+		
+		max_strength = 120
+		
+
+		
+		type = { 
+			capital_ship
+			anti_air
+		}
+		build_cost_ic = 1650
+		resources = {
+			#oil = 1
+			steel = 3
+		}
+		manpower = 800
+	}
+	
+}
