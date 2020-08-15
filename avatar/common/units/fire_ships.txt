@@ -18,11 +18,11 @@ sub_units = {
 	}
 
 	firenation_heavy_cruiser = {
-		sprite = heavy_cruiser
+		sprite = battlecruiser
 		map_icon_category = ship
 		priority = 6
 		active = yes
-		type = { screen_ship }
+		type = { capital_ship }
 		need = { firenation_cruiser_hull = 1 }
 		
 		max_organisation = 40
@@ -36,7 +36,7 @@ sub_units = {
 	}
 
 	firenation_frigate = {
-		sprite = battleship
+		sprite = heavy_cruiser
 		map_icon_category = ship
 		priority = 3
 		active = yes
@@ -72,7 +72,7 @@ sub_units = {
 	}
 
 	jet_ski = {
-		sprite = battleship
+		sprite = submarine
 		map_icon_category = ship
 		priority = 3
 		active = yes
@@ -90,7 +90,7 @@ sub_units = {
 	}
 
 	river_boat = {
-		sprite = battleship
+		sprite = destroyer
 		map_icon_category = ship
 		priority = 3
 		active = yes
